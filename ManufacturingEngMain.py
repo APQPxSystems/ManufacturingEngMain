@@ -129,7 +129,7 @@ if automation_app == "Kigyo Calculator":
             output = BytesIO()
             writer = pd.ExcelWriter(output, engine="xlsxwriter")
             df.to_excel(writer, index=False, sheet_name="Kigyo Output")
-            writer.save()
+            writer.close()
             output.seek(0)
             return output
         
