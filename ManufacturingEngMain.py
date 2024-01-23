@@ -49,29 +49,7 @@ if automation_app == "Sub Balancing":
             st.subheader(f"Sub No: {sub_no} - Wire Count: {count_wire_no} ({percent_of_grand_total:.2f}% of Total Insertions)")
             st.write(group_data)
 
-        # Add a download button for all grouped data
-            st.write("------------------------------")
-        download_all_button = st.button("Download Generated Data")
-        if download_all_button:
-            # Create a BytesIO object to store the Excel file
-            excel_buffer_all = BytesIO()
-
-            # Use pandas to_excel method to write the raw_data3 to the BytesIO object
-            with pd.ExcelWriter(excel_buffer_all, engine='xlsxwriter') as writer_all:
-                for sub_no, group_data in grouped_data:
-                    group_data.to_excel(writer_all, sheet_name=f"SubNo_{sub_no}", index=False)
-
-            # Set the cursor to the beginning of the BytesIO object
-            excel_buffer_all.seek(0)
-
-            # Add a download link for the Excel file
-            st.download_button(
-                label="Download All Generated Data as Excel File",
-                data=excel_buffer_all,
-                file_name="All_Grouped_Data.xlsx",
-                key="download_button_all"
-            )
-
+        
 # Kigyo Calculator
 if automation_app == "Kigyo Calculator":
     # App Title and Subheader
