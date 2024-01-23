@@ -13,14 +13,14 @@ st.title("Manufacturing Engineering Dep't. Web App")
 
 st.write("""This web app is a collection of Manufacturing Engineering Department's automation tools.
          This runs on streamlit's cloud server and is not connected to any database.
-         Therefore, any data uploaded will not be saved or collected and will vanish everytime the app is refreshed.""") 
+         Therefore, any data uploaded will not be saved or collected and will vanish every time the app is refreshed.""")
 
 # Automation App Selection
-automation_app = st.selectbox("Select an automation app.", ["Sub Balancing", 
+automation_app = st.selectbox("Select an automation app.", ["Sub Balancing",
                                                             "Kigyo Calculator"])
 
 # Sub Balancing App
-if automation_app == "Sub Balancing":   
+if automation_app == "Sub Balancing":
     # App title
     st.title("Sub Balancing App")
 
@@ -45,12 +45,34 @@ if automation_app == "Sub Balancing":
         for sub_no, group_data in grouped_data:
             count_wire_no = len(group_data)
             percent_of_grand_total = (count_wire_no / grand_total) * 100
-            st.subheader(f"Sub No: {sub_no} - Wire Count: {count_wire_no} ({percent_of_grand_total:.2f}% of Total Insertions)")
+            st.subheader(
+                f"Sub No: {sub_no} - Wire Count: {count_wire_no} ({percent_of_grand_total:.2f}% of Total Insertions)")
             st.write(group_data)
 
-        # Add a download button for all grouped data
+            # Add a download button for each grouped data
             st.write("------------------------------")
-        download_all_button = st.button("Download Generated Data")
+            download_button = st.button(f"Download SubNo_{sub_no} Data")
+            if download_button:
+                # Create a BytesIO object to store the Excel file
+                excel_buffer = BytesIO()
+
+                # Use pandas to_excel method to write the group_data to the BytesIO object
+                with pd.ExcelWriter(excel_buffer, engine='xlsxwriter') as writer:
+                    group_data.to_excel(writer, sheet_name=f"SubNo_{sub_no}", index=False)
+
+                # Set the cursor to the beginning of the BytesIO object
+                excel_buffer.seek(0)
+
+                # Add a download link for the Excel file
+                st.download_button(
+                    label=f"Download SubNo_{sub_no} Data as Excel File",
+                    data=excel_buffer,
+                    file_name=f"SubNo_{sub_no}_Data.xlsx",
+                    key=f"download_button_{sub_no}"
+                )
+
+        # Add a download button for all grouped data
+        download_all_button = st.button("Download All Generated Data")
         if download_all_button:
             # Create a BytesIO object to store the Excel file
             excel_buffer_all = BytesIO()
@@ -78,8 +100,8 @@ if automation_app == "Kigyo Calculator":
     st.subheader("Upload the required excel files")
 
     # Upload necessary excel files and preview uploaded data
-    kigyo_col1, kigyo_col2, kigyo_col3 = st.columns([1,1,1])
-    
+    kigyo_col1, kigyo_col2, kigyo_col3 = st.columns([1, 1, 1])
+
     with kigyo_col1:
         price_list = st.file_uploader("Upload excel file of updated price list of parts", type=["xlsx"])
         if price_list is not None:
@@ -111,8 +133,10 @@ if automation_app == "Kigyo Calculator":
         parts_price_inventory = parts_and_price.merge(inventory_list_df, how="left")
 
         # Kigyo Calculations
-        kigyo_ouput = parts_price_inventory[["Parts Type", "Parts List", "Price per Piece", "Quantity", "Quantity Available"]]
-        kigyo_ouput["Quantity to Purchase"] = (kigyo_ouput["Quantity"] - kigyo_ouput["Quantity Available"]).apply(lambda x: max(x, 0))
+        kigyo_ouput = parts_price_inventory[["Parts Type", "Parts List", "Price per Piece", "Quantity",
+                                              "Quantity Available"]]
+        kigyo_ouput["Quantity to Purchase"] = (kigyo_ouput["Quantity"] - kigyo_ouput[
+            "Quantity Available"]).apply(lambda x: max(x, 0))
         kigyo_ouput["Purchase Cost"] = kigyo_ouput["Price per Piece"] * kigyo_ouput["Quantity to Purchase"]
         kigyo_ouput["Allowance"] = kigyo_ouput["Purchase Cost"] * (percent_allowance / 100)
         kigyo_ouput["Total Price"] = kigyo_ouput["Purchase Cost"] + kigyo_ouput["Allowance"]
@@ -124,20 +148,21 @@ if automation_app == "Kigyo Calculator":
         # Download Excel File
         st.subheader("Download Kigyo Output File")
 
-        # Create a function to save the datarame to an Excel File
+        # Create a function to save the dataframe to an Excel File
         def download_excel(df, file_name):
             output = BytesIO()
             writer = pd.ExcelWriter(output, engine="xlsxwriter")
             df.to_excel(writer, index=False, sheet_name="Kigyo Output")
-            writer.close()
+            writer.save()
             output.seek(0)
             return output
-        
+
         # Create a download button
         download_button = st.button("Download")
 
         # When the button is clicked, save the dataframe and create a download link
         if download_button:
             excel_file = download_excel(kigyo_ouput, "Kigyo_Output.xlsx")
-            st.download_button(label="Download as Excel", data=excel_file, file_name="Kigyo Output.xlsx", key=download_button)
+            st.download_button(label="Download as Excel", data=excel_file, file_name="Kigyo_Output.xlsx",
+                               key="download_button_kigyo")
 
