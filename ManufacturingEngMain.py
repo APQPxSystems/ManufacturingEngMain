@@ -122,21 +122,6 @@ if automation_app == "Kigyo Calculator":
         st.write("Preview of generated Kigyo")
         st.write(kigyo_ouput)
 
-        # Download Excel File
-        st.subheader("Download Kigyo Output File")
-
-        # Create a function to save the datarame to an Excel File
-        def download_excel(df, file_name):
-            output = BytesIO()
-            writer = pd.ExcelWriter(output, engine="xlsxwriter")
-            df.to_excel(writer, index=False, sheet_name="Kigyo Output")
-            writer.save()
-            output.seek(0)
-            return output
-        
-        # Create a download button
-        download_button = st.button("Download")
-
         # When the button is clicked, save the dataframe and create a download link
         if download_button:
             excel_file = download_excel(kigyo_ouput, "Kigyo_Output.xlsx")
