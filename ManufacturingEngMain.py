@@ -24,6 +24,10 @@ automation_app = st.selectbox("Select an automation app.", ["Sub Balancing",
 if automation_app == "Sub Balancing":   
     # App title
     st.title("Sub Balancing App")
+    st.write("""How to use: Upload an excel file of sub data.
+             Make sure that the extension is in XLSX. If not, open the file first and save as XLSX.
+             Make sure that the columns SubNo, Wi_No, Ins_L, Ins_R, ConnNo_L, ConnNo_R are present to avoid errors.
+             """)
 
     # Upload excel file
     raw_data = st.file_uploader("Upload sub balancing data", type=["xlsx"])
@@ -76,6 +80,10 @@ if automation_app == "Sub Balancing":
 if automation_app == "Kigyo Generator":
     # App Title and Subheader
     st.title("Kigyo Generator")
+    st.write("""How to use: Upload required excel files.
+             Drag the allowance slider to your desired price allowance in %.
+             The Kigyo output will be automatically generated.
+             """)
     st.subheader("Upload the required excel files")
 
     # Upload necessary excel files and preview uploaded data
