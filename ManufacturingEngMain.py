@@ -3,6 +3,7 @@
 # Import Libraries
 import streamlit as st
 import pandas as pd
+from datetime import datetime, timedelta
 from io import BytesIO
 
 # Streamlit Configurations
@@ -18,7 +19,8 @@ st.write("--------------------------------------------------------")
 
 # Automation App Selection
 automation_app = st.selectbox("Select an automation app.", ["Sub Balancing", 
-                                                            "Kigyo Generator"])
+                                                            "Kigyo Generator",
+                                                            "FMEA and QCP Matrix Date Calculator"])
 st.write("--------------------------------------------------------")
 
 # Sub Balancing App
@@ -174,3 +176,80 @@ if automation_app == "Kigyo Generator":
             file_name="Updated Inventory.csv",
             mime="text/csv"
         )
+
+# FMEA and QCP Matrix Date Calculator
+if automation_app == "FMEA and QCP Matrix Date Calculator":
+
+    # App Title and Description
+    st.title("FMEA and QCP Matrix Date Calculator")
+    st.write("""How to use: Select the type of matrix to be created.
+            The required timing will be displayed.
+            Look for the date of the indicated timing on the event schedule and input on the space provided.
+            The necessary DATE MADE, EFFECTIVITY DATE, and KEY DATE will be automatically generated.""")
+    st.write("--------------------------------------------")
+
+    # Matrix Type Selection
+    matrix_type = st.selectbox("Selec matrix type", ["Pre-Launch", "Mass Pro"])
+
+    # Required Timing
+    if matrix_type == "Pre-Launch":
+        st.subheader("! Use Assy date of first event")
+    else:
+        st.subheader("! Use Assy date of EV/RT")
+    st.write("--------------------------------------------")
+
+    # Date Input
+    date_input = st.date_input("Input the date based on event schedule.", value="today")
+
+    # Date Function
+    def subtract_weekdays(start_date, days_to_subtract):
+        current_date = start_date
+        while days_to_subtract > 0:
+            current_date -= timedelta(days=1)
+            # Check if the current day is a weekend (Saturday or Sunday)
+            if current_date.weekday() < 5:
+                days_to_subtract -= 1
+        return current_date
+
+    # FMEA and QCP columns
+    FMEAcol, QCPcol = st.columns([1,1])
+
+    with FMEAcol:
+        st.subheader("FMEA Matrix")
+        start_date = date_input
+
+        # Date Made
+        if matrix_type == "Pre-Launch":
+            result_date = subtract_weekdays(start_date, 9)
+            st.subheader(f"Date Made: {result_date.strftime('%Y-%m-%d')}")
+        else:
+            result_date = subtract_weekdays(start_date, 12)
+            st.subheader(f"Date Made: {result_date.strftime('%Y-%m-%d')}")
+
+        # Key Date
+        result_date = subtract_weekdays(start_date, 6)
+        st.subheader(f"Key Date: {result_date.strftime('%Y-%m-%d')}")
+
+        # Effectivity Date
+        if matrix_type == "Pre-Launch":
+            result_date = subtract_weekdays(start_date, 6)
+            st.subheader(f"Effectivity Date: {result_date.strftime('%Y-%m-%d')}")
+        else:
+            result_date = subtract_weekdays(start_date, 9)
+            st.subheader(f"Effectivity Date: {result_date.strftime('%Y-%m-%d')}")
+
+    with QCPcol:
+        st.subheader("QCP Matrix")
+        start_date = date_input
+
+        # Date Made
+        result_date = subtract_weekdays(start_date, 6)
+        st.subheader(f"Date Made: {result_date.strftime('%Y-%m-%d')}")
+
+        # Key Date
+        result_date = subtract_weekdays(start_date, 3)
+        st.subheader(f"Key Date: {result_date.strftime('%Y-%m-%d')}")
+
+        # Effectivity Date
+        result_date = subtract_weekdays(start_date, 3)
+        st.subheader(f"Effectivty Date: {result_date.strftime('%Y-%m-%d')}")
