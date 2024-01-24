@@ -14,10 +14,12 @@ st.title("Manufacturing Engineering Dep't. Web App")
 st.write("""This web app is a collection of Manufacturing Engineering Department's automation tools.
          This runs on streamlit's cloud server and is not connected to any database.
          Therefore, any data uploaded will not be saved or collected and will vanish everytime the app is refreshed.""") 
+st.write("--------------------------------------------------------")
 
 # Automation App Selection
 automation_app = st.selectbox("Select an automation app.", ["Sub Balancing", 
                                                             "Kigyo Generator"])
+st.write("--------------------------------------------------------")
 
 # Sub Balancing App
 if automation_app == "Sub Balancing":   
@@ -81,7 +83,7 @@ if automation_app == "Kigyo Generator":
     st.title("Kigyo Generator")
     st.write("""How to use: Upload required excel files.
              Drag the allowance slider to your desired price allowance in %.
-             The Kigyo output will be automatically generated.
+             The Kigyo output will automatically generated
              """)
     st.subheader("Upload the required excel files")
 
@@ -124,36 +126,51 @@ if automation_app == "Kigyo Generator":
         kigyo_ouput["Purchase Cost"] = kigyo_ouput["Price per Piece"] * kigyo_ouput["Quantity to Purchase"]
         kigyo_ouput["Allowance"] = kigyo_ouput["Purchase Cost"] * (percent_allowance / 100)
         kigyo_ouput["Total Price"] = kigyo_ouput["Purchase Cost"] + kigyo_ouput["Allowance"]
+        kigyo_ouput.set_index("Parts List", inplace=True)
+        st.write("--------------------------------------------------------")
 
         # Display Kigyo Output
-        st.write("Preview of generated Kigyo")
+        st.subheader("Preview of generated Kigyo")
         st.write(kigyo_ouput)
 
         # Download Excel File
-        st.subheader("Download Kigyo Output File")
-
-        # Create a function to save the datarame to an Excel File
-        def download_excel(df, file_name):
-            output = BytesIO()
-            writer = pd.ExcelWriter(output, engine="xlsxwriter")
-            df.to_excel(writer, index=False, sheet_name="Kigyo Output")
-            writer.close()
-            output.seek(0)
-            return output
+        @st.cache_data
+        def convert_kigyo(kigyo):
+            return kigyo.to_csv().encode("utf-8")
         
-        # Create a download button
-        download_button = st.button("Download")
+        generated_kigyo = convert_kigyo(kigyo_ouput)
 
-        # When the button is clicked, save the dataframe and create a download link
-        if download_button:
-            excel_file = download_excel(kigyo_ouput, "Kigyo_Output.xlsx")
-            st.download_button(label="Download as Excel", data=excel_file, file_name="Kigyo_Output.xlsx", key=download_button)
+        st.download_button(
+            label="Download Kigyo as CSV",
+            data=generated_kigyo,
+            file_name="Generated Kigyo.csv",
+            mime="text/csv"
+        )
 
+        st.write("--------------------------------------------------------")
     # Generating the Updated Inventory minus the Used Parts
     if price_list is not None and parts_list is not None and inventory_list is not None:
         st.subheader("Updated Inventory List")
-        inventory_minus_parts = inventory_list_df.merge(parts_list_df, how="left")
-        inventory_update = inventory_minus_parts["Parts List"]
-        inventory_update["Quantity Available"] = (inventory_minus_parts["Quantity Available"] - inventory_minus_parts["Quantity"]).apply(lambda x: max(x, 0))
+        inventory_update = inventory_list_df.merge(parts_list_df, how="left")
+        inventory_update["Quantity"] = inventory_update["Quantity"].fillna(0)
+        inventory_update["New Quantity Available"] = (inventory_update["Quantity Available"] - inventory_update["Quantity"]).apply(lambda x: max(x, 0))
+        inventory_final = inventory_update[["Parts List", "New Quantity Available"]]
+        inventory_final_pd = pd.DataFrame(inventory_final)
+        inventory_final_pd.rename(columns={"New Quantity Available":"Quantity Available"}, inplace=True)
+        inventory_final_pd.set_index("Parts List", inplace=True)
 
-        st.write(inventory_update)
+        st.write(inventory_final_pd)
+
+        # Download Inventory Excel File
+        @st.cache_data
+        def convert_kigyo(inventory):
+            return inventory.to_csv().encode("utf-8")
+        
+        generated_inventory = convert_kigyo(inventory_final_pd)
+
+        st.download_button(
+            label="Download Inventory as CSV",
+            data=generated_inventory,
+            file_name="Updated Inventory.csv",
+            mime="text/csv"
+        )
