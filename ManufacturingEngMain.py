@@ -20,7 +20,8 @@ st.write("--------------------------------------------------------")
 # Automation App Selection
 automation_app = st.selectbox("Select an automation app.", ["Sub Balancing", 
                                                             "Kigyo Generator",
-                                                            "FMEA and QCP Matrix Date Calculator"])
+                                                            "FMEA and QCP Matrix Date Calculator",
+                                                           "PDCA Viewer"])
 st.write("--------------------------------------------------------")
 
 # Sub Balancing App
@@ -253,3 +254,11 @@ if automation_app == "FMEA and QCP Matrix Date Calculator":
         # Effectivity Date
         result_date = subtract_weekdays(start_date, 3)
         st.subheader(f"Effectivty Date: {result_date.strftime('%Y-%m-%d')}")
+
+# PDCA Viewer
+if automation_app == "PDCA Viewer":
+         st.title("PDCA Summary")
+
+         pdca_file = pd.read_excel(open("//172.25.112.123/pe_final_storage_2019/Systems Egineering/PDCA/sample/Sub Balancing Sample.xlsx", "rb"))
+
+         st.write(pdca_file)
