@@ -259,6 +259,6 @@ if automation_app == "FMEA and QCP Matrix Date Calculator":
 if automation_app == "PDCA Viewer":
          st.title("PDCA Summary")
 
-         pdca_file = pd.read_excel("Sub Balancing Sample.csv")
+         pdca_file = pd.read_csv("Sub Balancing Sample.csv")
 
          st.write(pdca_file)
