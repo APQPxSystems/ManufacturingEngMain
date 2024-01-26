@@ -9,6 +9,14 @@ from io import BytesIO
 
 # Streamlit Configurations
 st.set_page_config(page_title="ME Dept Apps", layout="wide")
+hide_st_style = """
+                <style>
+                #MainMenu {visibility:hidden;}
+                footer {visibility:hidden;}
+                header {visibility:hidden;}
+                </style>
+                """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # App title and info
 st.title("Manufacturing Engineering Dep't. Web App")
