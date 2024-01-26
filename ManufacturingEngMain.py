@@ -61,7 +61,7 @@ if automation_app == "PDCA Summary Viewer":
     )
 
     # Show the chart in Streamlit app
-    st.plotly_chart(fig)
+    st.write(fig)
 
     # Filter in Department
     department_section = st.selectbox("Choose Department/ Section:", pdca_file["Department"].unique())
