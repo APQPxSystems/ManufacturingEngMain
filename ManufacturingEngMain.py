@@ -16,7 +16,7 @@ hide_st_style = """
                 header {visibility:hidden;}
                 </style>
                 """
-st.markdown(hide_st_style, unsafe_allow_html=True)
+#st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # App title and info
 st.title("Manufacturing Engineering Dep't. Web App")
