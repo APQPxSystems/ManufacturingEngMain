@@ -3,6 +3,7 @@
 # Import Libraries
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 from datetime import datetime, timedelta
 from io import BytesIO
 
@@ -18,11 +19,66 @@ st.write("""This web app is a collection of Manufacturing Engineering Department
 st.write("--------------------------------------------------------")
 
 # Automation App Selection
-automation_app = st.selectbox("Select an automation app.", ["Sub Balancing", 
+automation_app = st.selectbox("Select an automation app.", ["PDCA Summary Viewer",
+                                                            "Sub Balancing", 
                                                             "Kigyo Generator",
-                                                            "FMEA and QCP Matrix Date Calculator",
-                                                           "PDCA Viewer"])
+                                                            "FMEA and QCP Matrix Date Calculator"])
 st.write("--------------------------------------------------------")
+
+# PDCA Summary Viewer
+if automation_app == "PDCA Summary Viewer":
+    # App Title and Description
+    st.title("PDCA Summary Viewer")
+    st.write("""Select car maker, car model, status, and department/ section.
+            Then, the PDCA items will be generated.""")
+
+    # Read Excel File
+    pdca_file = pd.read_excel("PDCA/PDCA.xlsx")
+
+    # Columns for Filters in Model and Status
+    model_col, status_col = st.columns([1,1])
+
+    with model_col:
+        car_model = st.selectbox("Select Car Model:", pdca_file["Model"].unique())
+
+    with status_col:
+        status = st.selectbox("Select Status:", pdca_file["Status"].unique())
+
+    # Filter the DataFrame based on selected Model and Status
+    filtered_data = pdca_file[(pdca_file['Model'] == car_model) & (pdca_file['Status'] == status)]
+
+    # Create a grouped DataFrame for counting
+    grouped_data = filtered_data.groupby(['Department', 'Status']).size().reset_index(name='Count')
+
+    # Create a bar chart using Plotly Express
+    fig = px.bar(
+        grouped_data,
+        x='Department',
+        y='Count',
+        color='Status',
+        title=f'Status Count for {car_model} Model - {status}',
+        labels={'Count': 'Item Count'},
+    )
+
+    # Show the chart in Streamlit app
+    st.plotly_chart(fig)
+
+    # Filter in Department
+    department_section = st.selectbox("Choose Department/ Section:", pdca_file["Department"].unique())
+
+    # Filter and Drop Filtered Columns
+    filtered_items = pdca_file.loc[(pdca_file["Model"]==car_model) 
+                                & (pdca_file["Status"]==status) 
+                                & (pdca_file["Department"]==department_section)]
+
+    final_pdca = filtered_items.drop(["Car Maker", "Model", "Status", "Department"], axis=1)
+
+    # Variable Type Conversion and Fill None
+    final_pdca["Product"] = final_pdca["Product"].astype(str)
+    final_pdca.fillna("", inplace=True)
+
+    # Display Dataframe
+    st.dataframe(final_pdca)
 
 # Sub Balancing App
 if automation_app == "Sub Balancing":   
@@ -254,11 +310,3 @@ if automation_app == "FMEA and QCP Matrix Date Calculator":
         # Effectivity Date
         result_date = subtract_weekdays(start_date, 3)
         st.subheader(f"Effectivty Date: {result_date.strftime('%Y-%m-%d')}")
-
-# PDCA Viewer
-if automation_app == "PDCA Viewer":
-         st.title("PDCA Summary")
-
-         pdca_file = pd.read_csv("Sub Balancing Sample.csv")
-
-         st.write(pdca_file)
