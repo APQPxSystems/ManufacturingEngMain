@@ -33,7 +33,7 @@ if automation_app == "PDCA Summary Viewer":
             Then, the PDCA items will be generated.""")
 
     # Read Excel File
-    pdca_file = pd.read_excel("PDCA/PDCA.xlsx")
+    pdca_file = pd.read_excel("PDCA.xlsx")
 
     # Columns for Filters in Model and Status
     model_col, status_col = st.columns([1,1])
@@ -61,7 +61,7 @@ if automation_app == "PDCA Summary Viewer":
     )
 
     # Show the chart in Streamlit app
-    #st.write(fig)
+    #st.plotly_chart(fig)
 
     # Filter in Department
     department_section = st.selectbox("Choose Department/ Section:", pdca_file["Department"].unique())
@@ -78,8 +78,25 @@ if automation_app == "PDCA Summary Viewer":
     final_pdca.fillna("", inplace=True)
 
     # Display Dataframe
+    st.write("------------------------------------------")
+    st.title(f"{department_section} {status} Items - {car_model}")
+    total_items = len(final_pdca["Items"])
+    st.subheader(f"{total_items} {status} Items in Total.")
     st.dataframe(final_pdca)
 
+    # Download Button
+    @st.cache_data
+    def convert_df(df):
+        return df.to_csv().encode('utf-8')
+    
+    csv = convert_df(final_pdca)
+
+    st.download_button(
+        label="Download PDCA",
+        data=csv,
+        file_name= f"{department_section} {status} items - {car_model}.csv",
+        mime="text/csv")
+        
 # Sub Balancing App
 if automation_app == "Sub Balancing":   
     # App title
