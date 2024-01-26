@@ -87,9 +87,9 @@ if automation_app == "PDCA Summary Viewer":
 
     # Display Dataframe
     st.write("------------------------------------------")
-    st.title(f"{department_section} {status} Items - {car_model}")
+    st.title(f"{department_section} {status} Item/s - {car_model}")
     total_items = len(final_pdca["Items"])
-    st.subheader(f"{total_items} {status} Items in Total.")
+    st.subheader(f"{total_items} {status} Item/s in Total.")
     st.dataframe(final_pdca)
 
     # Download Button
