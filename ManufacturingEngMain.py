@@ -33,7 +33,7 @@ if automation_app == "PDCA Summary Viewer":
             Then, the PDCA items will be generated.""")
 
     # Read Excel File
-    pdca_file = pd.read_excel("PDCA.xlsx")
+    pdca_file = pd.read_excel("PDCA/PDCA.xlsx")
 
     # Columns for Filters in Model and Status
     model_col, status_col = st.columns([1,1])
