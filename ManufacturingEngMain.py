@@ -3,7 +3,7 @@
 # Import Libraries
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+import altair as alt
 from datetime import datetime, timedelta
 from io import BytesIO
 
@@ -16,7 +16,7 @@ hide_st_style = """
                 header {visibility:hidden;}
                 </style>
                 """
-#st.markdown(hide_st_style, unsafe_allow_html=True)
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # App title and info
 st.title("Manufacturing Engineering Dep't. Web App")
@@ -55,22 +55,16 @@ if automation_app == "PDCA Summary Viewer":
     # Filter the DataFrame based on selected Model and Status
     filtered_data = pdca_file[(pdca_file['Model'] == car_model) & (pdca_file['Status'] == status)]
 
-    # Create a grouped DataFrame for counting
-    grouped_data = filtered_data.groupby(['Department', 'Status']).size().reset_index(name='Count')
-
-    # Create a bar chart using Plotly Express
-    fig = px.bar(
-        grouped_data,
-        x='Department',
-        y='Count',
-        color='Status',
-        title=f'Status Count for {car_model} Model - {status}',
-        labels={'Count': 'Item Count'},
+    # Create a bar chart using Matplotlib
+    chart_df = pd.DataFrame(filtered_data)
+    grouped_data = chart_df.groupby(["Department", "Status"]).size().reset_index(name="Count")
+    chart_bar = alt.Chart(grouped_data).mark_bar().encode(
+        x="Department",
+        y="Count",
+        color="Status"
     )
-
-    # Show the chart in Streamlit app
-    st.plotly_chart(fig)
-
+    st.altair_chart(chart_bar, use_container_width=True)
+    
     # Filter in Department
     department_section = st.selectbox("Choose Department/ Section:", pdca_file["Department"].unique())
 
@@ -87,9 +81,9 @@ if automation_app == "PDCA Summary Viewer":
 
     # Display Dataframe
     st.write("------------------------------------------")
-    st.title(f"{department_section} {status} Item/s - {car_model}")
+    st.title(f"{department_section} {status} Items - {car_model}")
     total_items = len(final_pdca["Items"])
-    st.subheader(f"{total_items} {status} Item/s in Total.")
+    st.subheader(f"{total_items} {status} Items in Total.")
     st.dataframe(final_pdca)
 
     # Download Button
