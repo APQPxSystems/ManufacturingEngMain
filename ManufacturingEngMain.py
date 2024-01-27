@@ -27,12 +27,16 @@ st.write("""This web app is a collection of Manufacturing Engineering Department
 st.write("--------------------------------------------------------")
 
 # Automation App Selection
-automation_app = st.selectbox("Select an automation app.", ["PDCA Summary Viewer",
+automation_app = st.selectbox("Select an automation app.", ["Home",
+                                                            "PDCA Summary Viewer",
                                                             "Sub Balancing", 
                                                             "Kigyo Generator",
                                                             "FMEA and QCP Matrix Date Calculator"])
 st.write("--------------------------------------------------------")
 
+# Home
+if automation_app == "Home":
+    st.write("")
 # PDCA Summary Viewer
 if automation_app == "PDCA Summary Viewer":
     # App Title and Description
