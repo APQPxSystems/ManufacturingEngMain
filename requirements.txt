@@ -1,5 +1,5 @@
 streamlit
-plotly
+altair
 pandas
 openpyxl
 datetime
