@@ -231,7 +231,7 @@ if automation_app == "Kigyo Generator":
         st.write("Total Purchase Cost: " + str(kigyo_ouput["Purchase Cost"].sum()))
         st.write("Total Allowance Cost: " + str(kigyo_ouput["Allowance"].sum()))
         st.write("Total Price (Cost + Allowance): " + str(kigyo_ouput["Total Price"].sum()))
-        st.write("Total saved from inventory: " + str(kigyo_ouput["Savings from Inventory"].sum()))
+        st.write("Total Saved From Inventory: " + str(kigyo_ouput["Savings from Inventory"].sum()))
 
         # Download Excel File
         @st.cache_data
