@@ -26,8 +26,6 @@ st.write("""This web app is a collection of Manufacturing Engineering Department
          This runs on streamlit's cloud server and is not connected to any database.
          Therefore, any data uploaded will not be saved or collected and will vanish everytime the app is refreshed.""")
 st.write("--------------------------------------------------------")
-st.write("- Systems Engineering Section")
-st.write("--------------------------------------------------------")
 
 def check_password():
     """Returns `True` if the user had the correct password."""
