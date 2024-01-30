@@ -19,6 +19,8 @@ hide_st_style = """
                 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
+st.title("SYSTEMS ENGINEERING - MANUFACTURING ENGINEERING DEPARTMENT")
+
 def check_password():
     """Returns `True` if the user had the correct password."""
 
