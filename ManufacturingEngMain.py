@@ -195,6 +195,7 @@ if automation_app == "Kigyo Generator":
 
     # Generating the Kigyo Output
     if price_list is not None and parts_list is not None and inventory_list is not None:
+        st.write("--------------------------------------------------------")
         st.subheader("Generate Kigyo Excel File")
         percent_allowance = st.slider("Slide to the desired percent of price allowance", 0, 100, 10)
 
@@ -215,7 +216,6 @@ if automation_app == "Kigyo Generator":
 
     # Generating the Updated Inventory minus the Used Parts
     if price_list is not None and parts_list is not None and inventory_list is not None:
-        st.subheader("Updated Inventory List")
         inventory_update = inventory_list_df.merge(parts_list_df, how="left")
         inventory_update["Quantity"] = inventory_update["Quantity"].fillna(0)
         inventory_update["New Quantity Available"] = (inventory_update["Quantity Available"] - inventory_update["Quantity"]).apply(lambda x: max(x, 0))
@@ -223,7 +223,6 @@ if automation_app == "Kigyo Generator":
         inventory_final_pd = pd.DataFrame(inventory_final)
         inventory_final_pd.rename(columns={"New Quantity Available":"Quantity Available"}, inplace=True)
         inventory_final_pd.set_index("Parts List", inplace=True)
-        st.write("--------------------------------------------------------")
 
         # Display Kigyo Output
         st.subheader("Preview of generated Kigyo")
@@ -249,6 +248,7 @@ if automation_app == "Kigyo Generator":
         st.write("--------------------------------------------------------")
       
       # Diplay Updated inventory
+        st.subheader("Updated Inventory List")
         st.write(inventory_final_pd)
 
         # Download Inventory Excel File
