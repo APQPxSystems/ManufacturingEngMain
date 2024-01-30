@@ -225,7 +225,7 @@ if automation_app == "Kigyo Generator":
         inventory_final_pd.set_index("Parts List", inplace=True)
 
         # Display Kigyo Output
-        st.subheader("Preview of generated Kigyo")
+        st.subheader("Preview of Generated Kigyo")
         st.write(kigyo_ouput)
         st.write("Total Purchase Cost: " + str(kigyo_ouput["Purchase Cost"].sum()))
         st.write("Total Allowance Cost: " + str(kigyo_ouput["Allowance"].sum()))
