@@ -208,12 +208,30 @@ if automation_app == "Kigyo Generator":
         kigyo_ouput["Purchase Cost"] = kigyo_ouput["Price per Piece"] * kigyo_ouput["Quantity to Purchase"]
         kigyo_ouput["Allowance"] = kigyo_ouput["Purchase Cost"] * (percent_allowance / 100)
         kigyo_ouput["Total Price"] = kigyo_ouput["Purchase Cost"] + kigyo_ouput["Allowance"]
+        kigyo_ouput["Used Inventory"] = kigyo_ouput["Quantity"] - kigyo_ouput["Quantity to Purchase"]
+        kigyo_ouput["Savings from Inventory"] = kigyo_ouput["Price per Piece"] * kigyo_ouput["Used Inventory"]
         kigyo_ouput.set_index("Parts List", inplace=True)
+        st.write("--------------------------------------------------------")
+
+    # Generating the Updated Inventory minus the Used Parts
+    if price_list is not None and parts_list is not None and inventory_list is not None:
+        st.subheader("Updated Inventory List")
+        inventory_update = inventory_list_df.merge(parts_list_df, how="left")
+        inventory_update["Quantity"] = inventory_update["Quantity"].fillna(0)
+        inventory_update["New Quantity Available"] = (inventory_update["Quantity Available"] - inventory_update["Quantity"]).apply(lambda x: max(x, 0))
+        inventory_final = inventory_update[["Parts List", "New Quantity Available"]]
+        inventory_final_pd = pd.DataFrame(inventory_final)
+        inventory_final_pd.rename(columns={"New Quantity Available":"Quantity Available"}, inplace=True)
+        inventory_final_pd.set_index("Parts List", inplace=True)
         st.write("--------------------------------------------------------")
 
         # Display Kigyo Output
         st.subheader("Preview of generated Kigyo")
         st.write(kigyo_ouput)
+        st.write("Total Purchase Cost: " + str(kigyo_ouput["Purchase Cost"].sum()))
+        st.write("Total Allowance Cost: " + str(kigyo_ouput["Allowance"].sum()))
+        st.write("Total Price (Cost + Allowance): " + str(kigyo_ouput["Total Price"].sum()))
+        st.write("Total saved from inventory: " + str(kigyo_ouput["Savings from Inventory"].sum()))
 
         # Download Excel File
         @st.cache_data
@@ -228,19 +246,9 @@ if automation_app == "Kigyo Generator":
             file_name="Generated Kigyo.csv",
             mime="text/csv"
         )
-
         st.write("--------------------------------------------------------")
-    # Generating the Updated Inventory minus the Used Parts
-    if price_list is not None and parts_list is not None and inventory_list is not None:
-        st.subheader("Updated Inventory List")
-        inventory_update = inventory_list_df.merge(parts_list_df, how="left")
-        inventory_update["Quantity"] = inventory_update["Quantity"].fillna(0)
-        inventory_update["New Quantity Available"] = (inventory_update["Quantity Available"] - inventory_update["Quantity"]).apply(lambda x: max(x, 0))
-        inventory_final = inventory_update[["Parts List", "New Quantity Available"]]
-        inventory_final_pd = pd.DataFrame(inventory_final)
-        inventory_final_pd.rename(columns={"New Quantity Available":"Quantity Available"}, inplace=True)
-        inventory_final_pd.set_index("Parts List", inplace=True)
-
+      
+      # Diplay Updated inventory
         st.write(inventory_final_pd)
 
         # Download Inventory Excel File
