@@ -1,3 +1,4 @@
+hmac
 streamlit
 altair
 pandas
