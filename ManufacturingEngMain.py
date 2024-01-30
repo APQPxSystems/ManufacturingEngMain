@@ -19,7 +19,15 @@ hide_st_style = """
                 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-st.title("SYSTEMS ENGINEERING - MANUFACTURING ENGINEERING DEPARTMENT")
+# App title and info
+st.title("Manufacturing Engineering Department Web App")
+
+st.write("""This web app is a collection of Manufacturing Engineering Department's automation tools.
+         This runs on streamlit's cloud server and is not connected to any database.
+         Therefore, any data uploaded will not be saved or collected and will vanish everytime the app is refreshed.""")
+st.write("--------------------------------------------------------")
+st.write("- Systems Engineering Section")
+st.write("--------------------------------------------------------")
 
 def check_password():
     """Returns `True` if the user had the correct password."""
@@ -48,14 +56,6 @@ def check_password():
 if not check_password():
     st.stop()  # Do not continue if check_password is not True.
 #-------------------------------------------------------------------------------------------
-
-# App title and info
-st.title("Manufacturing Engineering Dep't. Web App")
-
-st.write("""This web app is a collection of Manufacturing Engineering Department's automation tools.
-         This runs on streamlit's cloud server and is not connected to any database.
-         Therefore, any data uploaded will not be saved or collected and will vanish everytime the app is refreshed.""") 
-st.write("--------------------------------------------------------")
 
 # Automation App Selection
 automation_app = st.selectbox("Select an automation app.", ["Home",
