@@ -75,13 +75,13 @@ if automation_app == "PDCA Summary Viewer":
     pdca_file = pd.read_excel("PDCA/PDCA.xlsx")
 
     # Altair Bar Chart - All Models and per Department
-    general_df = pd.DataFrame(pdca_file)
-    general_chart = alt.Chart(general_df).mark_bar().encode(
+    general_df_open = pd.DataFrame(pdca_file[pdca_file["Status"]=="Open"])
+    general_chart = alt.Chart(general_df_open).mark_bar().encode(
         x=alt.X('Model:N', title='Model'),
         y=alt.Y('count():Q', title='Count'),
-        color='Status:N'
+        color='Department:N'
     ).properties(
-        title='Count of Open, Closed, and Cancelled items for each Model'
+        title='Stacked Count of Open items for each Model by Department'
     )
     st.altair_chart(general_chart, use_container_width=True)
     st.write("--------------------------------------------------------")
