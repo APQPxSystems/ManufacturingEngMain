@@ -1,4 +1,6 @@
 # Full systems engineering web application
+# Systems Engineering Section - Manufacturing Engineering Department
+# Kent Katigbak - Staff
 
 # Import Libraries
 import hmac
@@ -47,7 +49,7 @@ def check_password():
         "ENTER PASSWORD TO OPEN THE WEB APP", type="password", on_change=password_entered, key="password"
     )
     if "password_correct" in st.session_state:
-        st.error("😕 Password incorrect")
+        st.error("Password incorrect")
     return False
 
 
@@ -66,6 +68,7 @@ st.write("--------------------------------------------------------")
 # Home
 if automation_app == "Home":
     st.write("")
+  
 # PDCA Summary Viewer
 if automation_app == "PDCA Summary Viewer":
     # App Title and Description
