@@ -88,8 +88,7 @@ if automation_app == "PDCA Summary Viewer":
 
     # Columns for Filters in Model and Status
     
-    st.write("""Select car maker, car model, status, and department/ section.
-            Then, the PDCA items will be generated.""")
+    st.write("""Select car maker, car model, status, and department/ section.""")
     model_col, status_col = st.columns([1,1])
 
     with model_col:
