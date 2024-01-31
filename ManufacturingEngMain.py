@@ -129,7 +129,7 @@ if automation_app == "PDCA Summary Viewer":
     st.download_button(
         label="Download PDCA",
         data=csv,
-        file_name= f"{department_section} {status} items - {car_model}.csv",
+        file_name= f"{department_section} PDCA {status} items - {car_model}.csv",
         mime="text/csv")
         
 # Sub Balancing App
