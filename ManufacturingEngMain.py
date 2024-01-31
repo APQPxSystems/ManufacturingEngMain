@@ -70,13 +70,25 @@ if automation_app == "Home":
 if automation_app == "PDCA Summary Viewer":
     # App Title and Description
     st.title("PDCA Summary Viewer")
-    st.write("""Select car maker, car model, status, and department/ section.
-            Then, the PDCA items will be generated.""")
 
     # Read Excel File
-    pdca_file = pd.read_excel("PDCA/PDCA.xlsx")
+    pdca_file = pd.read_excel("PDCA.xlsx")
+
+    # Altair Bar Chart - All Models and per Department
+    general_df = pd.DataFrame(pdca_file)
+    general_chart = alt.Chart(general_df).mark_bar().encode(
+        x=alt.X('Model:N', title='Model'),
+        y=alt.Y('count():Q', title='Count'),
+        color='Status:N'
+    ).properties(
+        title='Count of Open, Closed, and Cancelled items for each Model'
+    )
+    st.altair_chart(general_chart, use_container_width=True)
 
     # Columns for Filters in Model and Status
+    
+    st.write("""Select car maker, car model, status, and department/ section.
+            Then, the PDCA items will be generated.""")
     model_col, status_col = st.columns([1,1])
 
     with model_col:
@@ -88,7 +100,7 @@ if automation_app == "PDCA Summary Viewer":
     # Filter the DataFrame based on selected Model and Status
     filtered_data = pdca_file[(pdca_file['Model'] == car_model) & (pdca_file['Status'] == status)]
 
-    # Create a bar chart using Matplotlib
+    # Altair Bar Chart - Specific Model per Department
     chart_df = pd.DataFrame(filtered_data)
     grouped_data = chart_df.groupby(["Department", "Status"]).size().reset_index(name="Count")
     chart_bar = alt.Chart(grouped_data).mark_bar().encode(
