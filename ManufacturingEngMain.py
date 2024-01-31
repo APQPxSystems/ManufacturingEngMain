@@ -84,6 +84,7 @@ if automation_app == "PDCA Summary Viewer":
         title='Count of Open, Closed, and Cancelled items for each Model'
     )
     st.altair_chart(general_chart, use_container_width=True)
+    st.write("--------------------------------------------------------")
 
     # Columns for Filters in Model and Status
     
@@ -109,6 +110,7 @@ if automation_app == "PDCA Summary Viewer":
         color="Status"
     )
     st.altair_chart(chart_bar, use_container_width=True)
+    st.write("------------------------------------------")
     
     # Filter in Department
     department_section = st.selectbox("Choose Department/ Section:", pdca_file["Department"].unique())
@@ -125,7 +127,6 @@ if automation_app == "PDCA Summary Viewer":
     final_pdca.fillna("", inplace=True)
 
     # Display Dataframe
-    st.write("------------------------------------------")
     st.title(f"{department_section} {status} Items - {car_model}")
     total_items = len(final_pdca["Items"])
     st.subheader(f"{total_items} {status} Items in Total.")
