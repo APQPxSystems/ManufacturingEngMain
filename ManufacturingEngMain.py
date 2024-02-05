@@ -474,10 +474,10 @@ if automation_app == "FMEA PDCA Viewer":
     st.title("FMEA PDCA Viewer")
 
     # Read FMEA PDCA Excel File
-    fmea_pdca_raw = pd.read_csv("PDCA/FMEA.csv", encoding="ISO-8859-1")
+    fmea_pdca_raw = pd.read_excel("PDCA/FMEA.xlsx")
 
     # Drop Unnecessary Columns
-    fmea_pdca_dropped_cols = fmea_pdca_raw[["Car Maker", "Car Model", "Line", "Findings", "Items to Check/Action", "Department", "Person in Charge", "Status", "Target Date"]]
+    fmea_pdca_dropped_cols = fmea_pdca_raw.DataFrame[["Car Maker", "Car Model", "Line", "Findings", "Items to Check/Action", "Department", "Person in Charge", "Status", "Target Date"]]
 
     # Convert Line Column to String
     fmea_pdca_dropped_cols["Line"] = fmea_pdca_dropped_cols["Line"].astype(str)
