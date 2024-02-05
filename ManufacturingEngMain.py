@@ -3,7 +3,7 @@
 # Kent Katigbak - Staff
 
 # Import Libraries
-import hmac
+# import hmac
 import streamlit as st
 import pandas as pd
 import altair as alt
@@ -29,41 +29,69 @@ st.write("""This web app is a collection of Manufacturing Engineering Department
          Therefore, any data uploaded will not be saved or collected and will vanish everytime the app is refreshed.""")
 st.write("--------------------------------------------------------")
 
-def check_password():
-    """Returns `True` if the user had the correct password."""
+# User Roles
+credential_col1, credential_col2 = st.columns([2,1])
+with credential_col1:
+    user_role = st.selectbox("Select your department.", ["Manufacturing Engineering",
+                                                        "Production",
+                                                        "Board Assembly Engineering",
+                                                        "Quality Assurance"])
+with credential_col2:
+    app_key = st.text_input("Enter credential key.")
 
-    def password_entered():
-        """Checks whether a password entered by the user is correct."""
-        if hmac.compare_digest(st.session_state["password"], st.secrets["password"]):
-            st.session_state["password_correct"] = True
-            del st.session_state["password"]  # Don't store the password.
-        else:
-            st.session_state["password_correct"] = False
+# def check_password():
+#     """Returns `True` if the user had the correct password."""
 
-    # Return True if the password is validated.
-    if st.session_state.get("password_correct", False):
-        return True
+#     def password_entered():
+#         """Checks whether a password entered by the user is correct."""
+#         if hmac.compare_digest(st.session_state["password"], st.secrets["password"]):
+#             st.session_state["password_correct"] = True
+#             del st.session_state["password"]  # Don't store the password.
+#         else:
+#             st.session_state["password_correct"] = False
 
-    # Show input for password.
-    st.text_input(
-        "ENTER PASSWORD TO OPEN THE WEB APP", type="password", on_change=password_entered, key="password"
-    )
-    if "password_correct" in st.session_state:
-        st.error("Password incorrect")
-    return False
+#     # Return True if the password is validated.
+#     if st.session_state.get("password_correct", False):
+#         return True
+
+#     # Show input for password.
+#     st.text_input(
+#         "ENTER PASSWORD TO OPEN THE WEB APP", type="password", on_change=password_entered, key="password"
+#     )
+#     if "password_correct" in st.session_state:
+#         st.error("Password incorrect")
+#     return False
 
 
-if not check_password():
-    st.stop()  # Do not continue if check_password is not True.
+# if not check_password():
+#     st.stop()  # Do not continue if check_password is not True.
 #-------------------------------------------------------------------------------------------
 
 # Automation App Selection
-automation_app = st.selectbox("Select an automation app.", ["Home",
-                                                            "PDCA Summary Viewer",
-                                                            "FMEA PDCA Viewer",
-                                                            "Sub Balancing", 
-                                                            "Kigyo Generator",
-                                                            "FMEA and QCP Matrix Date Calculator"])
+if user_role == "Manufacturing Engineering" and app_key == "ME-SE24":
+    automation_app = st.selectbox("Select an automation app.", ["Home",
+                                                                "PDCA Summary Viewer",
+                                                                "FMEA PDCA Viewer",
+                                                                "Sub Balancing", 
+                                                                "Kigyo Generator",
+                                                                "FMEA and QCP Matrix Date Calculator"])
+elif user_role == "Production" and app_key == "SE24":
+    automation_app = st.selectbox("Select an automation app.", ["Home",
+                                                                "PDCA Summary Viewer",
+                                                                "FMEA PDCA Viewer"])
+elif user_role == "Board Assembly Engineering" and app_key == "SE24":
+    automation_app = st.selectbox("Select an automation app.", ["Home",
+                                                                "PDCA Summary Viewer",
+                                                                "FMEA PDCA Viewer"])
+elif user_role == "Quality Assurance" and app_key == "SE24":
+    automation_app = st.selectbox("Select an automation app.", ["Home",
+                                                                "PDCA Summary Viewer",
+                                                                "FMEA PDCA Viewer"])
+else:
+    st.subheader("Department/ Credential Key Required")
+    st.write("Please enter the credential key that matches with your chosen department.")
+    automation_app = ""
+
 st.write("--------------------------------------------------------")
 
 # Home
@@ -76,7 +104,7 @@ if automation_app == "PDCA Summary Viewer":
     st.title("PDCA Summary Viewer")
 
     # Read Excel File
-    pdca_file = pd.read_excel("PDCA/PDCA.xlsx")
+    pdca_file = pd.read_excel("PDCA.xlsx")
 
     # Altair Bar Chart - All Models and per Department
     general_df_open = pd.DataFrame(pdca_file[pdca_file["Status"]=="Open"])
