@@ -484,18 +484,40 @@ if automation_app == "FMEA PDCA Viewer":
     # Convert Line Column to String
     fmea_pdca_dropped_cols["Line"] = fmea_pdca_dropped_cols["Line"].astype(str)
 
-    # First Graph
-    # Open Items of Each Car Maker per Department/ Section
-    # First Altair Bar Chart -- Per Car Maker
-    df_car_maker_chart = pd.DataFrame(fmea_pdca_dropped_cols[fmea_pdca_dropped_cols["Status"]=="OPEN"])
-    car_maker_chart = alt.Chart(df_car_maker_chart).mark_bar().encode(
-        x=alt.X('Car Maker:N', title='Car Maker'),
-        y=alt.Y('count():Q', title='Count'),
-        color='Department:N'
-    ).properties(
-        title="Open Items of Each Department per Car Maker"
-    )
-    st.altair_chart(car_maker_chart, use_container_width=True)
+    # Completion Rate per Car Maker and Graph
+    car_maker_col1, car_maker_spacer, car_maker_col2 = st.columns([1.5,0.1,5])
+
+    with car_maker_col2:
+        # First Graph
+        # Open Items of Each Car Maker per Department/ Section
+        # First Altair Bar Chart -- Per Car Maker
+        df_car_maker_chart = pd.DataFrame(fmea_pdca_dropped_cols[fmea_pdca_dropped_cols["Status"]=="OPEN"])
+        car_maker_chart = alt.Chart(df_car_maker_chart).mark_bar().encode(
+            x=alt.X('Car Maker:N', title='Car Maker'),
+            y=alt.Y('count():Q', title='Count'),
+            color='Department:N'
+        ).properties(
+            title="Open Items of Each Department per Car Maker"
+        )
+        st.altair_chart(car_maker_chart, use_container_width=True)
+    
+    with car_maker_col1:
+        st.subheader("Completion Rate")
+        car_maker_closed = fmea_pdca_dropped_cols[fmea_pdca_dropped_cols["Status"]=="CLOSED"]
+        car_maker_completion_rates = []
+
+        for car_maker in fmea_pdca_dropped_cols["Car Maker"].unique():
+            total_closed_items = car_maker_closed[car_maker_closed["Car Maker"]==car_maker].shape[0]
+            total_items = fmea_pdca_dropped_cols[fmea_pdca_dropped_cols["Car Maker"]==car_maker].shape[0]
+            completion_rate = total_closed_items / total_items if total_items > 0 else 0
+            car_maker_completion_rates.append({
+                'Car Maker': car_maker,
+                'Completion Rate': f"{round(completion_rate * 100, 2)} %"
+            })
+
+        # Display completion rates
+        completion_df = pd.DataFrame(car_maker_completion_rates)
+        st.write(completion_df)
     st.write("------------------------------")
 
     # Second Graph
