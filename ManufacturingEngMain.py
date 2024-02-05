@@ -68,7 +68,7 @@ with credential_col2:
 #-------------------------------------------------------------------------------------------
 
 # Automation App Selection
-if user_role == "Manufacturing Engineering" and app_key == "ME-SE24":
+if user_role == "Manufacturing Engineering" and app_key == "MESE24":
     automation_app = st.selectbox("Select an automation app.", ["Home",
                                                                 "PDCA Summary Viewer",
                                                                 "FMEA PDCA Viewer",
