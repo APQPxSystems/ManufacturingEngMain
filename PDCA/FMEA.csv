@@ -1,0 +1,1106 @@
+﻿Item No.,Item No. on PDCA,Car Maker,Car Model,Line,Findings,Items to Check/Action,Department,Person in Charge,Status,Target Date,,,
+1,23,SUZUKI,YLP,5121,No jig cover (all boards),Request to provide jig cover to all boards,"PE-BAE
+(Assy Development)",K. De Grano,CLOSED,14-Sep-23,,,
+2,13,SUZUKI,YOC,5121,No provided wire damaged prevention jig installed on assy jig (breaking jig) on all assyboards, Provide jig cover to all assembly jig,PE-BAE (ASSY DEV),K. De Grano,CLOSED,14-Sep-23,,,
+3,7,SUZUKI,YD1 Floor,5119,No receiving jig on conn. 45 from bukumi 3 a/b for checking protector o,"For confirmation from juntion to conn. 64 and from clamp to clamp 20 
+
+Answer: No need to install receiving jig, since clamp no. ",PE-BAE (ASSY DEV),K. De Grano,CLOSED,19-Jul-23,,,
+4,39,SUZUKI,YD1 Floor,5119,Request to change location of Packaging OI on Appearance inspection.,Change location of Packaging OI on Appearance inspection.,ME-NPI (MPPD),April,CLOSED,14-Jul-23,,,
+5,44,SUZUKI,YD1 Floor,5119,Confirm the jig height if have difficulty on process that can affect the dimension.,"Verify the jig height on Assy boards.
+
+Answer: Upon verification, the height and level of harness are good. No need to change jig height/combine.",PE-BAE (ASSY DEV),K. De Grano,CLOSED,17-Jul-23,,,
+6,7,SUZUKI,YD1 Floor,5124,No receiving jig on conn. 45 from bukumi 3 a/b for checking protector on conn. 61,"For confirmation from juntion to conn. 64 and from clamp to clamp 20 
+Answer: No need to add assy jig,  dimension of clamp and connector are already controlled from clamp 65. U-jig will serves as the holder for the branch.",PE-BAE (ASSY DEV),K. De Grano,CLOSED,19-Jul-23,,,
+7,35,SUZUKI,YD1 Floor,5124,Request to change location of Packaging OI on Appearance inspection.,Change location of Packaging OI on Appearance inspection.,ME-NPI (MPPD),April,CLOSED,14-Jul-23,,,
+8,1,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,No upper limit on tupper box on Sub,Request to put upper limit indication on each connector  tupperboxes.,PRODUCTION,A. De Guzman,CLOSED,18-Apr-23,,,
+9,2,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,No good setting of joint wire on sub assy process.,Request to provide joint sub hanger.,PE-FABRICATION,A. De Guzman,CLOSED,18-Apr-23,,,
+10,3,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,No good label on tupperbox.,Request to provide and change label for tupperbox.,PRODUCTION,A. De Guzman,CLOSED,12-Apr-23,,,
+11,4,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,Too much dust on sub assy downspout.,Request to conduct 5's.,PRODUCTION,A. De Guzman,CLOSED,18-Apr-23,,,
+12,5,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,NG pulling base for conn. YSN-8F and DSL-2FB (36751),"Request to repair pulling base.
+
+Already Repair",PE-EQ-FINAL,EQ-PM-FINAL,CLOSED,15-Jul-23,,,
+13,9,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,Associate did not comply on standard process on what to do when encountered abnormalities.,Request to educate associate what to do once abnormality was encountered.,PRODUCTION,A. De Guzman,CLOSED,19-Apr-23,,,
+14,11,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,No available OI on grommet process.,Request to provide OI.,ME-NPI (MPPD),A. De Guzman,CLOSED,19-Jul-23,,,
+15,17,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,No E-bag on assembly associate.,Request to provide E-Bag,PRODUCTION,A. De Guzman,CLOSED,5-Jun-23,,,
+16,23,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,Dirty connector jig,Request to conduct 5S,PRODUCTION,A. De Guzman,CLOSED,20-Apr-23,,,
+17,23,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,Dirty connector jig,Request to conduct 5S,PRODUCTION,A. De Guzman,CLOSED,,,,
+18,2,SUZUKI,YD1 DOOR,5135,No good height of the assy jig,"Coordinate to PE-MPPD1
+
+Answer: Based on checking, the height and level of harness are good. No need to change jig height/combine.",PE-BAE (ASSY DEV),K. De Grano,CLOSED,17-Jul-23,,,
+19,6,SUZUKI,YD1 DOOR,5135,No provide ebag on assy process.,Already requested.,PRODUCTION,,CLOSED,,,,
+20,8,SUZUKI,YD1 DOOR,5135,Not updated running product,Always update running product,PRODUCTION,J. Atienza,CLOSED,17-Jul-23,,,
+21,11,SUZUKI,YD1 DOOR,5135,Some jigs are not pokayoke,"Verify jigs need to change to pokayoke
+
+Answer: No need to change common jig to assy jig, there is no history of defects encountered. Jigs (junction to connector) measurementt are also verified.",PE-BAE (ASSY DEV),K. De Grano,CLOSED,17-Jul-23,,,
+22,8,SUZUKI,YD1 BTRY/CURTAIN AB/ FR FOG LP/ DOME LAMP,5018,No available e-bag on the process,follow up in supplies,PRODUCTION,J. Catipan,CLOSED,03-Jul-23,,,
+23,13,SUZUKI,YD1 BTRY/CURTAIN AB/ FR FOG LP/ DOME LAMP,5018,Associate do not comply on standard process of locking retainer.,Re-orient associate on standard way of locking retainer.,PRODUCTION,J. Catipan,CLOSED,03-Jul-23,,,
+24,23,HONDA,TKRA Eng,3129,NG Pulling Strength,"Request to change newton settings for AEE connector jig 6.6-7.6 Newton on Sub 05
+
+Good: 7.5-8.5N.m
+NG: 9.5-10.5N.m
+Result:
+Good: 8.2N.m
+NG: 10.1N.m",PE-EQ-FINAL,EQ-PM-FINAL,CLOSED,15-Jul-23,,,
+25,13,MAZDA,J30A,1135,Associate did not conduct checking of wire condition of grommet,Orient associate to conduct checking of wire condition on grommet,PRODUCTION,J. Dimaculangan,CLOSED,7-Feb-23,,,
+26,14,MAZDA,J30A,1135,Displayed applicable product on sub is not tally on the running product,Conduct orientation that displayed applicable product on sub must be tally on the running product,PRODUCTION,J. Dimaculangan,CLOSED,2-Jul-23,,,
+27,15,MAZDA,J30A,1135,Associate did not conduct lightly pulling of grommet and checking if comes off,Conduct orientation to conduct lightly pulling of grommet and check of comes off,PRODUCTION,J. Dimaculangan,CLOSED,7-Feb-23,,,
+28,16,MAZDA,J30A,1135,Not updated OI (all process),Post updated OI,ME-NPI (MPPD),A. Dimaano,CLOSED,7-Feb-23,,,
+29,17,MAZDA,J30A,1135,No nameplate holder,Provide nameplate holder,PE-FABRICATION,M. Carandang,CLOSED,13-Feb-23,,,
+30,19,MAZDA,J30A,1135,"Damaged, wrong color and missing E-tanmatsu on all assyboard with different portion","1. Request to provide E-tanmatsu.
+2. Request to repair and change the damaged and wrong color of tanmatsu used.",PE-BAE (Maintenance),Shawn,CLOSED,31-Jul-23,,,
+31,20,MAZDA,J30A,1135,No provided wire damaged prevention jig installed on assy jig (breaking jig) on all assyboards - different portions and branch, Request to provide protective cover on jigs with missing cover. (other boards have cover on the same jig),PE-BAE (Maintenance),Shawn,CLOSED,TBA (For confirmation of budget),,,
+32,21,MAZDA,J30A,1135,Associate did not follow standard on performing the clamp fixing work,Conduct orientation on proper taping method on clamp fixing,PRODUCTION,J. Dimaculangan,CLOSED,7-Feb-23,,,
+33,23,MAZDA,J30A,1135,Associate is not knowledgeable regarding indication of twice pulling on board,Conduct orientation regarding indication of twice pulling on board,PE-BAE (Maintenance),Shawn,CLOSED,31-Jul-23,,,
+34,24,MAZDA,J30A,1135,Lay-out associate is unaware on bending frequency.,Conduct orientation for wire bending frequency,PRODUCTION,J. Dimaculangan,CLOSED,7-Feb-23,,,
+35,27,MAZDA,J30A,1135,Damaged wing on ECT Process,Request to repair damaged wing of checker on ECT,PE-BAE (Maintenance),Shawn,CLOSED,31-Jul-23,,,
+36,28,MAZDA,J30A,1135,No sequence on Option Tape box,Provide sequence on Option,ME-NPI (MPPD),A. Dimaano,CLOSED,7-Feb-23,,,
+37,29,MAZDA,J30A,1135,"OI of grommet must not contain the following:
+
+1. expansion diameter
+2. good and no good status of grommet
+3. wire biting
+4. grommet fixing tape wound about 50mm",Revision of OI,ME-NPI (MPPD),A. Dimaano,CLOSED,7-Feb-23,,,
+38,30,MAZDA,J30A,1135,Associate is not aware regarding checking of grommet stamp on Appearance process,Conduct orientation on checking of grommet stamp,PE-BAE (Maintenance),Shawn,CLOSED,31-Jul-23,,,
+39,15,MAZDA,J30A,1137,'No good arrangement of parts based on WI ,Arrange parts based on WI and conduct orientation,PRODUCTION,J. Dimaculangan,CLOSED,2-Jul-23,,,
+40,29,MAZDA,J30A,1137,Associate is not aware that terminal have an electric wire within 10mm ,Conduct orientation  that terminal have an electric wire within 10mm ,PRODUCTION,J. Dimaculangan,CLOSED,2-Jul-23,,,
+41,3,DAIHATSU,D18B DOOR,2120,"No displayed of applicable running product
+(Sub-assy)",Provision of Product Label for applicable running product ,PE-FABRICATION,K. Marquez,CLOSED,29-Mar-23,,,
+42,7,DAIHATSU,D18B ENGINE,2114,"One set supply box not match on parts storage shelf
+(Parts Distribution)",Re-arrange tupperbox and conduct orientation regarding the sequence of tupperbox.,PRODUCTION,J. Reyes,CLOSED,17-Apr-23,,,
+43,27,DAIHATSU,D18B ENGINE,2114,Connector storage box is not located on top,Request to provide flatform for connector storage box,PRODUCTION,J. Reyes,CLOSED,11-Jul-23,,,
+44,1,DAIHATSU,"D54L/D83A
+ENGINE",2117,Request to orient all sub assy and lay out associate regarding wire bending frequency.,Re-orient associate regarding bening frequency.,PRODUCTION,K. Marquez,CLOSED,12-Jul-23,,,
+45,7,SUZUKI,YSB INPANEL,5113,"Not following Up, Down, Left, Right sequence on parts box  at parts supply station.",Arrange tupperbox base on sequence on parts box.,PRODUCTION,A. De Guzman,CLOSED,13-Apr-23,,,
+46,10,SUZUKI,YSB INPANEL,5113,Assembly associates not using E-bag.,Request E-bag for all Assembly associates.,PRODUCTION,A. De Guzman,CLOSED,5-Jun-23,,,
+47,11,SUZUKI,YSB INPANEL,5113,Some sub assy associate not aware on bending frequency,Orient all sub associate about bending frequency,PRODUCTION,A. De Guzman,CLOSED,13-Apr-23,,,
+48,12,SUZUKI,YSB INPANEL,5113,Too much dust on connector jig.,Clean connector jig.,PRODUCTION,A. De Guzman,CLOSED,13-Apr-23,,,
+49,13,SUZUKI,YSB INPANEL,5113,No Updated SOT on assy process.,Request to update SOT on assy process.,ME-NPI (MPPD),,CLOSED,7-Mar-23,,,
+50,15,SUZUKI,YSB INPANEL,5113,No good Vinyl cover on shiage board.,Request to change vinyl cover.,PRODUCTION,A. De Guzman,CLOSED,7-Jun-23,,,
+51,26,SUZUKI,YSB INPANEL,5113,Damaged label of option box.,Request to provide label of option box,PRODUCTION,A. De Guzman,CLOSED,6-Jul-23,,,
+52,28,SUZUKI,YSB INPANEL,5113,Ran out of tape,Orient associate when encountered lacking parts always call the attention of assign Jr.staff and expert,PRODUCTION,A. De Guzman,CLOSED,15-Apr-23,,,
+53,31,SUZUKI,YSB INPANEL,5113,Not following OI on option (105-E).Did not perform step 5.1,Orient option associate step by step on OI.,PRODUCTION,A. De Guzman,CLOSED,15-Apr-23,,,
+54,5,SUZUKI,YT3 Floor,5136,Need to replace OI in Shiage,"Request to provide OI on Shiage
+",ME-NPI (MPPD),E. Cometa,CLOSED,,,,
+55,8,SUZUKI,YT3 Floor,5136,Associate did not follow the mounting direction and jig setting method  of grommet.,Update OI,ME-NPI (MPPD),E. Cometa,CLOSED,17-Jul-23,,,
+56,9,SUZUKI,YT3 Floor,5136,Associate is not aware on fixing taping on grommet tail.,Update OI,ME-NPI (MPPD),E. Cometa,CLOSED,17-Jul-23,,,
+57,11,SUZUKI,YT3 Floor,5136,"Loose jigs on assyboard
+(Assembly)
+
+1. Board 6 conn.28,136
+2. Board 7 dummy jig 40
+3. Board 7 conn 15,16
+4. Board 6 clamp jig 34
+5. Board 2 bending conn.28
+6. Board 2 conn. 36
+7. Board 3. conn. 28",Request for the immediate repair of jigs to AME,PE-BAE (Maintenance),S. Magsino,CLOSED,17-Jul-23,,,
+58,13,SUZUKI,YT3 Floor,5136,Associate is not aware regarding the proper orientation of terminal insertion,Re-orient associate about the standard terminal insertion,PRODUCTION,E. Cometa,CLOSED,17-Jul-23,,,
+59,16,SUZUKI,YT3 Floor,5136,Associate did not comply on the standard way of electric wires storation,Re-orient associate about the rules,PRODUCTION,E. Cometa,CLOSED,17-Jul-23,,,
+60,22,SUZUKI,YT3 Floor,5136,Associate is not aware on twice pulling method for terminal that is not guaranteed to be pulled out,Re-orient associate regarding the twice pulling method,PRODUCTION,E. Cometa,CLOSED,17-Jul-23,,,
+61,23,SUZUKI,YT3 Floor,5136,Associate did not comply on the 10mm away from finger rule  ,Re-orient associate regarding the 10mm away from finger rule,PRODUCTION,E. Cometa,CLOSED,17-Jul-23,,,
+62,24,SUZUKI,YT3 Floor,5136,Associate is not aware about the standard bending frequency ,Re-orient associate regarding bending frequency,PRODUCTION,E. Cometa,CLOSED,17-Jul-23,,,
+63,25,SUZUKI,YT3 Floor,5136,Associate do not understand the precautions when inserting the wire terminal,Re-orient associate regarding the precautions during wire terminal insertions,PRODUCTION,E. Cometa,CLOSED,17-Jul-23,,,
+64,27,SUZUKI,YT3 Floor,5136,Associate is not aware on what to do with a product that is NG but no red tag,Re-orient associate about the missing red tag on NG products,QA-Final ,E. Cometa,CLOSED,17-Jul-23,,,
+65,29,SUZUKI,YT3 Floor,5136,Associate is not aware on proper sequence of option process.,Re-orient associate regarding to their work scope and method,PRODUCTION,E. Cometa,CLOSED,17-Jul-23,,,
+66,2,SUZUKI,YKC Floor,5111,No Tupperbox holder on Sub 5,Request to install tupper box holder on left side of sub PC,PE-FABRICATION,M. Carandang,OPEN,,,,
+67,19,SUZUKI,YKC Floor,5111,Narrow design of wire catcher on assembly board,Request to widen wire catcher on assembly board,PE-FABRICATION,M. Carandang,OPEN,,,,
+68,27,SUZUKI,YKC Floor,5111,Missing tapebox on option taping process,Request replacement of missing tapebox on Option taping process ,PE-FABRICATION,M. Carandang,OPEN,,,,
+69,36,SUZUKI,YKC Floor,5111,NG Wire catchers on Sub Assy,Request to repair NG wire catchers,PE-FABRICATION,M. Carandang,OPEN,,,,
+70,3,SUZUKI,Y3J Small,5138,Damaged wire catcher,Repairing of damaged wire catcher,PE-FABRICATION,M. Carandang,OPEN,,,,
+71,2,SUZUKI,DR DOOR,5139,No vinyl cover for the hanger wires,Request for a vinyl cover,PE-FABRICATION,,OPEN,,,,
+72,10,SUZUKI,DR DOOR,5139,"Transfer the location of bando gun holder, it may cause of worn out label",Request to transfer the location of bando gun holder,PE-FABRICATION,,OPEN,,,,
+73,19,SUZUKI,DR DOOR,5139,Revision of SOT on Assembly,Ongoing revision of SOT,ME-NPI (MPPD),Aisa,For confirmation,28-Jul-23,,,
+74,22,SUZUKI,DR DOOR,5139,NG option box,Request to repair NG option box,PE-FABRICATION,,OPEN,,,,
+75,25,SUZUKI,DR DOOR,5139,Inspector is not aware regarding inspection of grommet stamp,Orient the visual inspection item for grommet stamp,QA-Final ,,OPEN,,,,
+76,30,SUZUKI,DR DOOR,5139,Damaged e-tanmatsu,Request to repair NG e-tanmatsu ,PE-FABRICATION,,OPEN,,,,
+77,32,SUZUKI,DR DOOR,5139,Appearance inspector is not aware regarding inspection standard,Orentation on appearance inspector for awareness on inspection standard,QA-Final ,,OPEN,,,,
+78,5,SUZUKI,YSA,5114,Modified wire hanger,Request to modified wire hanger on sub assy,PE-FABRICATION,,OPEN,,,,
+79,9,SUZUKI,YSA,5114,NG Parts label on parts box,Request to repair the label of parts box,PE-FABRICATION,,OPEN,,,,
+80,10,SUZUKI,YSA,5114,NG Parts box,Request to change NG parts box ,PE-FABRICATION,,OPEN,,,,
+81,21,SUZUKI,YSA,5114,Same conn.on dimension table need to provide picture,Request to provide picture of same conn. in dimension table,QA-Final ,,OPEN,,,,
+82,22,SUZUKI,YSA,5114,Acrylic indication tolerance in dimension table,Request to provide acrylic indication tolerance in dimension process.,QA-Final ,,OPEN,,,,
+83,26,SUZUKI,YSA,5114,Color sensor for same connector,Request to provide color sensor for same connector on ect ,PE-EQ-FINAL,,OPEN,"For confirmation of QA for the budget 
+of color sensor",,,
+84,39,SUZUKI,YSA,5114,No cover Jig in all boards,Request to provide cover in all jigs,PE-BAE (Maintenance),Shawn,OPEN,TBA (For confirmation of budget),,,
+85,47,SUZUKI,YSA,5114,NG jigs in option board,Jig Verification,PE-BAE (Maintenance),Shawn,OPEN,14-Aug-23,,,
+86,3,SUZUKI,YD1 Battery,5009,No bendable cover for all bendble jig,Request to put bendable cover in all bendable jig ,PE-BAE (Maintenance),Shawn,OPEN,TBA (For confirmation of budget),,,
+87,4,SUZUKI,YD1 Battery,5009,No available ebag,Request to provide ebag,PRODUCTION,,OPEN,,,,
+88,5,SUZUKI,YD1 Battery,5009,Advance attachment of component,Request to include the advance attachment of component on SOT since different component attached on harness,ME-NPI (MPPD),April,OPEN,21-Jul-23,,,
+89,8,SUZUKI,YD1 Battery,5009,No proper handling of harness,Need to orient regarding proper handling of harness,PRODUCTION,,OPEN,,,,
+90,9,SUZUKI,YD1 Battery,5009,Operator is not aware that insertion of shikakari should be 10mm far from finger of operator ,Need to orient regarding distance of holding shikakari,PRODUCTION,,OPEN,,,,
+91,10,SUZUKI,YD1 Battery,5009,Operator is not aware about allowable bending frequency of wires,Need to orient regarding allowable bending frequency of wires,PRODUCTION,,OPEN,,,,
+92,11,SUZUKI,YD1 Battery,5009,Operator is not aware of proper checking of nameplate and taping,Need to orient regarding proper checking of nameplate and taping,PRODUCTION,,OPEN,,,,
+93,4,SUZUKI,YLP,5121, To improve Wire Catcher,Request to fix the damaged catchers,PE-FABRICATION,M. Carandang,OPEN,,,,
+94,5,SUZUKI,YLP,5121,Removal of SPJ,To request removal of SPJ and change to receiving jig,PE-BAE (ASSY DEV),K. De Grano,OPEN,19-Jul-23,,,
+95,8,SUZUKI,YLP,5121,Improve Sub Hanger on Sub 5,For request to improve sub hanger,PE-FABRICATION,,OPEN,,,,
+96,15,SUZUKI,YLP,5121,Improve vinyl sheet,To improve vinyl sheet due to having risk on terminal deformation,PE-FABRICATION,,OPEN,,,,
+97,17,SUZUKI,YLP,5121,Not fix dispenser tape on Option Process, For request to fix tape box on Option Process,PE-FABRICATION,,OPEN,,,,
+98,19,SUZUKI,YLP,5121,"Insufficient details on OI of grommet
+a. Name of grommet
+b. Expansion diameter
+c. Wire biting
+d. Fixing tape (rolling tape) wound","Revision of Operation Instruction and include below item:
+
+a. Name of grommet
+b. Expansion diameter
+c. Wire biting
+d. Fixing tape (rolling tape) wound",ME-NPI (MPPD),April,OPEN,28-Jul-23,,,
+99,29,SUZUKI,YLP,5121,No joint hanger on layout,Request to provide joint hanger ,PE-FABRICATION,M. Carandang,OPEN,,,,
+100,33,SUZUKI,YLP,5121,Not tally MP of SOT in actual,Tally MP to SOT,PRODUCTION,K. Sangalang,OPEN,,,,
+101,1,SUZUKI,YKC ,5130,Parts without label,Label on tupperbox,PE-FABRICATION,,OPEN,,,,
+102,3,SUZUKI,YKC ,5130,No sample coonector picture,Connector picture,PE-FABRICATION,,OPEN,,,,
+103,7,SUZUKI,YKC ,5130,"Wrong label of connector
+OK: DSL-4FB-B NG: DSL-4F-B",Connector label,PE-FABRICATION,,OPEN,,,,
+104,9,SUZUKI,YKC ,5130,No cover for clamp jig and connector jig,Provide bendable cover jig,PE-BAE (Maintenance),Shawn,OPEN,TBA (For confirmation of budget),,,
+105,10,SUZUKI,YKC ,5130,Loose jigs,Repairing of loose jigs,PE-BAE (Maintenance),Shawn,OPEN,28-Aug-23,,,
+106,11,SUZUKI,YKC ,5130,Missing S-pin,Provide missing S-pin,PE-BAE (Maintenance),Shawn,OPEN,28-Aug-23,,,
+107,5,SUZUKI,YOC,5121,Unfix Bukumi  Board 2,Fix the bukumi board,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+108,23,SUZUKI,YOC,5121,Unfixed tupper box for similar parts,Request to fix the tupper box of similar parts far from each other,PE-FABRICATION,M. Carandang,OPEN,,,,
+109,26,SUZUKI,YOC,5121,"Insufficient details on OI, below items are not included;
+(a) Good and no good attachment condition of grommet
+(b) Wire biting","Revision of OI on Bukumi 
+(Inclusion of Good and NG status of grommet and wire biting)",ME-NPI (MPPD),Aisa,OPEN,28-Jul-23,,,
+110,31,SUZUKI,YOC,5121,Number of Manpower in inspection is not tally in process design,"1. Confirmation of process design
+2. Follow manpower count in inspection process",PRODUCTION,,OPEN,,,,
+111,6,SUZUKI,XF273,5015,No master sample on dummy plug for connector JMWT-SB-6F-R,Provide master sample of connector for dummy plug,PE-EQ-FINAL,,OPEN,,,,
+112,9,SUZUKI,XF273,5015,No connector name and picture label on sub assy jig and tupper box ,Provide connector name and picture label,PE-FABRICATION,,OPEN,,,,
+113,10,SUZUKI,XF273,5015,No label on Tupper Box,Provide proper label on tupper box,PE-FABRICATION,,OPEN,,,,
+114,2,SUZUKI,YD1 Inp,5117,Foreign material found on sub 12,Conduct 5S,PRODUCTION,M. Ramos,OPEN,,,,
+115,3,SUZUKI,YD1 Inp,5117, Same type and color of connector set in the same sub assy,Put tupperbox besides conector,PRODUCTION,M. Ramos,OPEN,,,,
+116,4,SUZUKI,YD1 Inp,5117,Loose jig on conn 135 and 136 board 17,Request to change all loose lockset on assy board,PRODUCTION,M. Ramos,OPEN,,,,
+117,5,SUZUKI,YD1 Inp,5117,Unused clamp jig at assembly board (CLAMP 11),Request to remove unused jigs,PRODUCTION,M. Ramos,OPEN,,,,
+118,6,SUZUKI,YD1 Inp,5117,Not updated/Lacking OI on assy board,OI Posting,ME-NPI (MPPD),April,OPEN,17-Jul-23,,,
+119,8,SUZUKI,YD1 Inp,5117,Broken protective cover on Sub 17,Repair wire catcher on sub assy,PE-FABRICATION,,OPEN,07/17/2023,,,
+120,9,SUZUKI,YD1 Inp,5117,Missing bendable covers for Board 7 and Board 5,"Install bendable cover jig 
+(Lacking budget)",PE-BAE (Maintenance),Shawn,OPEN,TBA (For confirmation of budget),,,
+121,10,SUZUKI,YD1 Inp,5117,"Missing OI on Assy,
+Not updated OI on ECT,
+Faded OI in Shiage",Post the updated OI in Line,ME-NPI (MPPD),April,OPEN,17-Jul-23,,,
+122,11,SUZUKI,YD1 Inp,5117,"Operator is not aware of ""UP-DOWN-LEFT-RIGHT"" pattern of putting components on component box",Re-orient associate on standard way of putting parts on component box. Re-arrange tupper on parts shelves.,PE-FABRICATION,,OPEN,07/17/2023,,,
+123,12,SUZUKI,YD1 Inp,5117,Damaged tanmatsu,Replace damaged tanmatsu,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+124,13,SUZUKI,YD1 Inp,5117,Operator sometimes perform airworking instead of using the jig,Re-orient associate on standard way of attaching VS.,PRODUCTION,L. Cadiz,OPEN,,,,
+125,14,SUZUKI,YD1 Inp,5117,"Operator is not following the standard way of attaching VS.
+
+(press from middle to both ends)",Re-orient associate on standard way of attaching VS.,PRODUCTION,L. Cadiz,OPEN,,,,
+126,16,SUZUKI,YD1 Inp,5117,Manpower on dimension inspection do not match process design,Provide workload division on dimension inspection,QA-Final ,,OPEN,,,,
+127,17,SUZUKI,YD1 Inp,5117,Lacking checker jig wings on ECT,Install lacking checker jig wngs on ECT,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+128,18,SUZUKI,YD1 Inp,5117,"Manpower on option taping do not match process design
+
+Process design: 2
+Actual: 1",Verify manpower allocation,PRODUCTION,L. Cadiz,OPEN,,,,
+129,19,SUZUKI,YD1 Inp,5117,No label for tapebox on option,Provide correct label for tape box on option,PE-FABRICATION,,OPEN,,,,
+130,20,SUZUKI,YD1 Inp,5117,The worker is the one getting the tape whenever it runs out during work,Re-orient associate to call Jr. Staff when tape runs out during process,PRODUCTION,L. Cadiz,OPEN,,,,
+131,21,SUZUKI,YD1 Inp,5117,Worker is not aware regarding rounds of taping on Option Taping process.,Re-orient associate regarding the standard way of taping rounds on Option Process.,PRODUCTION,L. Cadiz,OPEN,,,,
+132,22,SUZUKI,YD1 Inp,5117,"Manpower on appearance inspection do not match process design
+
+Process design: 3
+Actual: 1",Verify manpower allocation,PRODUCTION,L. Cadiz,OPEN,,,,
+133,23,SUZUKI,YD1 Inp,5117,No indication of workload division on Appearance Inspection,Provide workload division on Appearance Inspection,QA-Final ,,OPEN,,,,
+134,5,SUZUKI,YD1 Merge,5120,Slightly bend jig on clamp 19 & loose clamp 2 on board 5,Request to repair all NG jigs,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+135,7,SUZUKI,YD1 Merge,5120,Lacking wire catcher on assy board,Request to install wire catcher.,PE-FABRICATION,,OPEN,,,,
+136,8,SUZUKI,YD1 Merge,5120,Loose lockset on assy board,Request to change all loose lockset on assy board.,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+137,9,SUZUKI,YD1 Merge,5120,All board does not have assy jig cover,Request to install cover to all assembly jigs. (Lacking Budget),PE-BAE (Maintenance),,OPEN,,,,
+138,10,SUZUKI,YD1 Merge,5120,No/ Wrong connector picture label on sub assy jig.,Provide the correct connector picture label on sub assy jig,PE-FABRICATION,,OPEN,,,,
+139,11,SUZUKI,YD1 Merge,5120,Terminals that are not inserted into the connector are not properly contained in the wire catcher. ,Re-orient associate to use the wire catcher properly.,PRODUCTION, M. Ramos,OPEN,,,,
+140,12,SUZUKI,YD1 Merge,5120,Foreign materials inside the tupper box.,Conduct 5S,PRODUCTION, M. Ramos,OPEN,,,,
+141,13,SUZUKI,YD1 Merge,5120,Associate is not checking the condition of wire after inserting on the grommet. ,Re-orient associate to check the condition of wire after inserting on the grommet. ,PRODUCTION, M. Ramos,OPEN,,,,
+142,14,SUZUKI,YD1 Merge,5120,No running product label on sub PC.,Provide running product label on sub PC,PRODUCTION, M. Ramos,OPEN,,,,
+143,15,SUZUKI,YD1 Merge,5120,"Grommet expansion diameter, Good and No Good criteria of grommet inner mounting, 50mm rolling down tape (fixing taping), and precautions of wire biting not indicated in OI.",Update OI,ME-NPI (MPPD),April,OPEN,31-Jul-23,,,
+144,16,SUZUKI,YD1 Merge,5120,Not all jigs are pokayoke,Acceptable due to No Budget,PE-BAE (ASSY DEV),K. De Grano,Lack of budget,19-Jul-23,,,
+145,17,SUZUKI,YD1 Merge,5120,Parts on tupperbox not tally on actual,Orientation to parts associate about filling up of parts on tupperbox must be tally on label and actual. Arrange tupper box on parts shelves.,PE-FABRICATION,,OPEN,,,,
+146,18,SUZUKI,YD1 Merge,5120,Confirm the jig height if have difficulty on process that can affect the dimension.,Verify the jig height on Assy boards.,PE-BAE (ASSY DEV),,OPEN,,,,
+147,19,SUZUKI,YD1 Merge,5120,Lacking lockset,Provide lockset.,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+148,20,SUZUKI,YD1 Merge,5120,"Associate is not aware on bending frequency.
+0.13 & 0.22 - 1x bending is already NG
+0.35 - 1x bending is allowed",Re-orient associate on bending frequency.,PRODUCTION, M. Ramos,OPEN,,,,
+149,21,SUZUKI,YD1 Merge,5120,Not all assembly associates wearing E-bag,Completion of E-bag request for all new MP and old MP with missing/ NG E-Bag.,PRODUCTION, M. Ramos,OPEN,,,,
+150,23,SUZUKI,YD1 Merge,5120,Damaged checker jig wings (connector 4),Repir damaged checker jig wings.,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+151,24,SUZUKI,YD1 Merge,5120,Damaged wire catcher (sub 1),Repair damaged wire catcher,PE-FABRICATION,,OPEN,,,,
+152,25,SUZUKI,YD1 Merge,5120,Lacking connector picture label on Sub PC,Provide conector picture label on Sub Assy jig.,PE-FABRICATION,,OPEN,,,,
+153,26,SUZUKI,YD1 Merge,5120,Lacking/No OI posted on Line.,Post the updated OI in Line.,ME-NPI (MPPD),April,OPEN,21-Jul-23,,,
+154,27,SUZUKI,YD1 Merge,5120,Dirty checker jigs on ECT,Conduct 5S,PRODUCTION, M. Ramos,OPEN,,,,
+155,28,SUZUKI,YD1 Merge,5120,Associate is not following standard way of inspecting grommet,Re-orient associate on proper way of inspecting grommet.,QA-Final ,,OPEN,,,,
+156,2,SUZUKI,YD1 Floor,5119,Damaged wire catcher on sub PC machine,Request to repair all damaged wire catcher.,PE-FABRICATION,M. Carandang,OPEN,,,,
+157,3,SUZUKI,YD1 Floor,5119,No protective cover on sub hanger,Request to improve design by adding side cover on catcher.,PE-FABRICATION,M. Carandang,OPEN,,,,
+158,8,SUZUKI,YD1 Floor,5119,Not updated/'Lacking OI on assy board,OI Posting,ME-NPI (MPPD),April,OPEN,17-Jul-23,,,
+159,13,SUZUKI,YD1 Floor,5119,Damaged wire catcher on Assy  Board,Request to repair all damaged wire catcher.,PE-FABRICATION, M. Carandang,OPEN,,,,
+160,14,SUZUKI,YD1 Floor,5119,Wrong color of tanmatsu installed on assembly jig.,Request for correct color of tanmatsu to be installed on assy jig.,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+161,15,SUZUKI,YD1 Floor,5119,Damaged rubber tanmatsu on assy board,Request for new  tanmatsu to be installed on assy jig.,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+162,16,SUZUKI,YD1 Floor,5119,Loose lockset on assy board,Request to change all loose lockset on assy board.,PE-BAE (Maintenance),,OPEN,,,,
+163,17,SUZUKI,YD1 Floor,5119,All board does not have assy jig cover,Provide assy jig cover for all boards,PE-BAE (ASSY DEV),,OPEN,,,,
+164,19,SUZUKI,YD1 Floor,5119,Missing tanmatsu on Conn. 6,Request to install tanmatsu for all missing.,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+165,23,SUZUKI,YD1 Floor,5119,No Workload division on Dimension Inspection,Put division of workload on Dimension Board.,QA-Final ,,OPEN,,,,
+166,24,SUZUKI,YD1 Floor,5119,"Missing nuts,screw, spring on conn TSN-2F at ECT Process.",Request to fix and install all missing.,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+167,25,SUZUKI,YD1 Floor,5119,Damaged tape box on option taping,Request to repair all damage tape box.,PE-FABRICATION, M. Carandang,OPEN,,,,
+168,29,SUZUKI,YD1 Floor,5119,NG / Missing wings on ECT jigs,Request new wings of ECT jig,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+169,30,SUZUKI,YD1 Floor,5119,Lacking connector picture label on Sub PC,Provide conector picture label on Sub Assy jig.,PE-FABRICATION,,OPEN,,,,
+170,31,SUZUKI,YD1 Floor,5119,"Grommet expansion diameter, Good and No Good criteria of grommet inner mounting, 50mm rolling down tape (fixing taping), and precautions of wire biting not indicated in OI.","Include Grommet expansion diameter, Good and No Good criteria of grommet inner mounting, 50mm rolling down tape (fixing taping), and precautions of wire biting not indicated in OI.",ME-NPI (MPPD),April,OPEN,28-Jul-23,,,
+171,32,SUZUKI,YD1 Floor,5119,Non-compliance of associate in conducting slightly pulling 3x of grommet.,Re-orient associate on conducting 3x pulling of grommet,ME-NPI (MPPD),April,OPEN,18-Jul-23,,,
+172,33,SUZUKI,YD1 Floor,5119,Not all jigs are pokayoke,Acceptable due to No Budget,PE-BAE (ASSY DEV),K. De Grano,Lack of budget,19-Jul-23,,,
+173,34,SUZUKI,YD1 Floor,5119,Confirm if spacer is necessary for toridashi jigs.,Verify if spacer is necessary for toridashi jigs.,PE-BAE (ASSY DEV),,OPEN,29-Jul-23,,,
+174,38,SUZUKI,YD1 Floor,5119,Through clamp detected even if half fitting.,Fix detection checker jig on ECT.,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+175,42,SUZUKI,YD1 Floor,5119,Wrong OI of fixing taping on grommet tail. Indicate how many rounds would be apply.,Post the correct OI and indicate how many rounds would be applied on fixing taping on grommet tail.,ME-NPI (MPPD),,OPEN,22-May-23,,,
+176,2,SUZUKI,YD1 Floor,5124,Damaged wire catcher on sub PC machine,Request to repair all damaged wire catcher.,PE-FABRICATION,M. Carandang,OPEN,,,,
+177,3,SUZUKI,YD1 Floor,5124,No protective cover on sub hanger,Request to improve design by adding side cover on catcher.,PE-FABRICATION,M. Carandang,OPEN,,,,
+178,8,SUZUKI,YD1 Floor,5124,Not updated/Lacking OI on assy board,OI Posting,ME-NPI (MPPD),April,OPEN,17-Jul-23,,,
+179,10,SUZUKI,YD1 Floor,5124,Lacking tupperbox on parts distribution station,Provide tupperbox,PE-FABRICATION, M. Carandang,OPEN,,,,
+180,12,SUZUKI,YD1 Floor,5124,Damaged wire catcher on Assy  Board,Request to repair all damaged wire catcher.,PE-FABRICATION, M. Carandang,OPEN,,,,
+181,13,SUZUKI,YD1 Floor,5124,Wrong color of tanmatsu installed on assembly jig.,Request for correct color of tanmatsu to be installed on assy jig.,PE-BAE (Maintenance),Shawn,OPEN,28-Aug-23,,,
+182,14,SUZUKI,YD1 Floor,5124,Loose lockset on assy board,Request to change all loose lockset on assy board.,PE-BAE (Maintenance),Shawn,OPEN,28-Aug-23,,,
+183,15,SUZUKI,YD1 Floor,5124,All board does not have assy jig cover,Request to install cover to all assembly jigs. (Lack of budget),PE-BAE (Maintenance),,OPEN,,,,
+184,17,SUZUKI,YD1 Floor,5124,Missing tanmatsu on Conn. 6,Request to install tanmatsu for all missing.,PE-BAE (Maintenance),,OPEN,,,,
+185,21,SUZUKI,YD1 Floor,5124,No Workload division on Dimension Inspection,Put division of workload on Dimension Board.,QA-Final ,,OPEN,,,,
+186,22,SUZUKI,YD1 Floor,5124,"Missing nuts,screw, spring on conn TSN-2F at ECT Process.",Request to fix and install all missing.,PE-BAE (Maintenance),Shawn,OPEN,28-Aug-23,,,
+187,23,SUZUKI,YD1 Floor,5124,Damaged tape box on option taping,Request to repair all damaged tape box.,PE-FABRICATION,M. Carandang,OPEN,,,,
+188,26,SUZUKI,YD1 Floor,5124,Lacking connector picture label on Sub PC,Provide conector picture label on Sub Assy jig.,PE-FABRICATION,,OPEN,,,,
+189,27,SUZUKI,YD1 Floor,5124,"Grommet expansion diameter, Good and No Good criteria of grommet inner mounting, 50mm rolling down tape (fixing taping), and precautions of wire biting not indicated in OI.","Include Grommet expansion diameter, Good and No Good criteria of grommet inner mounting, 50mm rolling down tape (fixing taping), and precautions of wire biting not indicated in OI.",ME-NPI (MPPD),April,OPEN,28-Jul-23,,,
+190,28,SUZUKI,YD1 Floor,5124,Non-compliance of associate in conducting slightly pulling 3x of grommet.,Re-orient associate on conducting 3x pulling of grommet,ME-NPI (MPPD),April,OPEN,18-Jul-23,,,
+191,29,SUZUKI,YD1 Floor,5124,Not all jigs are pokayoke,Acceptable due to No Budget,PE-BAE (ASSY DEV),K. De Grano,Lack of budget,19-Jul-23,,,
+192,30,SUZUKI,YD1 Floor,5124,Confirm if spacer is necessary for toridashi jigs.,Verify if spacer is necessary for toridashi jigs.,PE-BAE (ASSY DEV),,OPEN,,,,
+193,34,SUZUKI,YD1 Floor,5124,Through clamp detected even if half fitting.,Fix detection checker jig on ECT.,PE-BAE (Maintenance),Shawn,OPEN,28-Aug-23,,,
+194,7,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,Faded picture connector.,Request to change faded picture conn.,PE-FABRICATION,,OPEN,,,,
+195,10,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,No OI for item 1-011-E on assy process on product 36843,Request to provide OI.,ME-NPI (MPPD),A. De Guzman,OPEN,19-Jul-23,,,
+196,14,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,No lockset on connector jig DSL-3F due to available jig was common jig.,Request to modified jig into receiving jig.,PE-BAE (ASSY DEV),,OPEN,,,,
+197,15,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,No available bendable cover for bendable jig on assy board.,Request to provide bendable cover for bendable jig.,PE-BAE (Maintenance),,OPEN,,,,
+198,18,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,No lockset on connector jig on product 36757/36751,Request to provide lockset.,PE-BAE (Maintenance),Shawn,OPEN,14-Aug-23,,,
+199,19,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,"No reference picture connector for similar conn.18, 19, 45 and 44 on dimension process.",Request to provide picture of same connector on dimension table.,QA-Final ,,OPEN,,,,
+200,21,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,Common jig to receiving jig.,Request to modified all jig on assy process.,PE-BAE (ASSY DEV),,OPEN,,,,
+201,24,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,No provided holder for alignment jig ,Request to provide holder for alignment jig.,PE-EQ-FINAL,,OPEN,,,,
+202,25,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,"Not updated OI  on product 36756 008-C-E, 009-C-E,0010-C-E,0011-C-E, 0012-C-E, 0013-C-E, 0014-C-E/ 0015-E, 0016-E, 0017-E",Requesto update OI,ME-NPI (MPPD),A. De Guzman,OPEN,19-Jul-23,,,
+203,26,SUZUKI,YOC BK/AS/RR DR/ROOF/BUMP,5022,Orient apperance about slighty pulling of grommet.,Orient apperance about slighty pulling of grommet.,QA-Final ,,OPEN,,,,
+204,4,SUZUKI,"YLP
+INPANEL",5112,Lacking bendable cover on all assy board,Request to put bendable cover on all lacking jig at assy board,PE-BAE (Maintenance),Shawn,OPEN,TBA (For confirmation of budget),,,
+205,7,SUZUKI,"YLP
+INPANEL",5112,Caution tag on Dimension board as a reference of similar parts,Request to put caution tag regarding similar parts,QA-Final ,,OPEN,,,,
+206,11,SUZUKI,"YLP
+INPANEL",5112,Remove all Not applicable connector jig at sub assy ,Request to remove all not applicable connector jig on all sub assy process,PRODUCTION,,OPEN,,,,
+207,13,SUZUKI,"YLP
+INPANEL",5112,'No E-bag on assembly associate,'Request to provide e-bag to all assy associate ,PE-FABRICATION,,OPEN,,,,
+208,15,SUZUKI,"YLP
+INPANEL",5112,Additional cover for not applicable jig per product,Request to provide  cover on assembly  jig with not applicable during running product to avoid wrong layout,ME-Initial (Preparation),Donna,OPEN,31-Jul-23,,,
+209,16,SUZUKI,"YLP
+INPANEL",5112,Conn.23 not   pokayoke jig PB-H-2FC(B),Request to pokayoke the jig of PB-H-2FC (B)since it was removing during assemble ,PE-BAE (ASSY DEV),,OPEN,,,,
+210,24,SUZUKI,"YLP
+INPANEL",5112,'No connector picture on sub assy,Request to put connector picture on sub assy,PE-FABRICATION,,OPEN,,,,
+211,25,SUZUKI,"YLP
+INPANEL",5112,NG wire catcher on sub 5/13,Reques to repair wire catcher on sub 5 /13,PE-FABRICATION,,OPEN,,,,
+212,30,SUZUKI,"YLP
+INPANEL",5112,OI not updated on assembly and shiage board,Request to put OI on assembly and shiage board,ME-NPI (MPPD),April,For confirmation,5-Jul-23,,,
+213,32,SUZUKI,"YLP
+INPANEL",5112,Connector SLE-6F # 49 pass on circuit even half lock the retainer lock,Request to conduct checking on ECT process the rootcause why conne.49 pass even half lock the retainer lock,PE-BAE (ECT),Sherwin,OPEN,31-Jul-23,,,
+214,33,SUZUKI,"YLP
+INPANEL",5112,OI on ECT not updated,Request to update all OI on ECT process for the reference during process,ME-NPI (MPPD),April,For confirmation,15-Jul-23,,,
+215,34,SUZUKI,"YLP
+INPANEL",5112,Associate is not aware regarding what to do to falling parts.,Re-orient associate regarding what to do in falling parts.,PRODUCTION,J. Matibag,OPEN,,,,
+216,3,SUZUKI,"Y2R
+DOME LAMP",5126,Incomplete sample drawing on sub assy connector jig.,Coordinate to Labeling.,PE-FABRICATION,,OPEN,,,,
+217,6,SUZUKI,"Y2R
+DOME LAMP",5126,'No provide ebag on assy process.,Already requested.,PE-FABRICATION,,OPEN,,,,
+218,2,SUZUKI,"YD1
+DVD",5031,Lacking  OI at assembly process.,Coordinate to PE-MPPD.,ME-NPI (MPPD),April,OPEN,28-Jul-23,,,
+219,5,SUZUKI,"YD1
+DVD",5031,Sub assy associate is unaware on insertion of shikakari 10mm far from finger of operator,Conduct orientation for distance of holding shikakari during insertion,PRODUCTION,,OPEN,,,,
+220,9,SUZUKI,"YD1
+DVD",5031,'Loose jigs on option board,Coordinate to AME to tighten the loose jigs on option board.,PE-BAE (Maintenance),Shawn,OPEN,14-Aug-23,,,
+221,6,SUZUKI,YD1 INPANEL,5123,"Too far clamp jig CL-60160-W,D
+(ALL BOARDS)","Request to adjust  clamp jig to CL-60160-W,D",PE-BAE (ASSY DEV),,OPEN,,,,
+222,7,SUZUKI,YD1 INPANEL,5123,Provide receiving jig on shiage conn.13,Request to  provide receiving connector on shiage process.,PE-BAE (ASSY DEV),K. De Grano,OPEN,28-Jul-23,,,
+223,9,SUZUKI,YD1 INPANEL,5123,Lacking E-BAG,Completion  of E-bag request  for all new/old MP with missing and NG E-bag,PRODUCTION,,OPEN,,,,
+224,13,SUZUKI,YD1 INPANEL,5123,No installed Bendable jig on assy boards,Provide  Bendable jig  in all assy board,PE-BAE (Maintenance),,OPEN,,,,
+225,14,SUZUKI,YD1 INPANEL,5123,Damaged  tape box on option  taping.,Request to repair all  damaged tape box  on option.,PE-FABRICATION,,OPEN,,,,
+226,16,SUZUKI,YD1 INPANEL,5123,Dirty vinyl sheet  on  dimension  board ,Request to  changed  vinyl sheet on dimension board .,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+227,17,SUZUKI,YD1 INPANEL,5123,Damaged spring on ect  jig ,Request to repair damaged spring on  ect board .,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+228,18,SUZUKI,YD1 INPANEL,5123,NG Wire Catcher on Sub Assy,Repair wire catcher.,PE-FABRICATION,,OPEN,,,,
+229,19,SUZUKI,YD1 INPANEL,5123,Good and NG status not included in Grommet OI,Include Good and NG status of grommet in OI,ME-NPI (MPPD),,OPEN,,,,
+230,20,SUZUKI,YD1 INPANEL,5123,"Good and No Good criteria of grommet inner mounting, and precautions of wire biting not indicated in OI.",Include Good and No Good criteria of grommet inner mounting and precautions of wire biting not indicated in OI.,ME-NPI (MPPD),,OPEN,,,,
+231,21,SUZUKI,YD1 INPANEL,5123,Lacking OI and not updated OI and SOT.,Provide complete updated OI and SOT,ME-NPI (MPPD),,OPEN,,,,
+232,22,SUZUKI,YD1 INPANEL,5123,Associate is not following sequence of putting parts in 1-set supply box.,Re-orient associate on standard process of sequence in 1-set supply box.,PRODUCTION,,OPEN,,,,
+233,23,SUZUKI,YD1 INPANEL,5123,"No spacer on toridashi jig.
+Board 19, 20, 18, 4, 12",Provide spacer on toridashi jig.,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+234,24,SUZUKI,YD1 INPANEL,5123,Not updated checksheet of color sensor,Provide updated check sheet of color sensor.,PRODUCTION,,OPEN,,,,
+235,25,SUZUKI,YD1 INPANEL,5123,Inspector on appearance doesn't understand the inspection standard and inspection methodsfor each inpection site.,Re-orient associate on inspection standard and inspection methods.,QA-Final ,,OPEN,,,,
+236,26,SUZUKI,YD1 INPANEL,5123,"Not all jigs are pokayoke.
+
+Some are common jigs.",Provide pokayoke jigs.,PE-BAE (ASSY DEV),,OPEN,,,,
+237,27,SUZUKI,YD1 INPANEL,5123,Associate is not following the standard way of attaching off-set clamp.,Re-orient associate on following standard way of attaching off-set clamp.,PRODUCTION,,OPEN,,,,
+238,28,SUZUKI,YD1 INPANEL,5123,Associate is not following the standard way of inserting shikakari on layout. It should be 10mm away from finger to the rear end of installation barrel.,Re-orient associate on standard way of inserting shikakari.,PRODUCTION,,OPEN,,,,
+239,29,SUZUKI,YD1 INPANEL,5123,'Associate doesn't understand the bending frequency or number of terminal insertion mistakes.,Re-orient associate on bending frequency,PRODUCTION,,OPEN,,,,
+240,30,SUZUKI,YD1 INPANEL,5123,No reference picture for similar connectors on the same branch on dimension inspection.,Provide reference picture for similar connectors on dimension inspection.,QA-Final ,,OPEN,,,,
+241,31,SUZUKI,YD1 INPANEL,5123,Missing wings of checker jig on ECT.,Provide checker jig wings.,PE-BAE (Maintenance),Shawn,OPEN,21-Aug-23,,,
+242,32,SUZUKI,YD1 INPANEL,5123,No workload division on Appearance Inspection,"Confirm if 2 manpower on process design.
+
+Note: 2 manpower are inspecting",QA-Final ,,OPEN,,,,
+243,4,SUZUKI,YD1 DOOR,5135,No cover of bendable jig,Coordinate to AME to put bendable cover on assembly board.,PE-BAE (Maintenance),Shawn,OPEN,TBA (For confirmation of budget),,,
+244,5,SUZUKI,YD1 DOOR,5135,No checker jig name.,Coordinate to responsible group.,PE-BAE (ECT),Teresa,OPEN,17-Jul-23,,,
+245,7,SUZUKI,YD1 DOOR,5135,Not using option taping box.,Coordinate to fabrication to remove 1 option taping box.,PE-FABRICATION,,OPEN,,,,
+246,9,SUZUKI,YD1 DOOR,5135,Loose tape holder,Repair tape holder,PE-FABRICATION,April,OPEN,17-Jul-23,,,
+247,10,SUZUKI,YD1 DOOR,5135,Lacking OI on Assy,Post complete OI,ME-NPI (MPPD),April/Aisa,For confirmation,,,,
+248,13,SUZUKI,YD1 DOOR,5135,Component box on last station is not flit when 1-set supply are all used.,Re-orient associate to flit the box when 1-set supply are all used.,PRODUCTION,,OPEN,,,,
+249,13,SUZUKI,YD1 DOOR,5135,Associate is careless when unloading wire harness.,Re-orient associate on standard way of unloading harness.,PRODUCTION,,OPEN,,,,
+250,14,SUZUKI,YD1 DOOR,5135,Associate is not aware on allowable bending frequency and what to do if they encounter bend terminal.,Re-orient associate regarding allowable bending frequency and standrad way of what to do when encountered bend terminal.,PRODUCTION,,OPEN,,,,
+251,15,SUZUKI,YD1 DOOR,5135,No proper setting and handling of harness.,Re-orient associate on proper way of handling harness.,PRODUCTION,,OPEN,,,,
+252,16,SUZUKI,YD1 DOOR,5135,NG Back wire plastic and ECT stand,Repair ECT stand,PE-BAE (Maintenance),Shawn,OPEN,28-Aug-23,,,
+253,17,SUZUKI,YD1 DOOR,5135,"Loose jig on Option Taping process.
+
+U-Jig10",Repair loose jig,PE-BAE (Maintenance),Shawn,OPEN,28-Aug-23,,,
+254,18,SUZUKI,YD1 DOOR,5135,Associate is not aware on standard way of inspection on Appearance.,Re-orient associate on standard way of inspection.,QA-Final ,,OPEN,,,,
+255,11,SUZUKI,YD1 BTRY/CURTAIN AB/ FR FOG LP/ DOME LAMP,5018,Some jigs are not pokayoke.,Verify jigs needed to change to pokayoke.,PE-BAE (ASSY DEV),K. De Grano,OPEN,20-Jul-23,,,
+256,12,SUZUKI,YD1 BTRY/CURTAIN AB/ FR FOG LP/ DOME LAMP,5018,No bendable jig cover.,Provide bendable jig cover,PE-BAE (Maintenance),Shawn,OPEN,TBA (For confirmation of budget),,,
+257,1,HONDA,3MOA Floor,3138,"Faded Upper line limit on connector tupper box
+(Almost all sub)",Repair the faded upper line limit of connector tupper box,PE-FABRICATION,,OPEN,,,,
+258,2,HONDA,3MOA Floor,3138,"NG Wire catcher
+Almost all sub",Request to repair all NG wire catcher at sub assy process,PE-FABRICATION,,OPEN,,,,
+259,3,HONDA,3MOA Floor,3138,No upper line limit on connector tupper box on sub 3,Repair the faded upper line limit of connector tupper box,PE-FABRICATION,,OPEN,,,,
+260,5,HONDA,3MOA Floor,3138,No connector label at sub 3,Repair the connector label,PE-FABRICATION,,OPEN,,,,
+261,10,HONDA,3MOA Floor,3138,Associate did not confirm the condition of wire in the grommet during and after sub assy process.,Conduct orientation to check the condition of wire in the grommet during and after sub assy process,PRODUCTION,,OPEN,,,,
+262,11,HONDA,3MOA Floor,3138,Worn out OI on bukumi board 5,Request to replaced worn out OI,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+263,12,HONDA,3MOA Floor,3138,Associate did not perform 3x pulling of grommet tail on bukumi process,"Conduct orientation to conduct 3x pulling of grommet tail
+Include on OI",ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+264,13,HONDA,3MOA Floor,3138,Good and No Good condition of grommet was not indicated on OI,Request to Include on OI the good and no good condition of grommet.,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+265,14,HONDA,3MOA Floor,3138,Wire biting on grommet was not indicated on OI.,Request to include wire biting on OI.,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+266,15,HONDA,3MOA Floor,3138,Associate did not apply lubricant during process.,Conduct orientation to apply lubricant on grommet.,PRODUCTION,,OPEN,,,,
+267,16,HONDA,3MOA Floor,3138,50 mm rolling down fixing tape was not indicated on OI,Request to include on OI the 50 mm rolling down fixing tape,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+268,17,HONDA,3MOA Floor,3138,Grommet expansion diameter was not indicated on OI,Request to include on OI the grommet expansion diameter,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+269,18,HONDA,3MOA Floor,3138,Bando gun associate was not aware on fallen parts rule,Orient all associate on fallen parts rule,PRODUCTION,,OPEN,,,,
+270,19,HONDA,3MOA Floor,3138,Confirm the height of jig.,MPPD1 will confirm the height of Jig.,PE-BAE (ASSY DEV),,OPEN,,,,
+271,20,HONDA,3MOA Floor,3138,Tupper box was not fix on parts rack,Request to fix the tupper box,PE-FABRICATION,,OPEN,,,,
+272,21,HONDA,3MOA Floor,3138,"NG jig on assembly board
+Put red tag in NG jig on assembly board",Put redtag and coordinate to AME,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+273,22,HONDA,3MOA Floor,3138,"Color indication on conn jig 
+( per applicable product)",Put color indication on conn jig,ME-FIE-PE (FMEA),,OPEN,,,,
+274,23,HONDA,3MOA Floor,3138,Old revision of OI on assembly process,Coordinate MPPD to revise the OI on assembly process,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+275,24,HONDA,3MOA Floor,3138,No sequence no. on tape box in option taping,Provide sequence no. on tape box in option taping ,PE-FABRICATION,,OPEN,,,,
+276,25,HONDA,3MOA Floor,3138,Sequence no. 28 on option taping is already worn out,Coordinate to MPPD to provide seq. no in option taping,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+277,26,HONDA,3MOA Floor,3138,Associate did not know what to inspect in grommet in appearance inspection,Conduct orientation on how/what to inspect grommet on appearance inspection base on OI,QA-Final ,,OPEN,,,,
+278,27,HONDA,3MOA Floor,3138,No tupper box for alignment jig on appearance inspection,Request to put tupper box for alignment jig on appearance inspection,PE-FABRICATION,,OPEN,,,,
+279,30,HONDA,3MOA Floor,3138,Some associates has no provided E-bags,Request on supply to have e-bags ,PRODUCTION,,OPEN,,,,
+280,31,HONDA,3MOA Floor,3138,Operator was not conducting twice pulling of shikakari on applicable product.,Conduct orientation to associate about the indication where will you conduct pulling 2 times. ,PRODUCTION,,OPEN,,,,
+281,32,HONDA,3MOA Floor,3138,No bendable cover/ Lacking bendable cover,Request lacking bendable cover,PE-BAE (Maintenance),Shawn,OPEN,TBA (For confirmation of budget),,,
+282,1,HONDA,3MOA Floor,3139,"Faded Upper line limit on connector tupper box
+(Almost all sub)",Repair the faded upper line limit of connector tupper box,PE-FABRICATION,,OPEN,,,,
+283,2,HONDA,3MOA Floor,3139,No upper line limit on connector tupper box on sub 3,Repair the  limit of connector tupper box,PE-FABRICATION,,OPEN,,,,
+284,4,HONDA,3MOA Floor,3139,No connector label at sub 3,Repair the connector label,PE-FABRICATION,,OPEN,,,,
+285,8,HONDA,3MOA Floor,3139,Associate did not perform 3x pulling of grommet tail on bukumi process,"Conduct orientation to conduct 3x pulling of grommet tail
+Include on OI",ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+286,9,HONDA,3MOA Floor,3139,Good and No Good condition of grommet was not indicated on OI,Request to include on OI the good and no good condition of OI.,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+287,10,HONDA,3MOA Floor,3139,Wire biting on grommet was not indicated on OI.,Request to include wire biting on OI.,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+288,11,HONDA,3MOA Floor,3139,50 mm rolling down fixing tape was not indicated on OI,Request to include on OI the 50 mm rolling down fixing tape,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+289,12,HONDA,3MOA Floor,3139,Grommet expansion diameter was not indicated on OI,Request to include on OI the grommewt expansion diameter,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+290,14,HONDA,3MOA Floor,3139,Confirm the height of jig,Request to check the height of jig,PE-BAE (ASSY DEV),,OPEN,,,,
+291,15,HONDA,3MOA Floor,3139,"NG jig on assembly board
+         Put red tag in NG jig on assembly board
+* Misaligned 225 clamp jig
+* Board 8; missing e-tanmatsu, no jig, no s-pin
+* Board 6; NG U-Jig near Clamp 39, misaligned 251
+* Board 4; NG color e-tanmatsu connector 450, No Jig Cover, No S-Pin, Hard to bend, Loose Jig",Put redtag and coordinate to AME,PE-BAE (Maintenance),Shawn,OPEN,14-Aug-23,,,
+292,16,HONDA,3MOA Floor,3139,"Color indication on conn jig 
+( per applicable product)",Put color indication on conn jig,ME-FIE-PE (FMEA),,OPEN,,,,
+293,17,HONDA,3MOA Floor,3139,Old revision of OI on assembly process,Coordinate MPPD to revise the OI on assembly process,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+294,18,HONDA,3MOA Floor,3139,Didn't remove the tape option even not applicable,Re-orient the associate to follow the standard rule on their process ,PRODUCTION,,OPEN,,,,
+295,19,HONDA,3MOA Floor,3139,NG catcher on lay out process,Coordinate on Fabrication to fix the NG catcher,PE-FABRICATION,,OPEN,,,,
+296,21,HONDA,3MOA Floor,3139,Incomplete E-bag,Already request E-bag for the associate,PRODUCTION,,OPEN,,,,
+297,22,HONDA,3MOA Floor,3139,Checker jig wings are damaged,Coordinate to AME,PE-BAE (Maintenance),Shawn,OPEN,14-Aug-23,,,
+298,23,HONDA,3MOA Floor,3139,Checker 105 the circuit of suru clamp was not able to detect the presence suru clamp,Coordinate to AME,PE-BAE (ECT),Teresa,OPEN,12-Jul-23,,,
+299,24,HONDA,3MOA Floor,3139,Misaligned 225 clamp jig (Loose),Request to align clamp jig 225,PE-BAE (Maintenance),Shawn,OPEN,14-Aug-23,,,
+300,25,HONDA,3MOA Floor,3139,"• Not following the standard OI of taping the offset
+  clamp
+• Not using clamp",Conduct orientation about the use of jig and the taping method based on OI,PRODUCTION,,OPEN,,,,
+301,26,HONDA,3MOA Floor,3139,Associate is not checking the condition of nameplate.,Conduct orientation to associate about the checking of nameplate,PRODUCTION,,OPEN,,,,
+302,27,HONDA,3MOA Floor,3139,No ink on Alignment check jig at Alignment Inspection,Refill ink on Aligment Jig.,PE-EQ-FINAL,,OPEN,18-Jul-23,,,
+303,28,HONDA,3MOA Floor,3139,NG Work load Division on Dimension Inspection,Put workload division in Dimension Process,QA-Final ,,OPEN,,,,
+304,29,HONDA,3MOA Floor,3139,Application of Lubricant was not included on OI,Request OI to include the application of lubricant to grommet,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+305,30,HONDA,3MOA Floor,3139,Fixing Taping on Grommet Tail was not included in OI,Request OI to include the fixing taping method ,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+306,1,HONDA,3MOA Floor,3147,NG wire sub catcher on sub ,Request to repair all NG wire catcher at sub assy process,PE-FABRICATION,,OPEN,,,,
+307,2,HONDA,3MOA Floor,3147,Good and No Good condition of grommet was not indicated on OI,Request to nclude on OI the good and no good condition of OI.,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+308,4,HONDA,3MOA Floor,3147,No connector label at sub 5,Repair the connector label,PE-FABRICATION,,OPEN,,,,
+309,5,HONDA,3MOA Floor,3147,Wrong layout,Request to cover for not applicable conn.,ME-FIE-PE (FMEA),,OPEN,,,,
+310,6,HONDA,3MOA Floor,3147,Wire biting on grommet was not indicated on OI.,Wire biting on grommet was not indicated on OI,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+311,8,HONDA,3MOA Floor,3147,50 mm rolling down fixing tape was not indicated on OI,Request to include on OI the 50 mm rolling down fixing tape,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+312,9,HONDA,3MOA Floor,3147,Some associates has no provided E-bags,Request on supply to have e-bags ,PRODUCTION,,OPEN,,,,
+313,11,HONDA,3MOA Floor,3147,"Wrong layout
+(per applicable product)",Put color indication on conn jig,ME-FIE-PE (FMEA),,OPEN,,,,
+314,12,HONDA,3MOA Floor,3147,Grommet Expansion Diameter not specified,For confirmation since manual.,ME-NPI (MPPD),SAM,OPEN,31-Jul-23,,,
+315,13,HONDA,3MOA Floor,3147,Checker jig wings are damaged and missing,Coordinate to AME,PE-BAE (Maintenance),Shawn,OPEN,14-Aug-23,,,
+316,18,HONDA,3MOA Floor,3147,No sequence no. on tape box in option taping,Provide sequence no. on tape box in option taping ,PE-FABRICATION,,OPEN,,,,
+317,1,HONDA,TKRA Eng,3129,Connector storage box is lower than the location of tsumesen tupper box.,Request to provide flatform for connector storage box,PRODUCTION,,OPEN,,,,
+318,3,HONDA,TKRA Eng,3129,NG sample connector picture on all Sub PC.,Request to change NG sample connector picture on all Sub PC.,PE-FABRICATION,,OPEN,,,,
+319,4,HONDA,TKRA Eng,3129,NG Componenrt box,Request to fabrication to repair all NG component box,PE-FABRICATION,,OPEN,,,,
+320,6,HONDA,TKRA Eng,3129,"Dimension defect, damaged parts",Request to add receiving jig for branch. 178 and 154 ,PE-BAE (ASSY DEV),,OPEN,,,,
+321,7,HONDA,TKRA Eng,3129,"Loose jigs, loose lockset, missing and wrong E-tanmatsu,S-pin, no bendable jig",Request to repair jigs with red tag on assy,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+322,8,HONDA,TKRA Eng,3129,Correct orientation of grommet is not included on OI,Request to include grommet orientation on OI.,ME-NPI (MPPD),Mhean,OPEN,31-Jul-23,,,
+323,9,HONDA,TKRA Eng,3129,Request to specify the grommet expansion diameter and setting value on OI.,Update OI for Grommet Fitting,ME-NPI (MPPD),Mhean,OPEN,31-Jul-23,,,
+324,10,HONDA,TKRA Eng,3129,Request to include Good and No Good grommet mounting criteria on OI.,Update OI for Grommet Fitting,PE-FABRICATION,,OPEN,,,,
+325,11,HONDA,TKRA Eng,3129,Request to include specification of wire biting precautions on OI.,Update OI for Grommet Fitting,ME-NPI (MPPD),Mhean,OPEN,31-Jul-23,,,
+326,12,HONDA,TKRA Eng,3129,"Request to include Grommet mounting direction
+and mounting position on OI.",Update OI for Grommet Fitting,ME-NPI (MPPD),Mhean,OPEN,31-Jul-23,,,
+327,25,HONDA,TKRA Eng,3129,Possible to encounter wrong combine,"Request to add receiving jig for branch 
+on Shiage Process",PE-BAE (ASSY DEV),,OPEN,,,,
+328,29,HONDA,TKRA Eng,3129,NG Vinyl cover of dimension board,Request to replace vinyl cover of dimension board,QA-Final ,,OPEN,,,,
+329,30,HONDA,TKRA Eng,3129,No workload division on Dimension Inspection,Request to provide workload division line on Dimension and QA inspection board.,QA-Final ,,OPEN,,,,
+330,37,HONDA,TKRA Eng,3129,Repair NG checker jig,Request to repair jigs with red tag on ECT.,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+331,39,HONDA,TKRA Eng,3129,Not updated OI,Post revised OI,ME-NPI (MPPD),Mhean,OPEN,31-Jul-23,,,
+332,2,HONDA,TKRA Inp,3125,No label of sample connector and faded picture on topper box,Request to provide label ,PE-FABRICATION,,OPEN,,,,
+333,5,HONDA,TKRA Inp,3125,Wrong view of connector (Note:Cutting of clamp was on shiage),Request to fix the view ,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+334,6,HONDA,TKRA Inp,3125,No applicable product number displayed on sub hanger,Need to provide applicable product number displayed on sub hanger.,PRODUCTION,,OPEN,,,,
+335,7,HONDA,TKRA Inp,3125,Need to orient associate upon proper sequence of setting parts.,Request to arragement of parts supply based on design of component box,ME-Initial (Preparation),Donna,OPEN,24-Jul-23,,,
+336,8,HONDA,TKRA Inp,3125,Request to monren,Confirm affected branch,ME-NPI (MPPD),Mhean,OPEN,31-Jul-23,,,
+337,9,HONDA,TKRA Inp,3125,No receiving jig after combine,Request to change layout ,ME-NPI (MPPD),Mhean,OPEN,31-Jul-23,,,
+338,10,HONDA,TKRA Inp,3125,Color of YSOP was not tally on actual color,Request to change color of YSOP,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+339,11,HONDA,TKRA Inp,3125,No bendable cover connector jig and clamp jig,Request to provide bendable cover connector jig and clamp jig,PE-BAE (Maintenance),Shawn,OPEN,TBA (For confirmation of budget),,,
+340,12,HONDA,TKRA Inp,3125,Board 2 loose jig,Request to fix,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+341,13,HONDA,TKRA Inp,3125,No spacer connector HSE/YSN4-20M board # 10 conn# 78,Request to provide spacer of connector ,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+342,15,HONDA,TKRA Inp,3125,NG PHJ ,Request to fix all damaged and missing PHJ,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+343,16,HONDA,TKRA Inp,3125,No receiving jig after combine,Request to provide receiving jig connector HSE/DHE2-L66FA,PE-BAE (ASSY DEV),,OPEN,,,,
+344,17,HONDA,TKRA Inp,3125,No color indication connector number and name of checker jig ,Provide color indication connector number and name of checker,PE-BAE (ECT),Teresa,OPEN,12-Jul-23,,,
+345,18,HONDA,TKRA Inp,3125,NG option tape box ,Request to provide new option box,PE-FABRICATION,,OPEN,,,,
+346,19,HONDA,TKRA Inp,3125,Damaged tape holder,Request to provide proper tape holder ,PE-FABRICATION,,OPEN,,,,
+347,20,HONDA,TKRA Inp,3125,NG vinyl cover on ECT and clamp checking board,Request to change vinyl cover,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+348,21,HONDA,TKRA Inp,3125,"Associate encountered difficulty on process due to height of jig.
+
+(For confirmation if what portion)",Request to adjust the height of alignment jig due to encountered difficulty of associate ,PE-BAE (ASSY DEV),,OPEN,,,,
+349,22,HONDA,TKRA Inp,3125,No workload division line on Dimension inspection board.,Request to provide workload division line on Dimension inspection board.,QA-Final ,,OPEN,,,,
+350,23,HONDA,TKRA Inp,3125,Different Layout of branch on assy board vs dimension board,Request if possible to align the layout on either Dimension board or assy board,PE-BAE (ASSY DEV),Mhean,OPEN,31-Jul-23,,,
+351,24,HONDA,TKRA Inp,3125,Not align height of clamp jig to connector jig,Request to fix alignment ,PE-BAE (ASSY DEV),,OPEN,,,,
+352,25,HONDA,TKRA Inp,3125,NG wire catcher for sub hanger,Request to repair NG wire catcher,PE-FABRICATION,,OPEN,,,,
+353,26,HONDA,TKRA Inp,3125,Foreign materials on connector storage box,Conduct 5S,PRODUCTION,,OPEN,,,,
+354,27,HONDA,TKRA Inp,3125,No running product label on sub assy,Request to provide product label,PRODUCTION,,OPEN,,,,
+355,28,HONDA,TKRA Inp,3125,Worker is not aware about what to do to falling parts,Conduct orientation on what to do to falling parts,PRODUCTION,,OPEN,,,,
+356,29,HONDA,TKRA Inp,3125,Missing lockset on assy board,Request to provide replacement,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+357,30,HONDA,TKRA Inp,3125,Missing connector cover,Request to provide replacement,PRODUCTION,,OPEN,,,,
+358,31,HONDA,TKRA Inp,3125,Associate is not fully aware about the important things to remember in the attachment of nameplate,Conduct orientation about the attachment of nameplate,PRODUCTION,,OPEN,,,,
+359,32,HONDA,TKRA Inp,3125,Associate is not fully aware about important inspection points on dimension inspection,Conduct orientation about important inspection points on dimension inspections,PRODUCTION,,OPEN,,,,
+360,33,HONDA,TKRA Inp,3125,Unnecessary pen markings on ECT board,Conduct 5S,PRODUCTION,,OPEN,,,,
+361,34,HONDA,TKRA Inp,3125,Damaged checker jigs,Request to provide checker jigs,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+362,1,HONDA,TKRA Floor,3127,Request to change 'NG sample of connector ,Repair the connector sample ,PE-FABRICATION,,OPEN,,,,
+363,2,HONDA,TKRA Floor,3127,No label of connector ,Request to provide label of connector,PE-FABRICATION,,OPEN,,,,
+364,3,HONDA,TKRA Floor,3127,Correct orientation of grommet is not included on OI,Request to include good & bad condition and orientation of grommet on OI.,ME-NPI (MPPD),Mhean,OPEN,31-Jul-23,,,
+365,4,HONDA,TKRA Floor,3127,No spacer connector ,Request to provide spacer on all boards connector STW-SBU-4F-DGR ,PE-BAE (Maintenance),Khea,OPEN,31-Jul-23,,,
+366,5,HONDA,TKRA Floor,3127,No color s-pin,"Request to provide color s-pin of connector HVS-SB-2F-B from white to black s-pin board # 10 , 2, 1",PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+367,6,HONDA,TKRA Floor,3127,Damaged vinyl cover on dimension board,Request to replace vinyl cover of dimension board,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+368,7,HONDA,TKRA Floor,3127,Damaged vinyl cover on ECT board,Request to replace vinyl cover of ECT  board,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+369,8,HONDA,TKRA Floor,3127,No workload division,Request to provide workload division line on Dimension inspection board.,QA-Final ,,OPEN,,,,
+370,9,HONDA,TKRA Floor,3127,Lacking bendable jig cover,"Request to provide cover on bendable jig
+Board  # 8 # 6 # 11 ",PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+371,10,HONDA,TKRA Floor,3127,NG Component box," Request to fabrication to repair all NG component box
+(For arrange component shelves)",PE-FABRICATION,,OPEN,,,,
+372,11,HONDA,TKRA Floor,3127,Faded Upper line limit on connector tupper box,Repair the faded upper line limit of connector tupper box,PE-FABRICATION,,OPEN,,,,
+373,12,HONDA,TKRA Floor,3127,No good setting of nameplate ,Conduct orientation to associate about the checking of nameplate,PRODUCTION,,OPEN,,,,
+374,13,HONDA,TKRA Floor,3127,Associate did not perform 3x slightly pulling of grommet tail on bukumi process due to not aware ,"Conduct orientation to conduct 3x pulling of grommet tail
+Include on OI",ME-NPI (MPPD),Mhean,OPEN,31-Jul-23,,,
+375,14,HONDA,TKRA Floor,3127,Messy component box ,Request to arragement of parts supply based on design of component box,PE-FABRICATION,,OPEN,,,,
+376,15,HONDA,TKRA Floor,3127,Not Updated and Lacking OI,Request for an updated OI,ME-NPI (MPPD),Mhean,OPEN,31-Jul-23,,,
+377,16,HONDA,TKRA Floor,3127,NG bandogun,Request to fixed NG bandogun ,PE-EQ-FINAL,,OPEN,18-Jul-23,,,
+378,17,HONDA,TKRA Floor,3127,"No color indication of checker jig airbag
+Connector #39 #49 #15 #27 #20",Request to provide color indication jig airbag,PE-BAE (ECT),Teresa,OPEN,12-Jul-23,,,
+379,18,HONDA,TKRA Floor,3127,No tanmatsu jig,"Request to provide tanmatsu jig                                  
+Board # 2 # 1 # 12",PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+380,19,HONDA,TKRA Floor,3127,Wrong layout,"Request to change layout branch 168
+Check if can be changed.",ME-NPI (MPPD),Mhean,OPEN,31-Jul-23,,,
+381,20,HONDA,TKRA Floor,3127,'Not updated running product number displayed on sub hanger.,Upadate the running product ,PRODUCTION,,OPEN,,,,
+382,21,HONDA,TKRA Floor,3127,"Possible to wrong combine of branch during fixing of clamp near branch 168 & 169
+224 - clamp 125 for checking of SOT",Request for verification,ME-NPI (MPPD),Mhean,OPEN,31-Jul-23,,,
+383,22,HONDA,TKRA Floor,3127,NG wings on checker jig,"Request to fixed the NG wings on checker jig at ECT.
+Checker No. (35, 14, 12, 4, 21, 46, 51)",PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+384,23,HONDA,TKRA Floor,3127,Broken beam holder,Repair beam holder,PE-FABRICATION,,OPEN,,,,
+385,24,HONDA,TKRA Floor,3127,Foreign materials inside tupper box.,Conduct 5S,PRODUCTION,,OPEN,,,,
+386,25,HONDA,TKRA Floor,3127,NG jig height of connector 227,Verify jig height,PE-BAE (ASSY DEV),,OPEN,,,,
+387,26,HONDA,TKRA Floor,3127,Loose and tight jigs,Fix the loose and tight jigs on Assy board.,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+388,27,HONDA,TKRA Floor,3127,No good catcher on Assy board,Repair wire catcher on Assy board,PE-FABRICATION,,OPEN,,,,
+389,28,HONDA,TKRA Floor,3127,Lacking lockset,Provide lockset,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+390,29,HONDA,TKRA Floor,3127,No E-bag,Already request,PRODUCTION,,OPEN,,,,
+391,30,HONDA,TKRA Floor,3127,Lacking connector cover for not applicable product,Provide connector cover,ME-Initial (Preparation),Donna,OPEN,31-Jul-23,,,
+392,30,HONDA,TKRA Floor,3127,Associate was not aware on what they will do if encountered NG terminal. ,Conduct orientation about NG terminal ,PRODUCTION,,OPEN,,,,
+393,4,MAZDA,J20E,1033,No installed bendable cover on assy jig,Request to install bendable cover,PE-BAE (Maintenance),Shawn,OPEN,TBA (For confirmation of budget),,,
+394,18,MAZDA,J30A,1135,Non compliance on following SOT,Follow SOT,PRODUCTION,J. Dimaculangan,OPEN,,,,
+395,22,MAZDA,J30A,1135,Damaged L- shaped molding jig,Request to repair the loose spacer.,PE-BAE (Maintenance),Shawn,OPEN,31-Jul-23,,,
+396,25,MAZDA,J30A,1135,Associate's have no available E-Bag, Request to provide E-Bag.,PRODUCTION,J. Dimaculangan,OPEN,30-2-23,,,
+397,26,MAZDA,J30A,1135,No workload division on Dimension Inspection Process,Provide reference for division of workload at dimension process.,QA-Final ,,OPEN,,,,
+398,31,MAZDA,J30A,1135,Dimension between assy jigs ,Conduct checking of dimension between assy jigs,PE-BAE (ASSY DEV),N. Axalan,OPEN,,,,
+399,32,MAZDA,J30A,1135,Br. 1 and Br. 2 have possibility to combine with each other,Revision of SOT (transfer attachment of clamp 75 to shiage),ME-NPI (MPPD),A. Dimaano,OPEN,,,,
+400,4,MAZDA,J30A,1136,No available protective cover.,Request to fabrication to provide protective vinyl cover.,PE-FABRICATION,,OPEN,7-Feb-23,,,
+401,6,MAZDA,J30A,1136,No available  product number per aplicable.,Request product number per applicable.,PE-FABRICATION,,OPEN,,,,
+402,9,MAZDA,J30A,1136,"Missing jig covers,No E-tanmatsu conn.71,51.
+-Missing lockset conn.49 board 6.
+-Missing S-pin ,121,50,32,125,31","Request to Ame to put tanmatsu,lockset,jig cover  and S-pin.",PE-BAE (Maintenance),Shawn,OPEN,TBA (For confirmation of budget),,,
+403,11,MAZDA,J30A,1136,Ng wire catcher.,Request to fabrication to repair wire catcher.,PE-FABRICATION,,OPEN,,,,
+404,13,MAZDA,J30A,1136,No provided SPJ for pink tape. ,Provide SPJ for pink tape,PE-BAE (ASSY DEV),N. Axalan,OPEN,,,,
+405,14,MAZDA,J30A,1136,Faded upperline limit,Provide upperline limit,PE-FABRICATION,,OPEN,,,,
+406,16,MAZDA,J30A,1136,Associate did not conduct lightly pulling of grommet and checking if comes off,Conduct orientation to conduct lightly pulling of grommet and check of comes off,PRODUCTION,J. Dimaculangan,OPEN,7-Feb-23,,,
+407,18,MAZDA,J30A,1136,Associate is not aware on proper lock of retainer on layout,Orient associate on proper lock of retainer on layout,PRODUCTION,J. Dimaculangan,OPEN,7-Feb-23,,,
+408,19,MAZDA,J30A,1136,Lay-out associate is unaware on bending frequency.,Conduct orientation for wire bending frequency,PRODUCTION,J. Dimaculangan,OPEN,7-Feb-23,,,
+409,20,MAZDA,J30A,1136,Associate is not knowledgeable on the items need to check on nameplate,Conduct orientation on important points of attachment of nameplate,PRODUCTION,J. Dimaculangan,OPEN,7-Feb-23,,,
+410,21,MAZDA,J30A,1136,Faded workload division,Provide workload division,QA-Final ,,OPEN,,,,
+411,22,MAZDA,J30A,1136,'Damaged wing on ECT Process,Request to repair damaged wing of checker on ECT,PE-BAE (Maintenance),Shawn,OPEN,31-Jul-23,,,
+412,23,MAZDA,J30A,1136,"'Based on observation, associate conduct hitting the checker on ECT Inspection",Conduct orientation on proper inspection on ECT process,PE-BAE (Maintenance),Shawn,OPEN,31-Jul-23,,,
+413,25,MAZDA,J30A,1136,Damaged option tape box,Repair damaged option tape box,PE-FABRICATION,,OPEN,,,,
+414,27,MAZDA,J30A,1136,Ink stamp on alignment jig is faded ,Provide ink stamp,PRODUCTION,J. Dimaculangan,OPEN,7-Feb-23,,,
+415,29,MAZDA,J30A,1136,Dimension between assy jigs ,Conduct checking of dimension between assy jigs,PE-BAE (ASSY DEV),N. Axalan,OPEN,7-Feb-23,,,
+416,1,MAZDA,J30A,1137,Connector storage box is lower than the location of tsumesen tupper box.,Request to provide flatform for connector storage box,PRODUCTION,J. Dimaculangan,OPEN,,,,
+417,2,MAZDA,J30A,1137,'No provided claw plug jig,Provide claw plug jig,ME-Initial (Preparation),Donna,OPEN,31-Jul-23,,,
+418,10,MAZDA,J30A,1137,'Not included on OI reference for slit VO ,Request to include on OI,ME-NPI (MPPD),A. Dimaano,OPEN,,,,
+419,19,MAZDA,J30A,1137,Same branch conn 3& 4,Check the similar parts on affected portion,ME-NPI (MPPD),A. Dimaano,OPEN,,,,
+420,20,MAZDA,J30A,1137,'Missing and wrong color of e-tanmatsu,Request to provide and repair wrong e-tanmatsu,PE-BAE (Maintenance),Shawn,OPEN,31-Jul-23,,,
+421,21,MAZDA,J30A,1137,Loose and tight lockset,Request to repair loose lockset,PE-BAE (Maintenance),Shawn,OPEN,31-Jul-23,,,
+422,25,MAZDA,J30A,1137,'Lacking jig cover,Provide lacking jig cover,PE-BAE (Maintenance),Shawn,OPEN,TBA (For confirmation of budget),,,
+423,30,MAZDA,J30A,1137,Some associate don’t have E-bag,Request E-bag,PRODUCTION,J. Dimaculangan,OPEN,,,,
+424,31,MAZDA,J30A,1137,Misalign 3D dimension jig,Repair misalign 3D dimension jig,PE-BAE (ASSY DEV),N. Axalan,OPEN,,,,
+425,32,MAZDA,J30A,1137,No workload division for inspector on inspection table,Request to put division on inspection table for inspector,QA-Final ,,OPEN,,,,
+426,33,MAZDA,J30A,1137,No conn.picture for same conn. As reference for conn.20&conn.21,Request to put conn. Reference for conn.20& conn.21 on dimension & appearance table.,PRODUCTION,J. Dimaculangan,OPEN,,,,
+427,34,MAZDA,J30A,1137,Hard to control the view of conn. 20 and conn. 21 in Option Taping Process,Conduct study regarding jig of conn. 20 and conn. 21,PE-BAE (ASSY DEV),N. Axalan,OPEN,,,,
+428,36,MAZDA,J30A,1137,Location of tapebox is far,Change location of tape box,PE-FABRICATION,,OPEN,,,,
+429,39,MAZDA,J30A,1137,'No conn.picture for same conn. As reference for conn.20 & conn.21 on option process,Request to put conn. Reference for conn.20& conn.21 on option process.,PRODUCTION,J. Dimaculangan,OPEN,,,,
+430,40,MAZDA,J30A,1137,Dimension between assy jigs ,Conduct checking of dimension between assy jigs,PE-BAE (ASSY DEV),N. Axalan,OPEN,,,,
+431,6,MAZDA,J30A,1138,No label on tupperbox,Provide label on tupperbox,PE-FABRICATION,,OPEN,,,,
+432,7,MAZDA,J30A,1138,No connector picture on SNH-32F,Put connector picture,PE-FABRICATION,,OPEN,,,,
+433,9,MAZDA,J30A,1138,Good and NG status of grommet is not included on OI,Request to include on OI,ME-NPI (MPPD),A. Dimaano,OPEN,,,,
+434,10,MAZDA,J30A,1138,"After fixing taping, associate did not conduct lightly pulling of grommet",Conduct orientation to associate regading lighly pulling of grommet,PRODUCTION,J. Dimaculangan,OPEN,,,,
+435,13,MAZDA,J30A,1138,No good arrangement of parts based on WI,Arrange parts based on WI and conduct orientation,PRODUCTION,J. Dimaculangan,OPEN,,,,
+436,14,MAZDA,J30A,1138,Damaged applicable and damage labels on one set supply box,Repair damaged labels and applicable,PE-FABRICATION,,OPEN,,,,
+437,17,MAZDA,J30A,1138,Damaged jig cover,request to provide jig cover,PE-BAE (Maintenance),Shawn,OPEN,TBA (For confirmation of budget),,,
+438,18,MAZDA,J30A,1138,Non compliance of clamp fixing work taping,Conduct orientation regarding proper taping on fixing,PRODUCTION,J. Dimaculangan,OPEN,,,,
+439,20,MAZDA,J30A,1138,Non compliance on retainer fitting work method,Conduct orientation on retainer fitting work method,PRODUCTION,J. Dimaculangan,OPEN,,,,
+440,21,MAZDA,J30A,1138,Non compliance on pull twice for terminals,Conduct orientation on pull twice for terminals,PRODUCTION,J. Dimaculangan,OPEN,,,,
+441,22,MAZDA,J30A,1138,Associate is not aware that terminal have an electric wire within 10mm,Conduct orientation that terminal have an electric wire within 10mm,PRODUCTION,J. Dimaculangan,OPEN,,,,
+442,23,MAZDA,J30A,1138,'Lack of knowledge of associate regarding bending frequency,"Re-orient all sub assy and assy associate.
+Posting of Bending frequency on all sub PC machine.",PRODUCTION,J. Dimaculangan,OPEN,,,,
+443,24,MAZDA,J30A,1138,Some associates has no provided E-bags,Request E-BAG  for  all associate,PRODUCTION,J. Dimaculangan,OPEN,,,,
+444,28,MAZDA,J30A,1138,Lack of knowledge on inspection standard and inspection method on Dimension Inspection,Conduct orientation on inspection standard and inspection method,QA-Final ,,OPEN,,,,
+445,29,MAZDA,J30A,1138,NG color of 3D jig in dimension,Request to repair NG color of 3D jig in dimension,PE-BAE (ASSY DEV),N. Axalan,OPEN,,,,
+446,30,MAZDA,J30A,1138,Similar connector of the branch reference 20&21,Provide reference on dimension inspection,PRODUCTION,J. Dimaculangan,OPEN,,,,
+447,32,MAZDA,J30A,1138,Tension wire on checker YSL-2F,Check if can adjust the checker YSL-2F,PE-BAE (ECT),Sherwin,OPEN,,,,
+448,33,MAZDA,J30A,1138,Associate did not conduct checking of continuity,Orientation on checking continuity,PRODUCTION,J. Dimaculangan,OPEN,,,,
+449,34,MAZDA,J30A,1138,Associate is not aware on sequence in ECT procesS,Orientation on sequence in ECT Process,PRODUCTION,J. Dimaculangan,OPEN,,,,
+450,36,MAZDA,J30A,1138,Tape box installed is far,Move the location of tape box,PE-FABRICATION,,OPEN,,,,
+451,37,MAZDA,J30A,1138,Conn. 27 can be combine to conn. 32,Provide U-jig,PE-BAE (ASSY DEV),N. Axalan,OPEN,,,,
+452,39,MAZDA,J30A,1138,Similar connector of the branch reference 20&21,Provide reference on appearance inspection,PRODUCTION,J. Dimaculangan,OPEN,,,,
+453,40,MAZDA,J30A,1138,Faded alignment checker jig,Refill ink,PRODUCTION,J. Dimaculangan,OPEN,,,,
+454,42,MAZDA,J30A,1138,Dimension between assy jigs ,Conduct checking of dimension between assy jigs,PE-BAE (ASSY DEV),N. Axalan,OPEN,,,,
+455,1,MAZDA,J78A-030,1144,"Wrong issue of parts
+ (Slit VO8)",Monitoring of received parts,PRODUCTION,,,,,,
+456,2,MAZDA,J78A-030,1144,Storage box is not higher than the tsumusen area,Request to move the storage box upper than the tsumusen area ,ME-Initial (Preparation),,,,,,
+457,3,MAZDA,J78A-030,1144,Faded upper line limit,Request to have a clearer upper line limit,PRODUCTION,,,,,,
+458,4,MAZDA,J78A-030,1144,Connector exceeds on the upper line limit,Request to remove excess connectors on tupper boxes,PRODUCTION,,,,,,
+459,5,MAZDA,J78A-030,1144,No running product label on sub,Request for running product label,PRODUCTION,,,,,,
+460,6,MAZDA,J78A-030,1144,Associate is not aware regarding frequency of bending,Request for associate's re-orientation regarding the bending frequency,PRODUCTION,,,,,,
+461,7,MAZDA,J78A-030,1144,Measurement of C Group jigs for verification,Request for verification of jig measurement,PE-BAE (ASSY DEV),,,,,,
+462,8,MAZDA,J78A-030,1144,No OI posted for C Group,Request to provide OI for C Group,ME-NPI (MPPD),,,,,,
+463,9,MAZDA,J78A-030,1144,With common jigs,Request for common jigs replacement,PE-BAE (ASSY DEV),,,,,,
+464,10,MAZDA,J78A-030,1144,"Possible interchange of 'Connectors 249, 214 and 79
+
+Possible interchange of Connectors 201, 15, 13 and 72 - SSG-UF-14F C connector 79 and 212 - SNH-24F per applicable connector 129
+",Request to provide color indicator on assy jig based on product card label or unique insertion of shikakari,ME-FIE-PE (FMEA),,,,,,
+465,11,MAZDA,J78A-030,1144,UP-DOWN-LEFT-RIGHT rule for confirmation if still applicable,Request for a follow up on UP-DOWN-LEFT-RIGHT rule revision,ME-Initial (Preparation),,,,,,
+466,12,MAZDA,J78A-030,1144,Possible wrong view/possible wrong use,"'Request to provide dummy jig on 51,204,177,LA in all assy board",PE-BAE (Maintenance),,,,,,
+467,13,MAZDA,J78A-030,1144," Connector 96 possible to wrong combine possible to wrong view Cord 208, 5, 148, 58, and 104",Request to conduct re-study/re-evaluation,ME-FIE-PE (FMEA),,,,,,
+468,14,MAZDA,J78A-030,1144,No spacer on Connector 166,Request to provide spacer (POM) on conn.166 in all assy board,PE-BAE (Maintenance),,,,,,
+469,16,MAZDA,J78A-030,1144,No SPIN on Connector 90,Request for Spin on Connector 90,PE-BAE (Maintenance),,,,,,
+470,17,MAZDA,J78A-030,1144,"Lacking/Missing tanmatsu 
+ (Connector 5 and Connector 208)", Request to provide tanmatsu,PE-BAE (Maintenance),,,,,,
+471,18,MAZDA,J78A-030,1144,Some cords are hard to remove,Request to improve the jigs of all cords in all assy board ,PE-BAE (Maintenance),,,,,,
+472,19,MAZDA,J78A-030,1144,Lacking/Missing locksets,Request to provide lock set in all connector jigs on all assy board,PE-BAE (Maintenance),,,,,,
+473,21,MAZDA,J78A-030,1144,Associates are not wearing E-BAG,Request to provide E-BAG,PE-FABRICATION,,On-going,10-Jun-23,,,
+474,24,MAZDA,J78A-030,1144,Missing STU,Request to provide tupper box for STU3X15X65SVN in all assy board ,PE-BAE (Maintenance),,,,,,
+475,25,MAZDA,J78A-030,1144,Lacking/Missing bendable cover, Request to provide bendable cover on bendble jig in option process.,PE-BAE (Maintenance),,,,,,
+476,26,MAZDA,J78A-030,1144,Missing sensor detection of STU,Request to provide sensor for STU on ECT,PE-BAE (Maintenance),,,,,,
+477,27,MAZDA,J78A-030,1144,Possible wrong binding,Request to provide parallel pin on conn.77,PE-BAE (Maintenance),,,,,,
+478,28,MAZDA,J78A-030,1144,"Possible interchange of connectors
+","Request for pokayoke 
+
+A GROUP -Connector 249, 79 and Connector 13, 72
+C GROUP- Connector 79,212 and Connector 201, 15",ME-FIE-PE (FMEA),,,,,,
+479,29,MAZDA,J78A-030,1144,"Prone to wrong orientation (79-SNH-24F, 212-SNH-24F, 219 - Pink, 220 - Blue)",Request to provide reflectorized tape on assy jig as per applied product,ME-FIE-PE (FMEA),,,,,,
+480,30,MAZDA,J78A-030,1144,"Lacking/Missing receiving jig
+
+(Clamp YB-31-B (Airbag) and CL-B511C91-B near Connector SNH-24F)",Request to provide receiving jig on Shiage ,PE-BAE (ASSY DEV),,,,,,
+481,31,MAZDA,J78A-030,1144,Possible insulation lowering and damage insulation,Request to provide an appearance attention note on Connector 136,ME-FIE-PE (FMEA),,,,,,
+482,32,MAZDA,J78A-030,1144,Process design MP count and actual MP count is not tally,Request for APQP manager confirmation regarding on the count of MP,ME-FIE-PE (FMEA),,,,,,
+483,33,MAZDA,J78A-030,1144,Associate is not aware on what to do when the tape rans out,Request for associate's reorientation regarding on what to do when the tape rans out,PRODUCTION,,,,,,
+484,34,MAZDA,J78A-030,1144,No ink available,Request for an ink replacement (SSG-TP-10M),PE-EQ-FINAL,,,,,,
+485,35,MAZDA,J78A-030,1144,NG extraction tools,"Request for fixation of the extraction tools (090 YSVF,BNY, ASEM, SSGM)",ME-Initial (Preparation),,,,,,
+486,2,MAZDA,J72_100,1124,Damaged sample picture,Request to repair damaged sample picture,PE-FABRICATION,M. Carandang,OPEN,,,,
+487,6,MAZDA,J72_101,1124,No provided product label on Sub Assy,Request to provide product label,PE-FABRICATION,M. Carandang,OPEN,,,,
+488,12,MAZDA,J72_101,1124,Not following SOT,Compliance on following SOT,PRODUCTION,J. Garcia,OPEN,,,,
+489,2,MAZDA,J78A-010,1143,Lay-out and Sub assy associate is un aware on bending frequency.,Request to conduct re-orientation for wire bending frequency,PRODUCTION, C. Orense/ B. Awat,OPEN,,,,
+490,3,MAZDA,J78A-010,1143,Overstocking of parts,Conduct re-orientation to all sub assy members regarding proper stocking of parts on tupperbox,PRODUCTION, C. Orense/ B. Awat,OPEN,,,,
+491,4,MAZDA,J78A-010,1143,Damaged wire catcher on sub assy process,Request to repair damaged wire catcher on sub assy process,PE-FABRICATION,,OPEN,,,,
+492,5,MAZDA,J78A-010,1143,No good 5's on wire catcher and sub assy jig.,Conduct 5s on sub assy area,PRODUCTION, C. Orense/ B. Awat,OPEN,,,,
+493,7,MAZDA,J78A-010,1143,No good location of jointed wires on down spout.,Request to modified/change the location of jointed wires.,PE-FABRICATION,,OPEN,,,,
+494,10,MAZDA,J78A-010,1143,No reference for application of lubricant to Grommet.,Request to provide reference for application of lubricant,PE-BAE (ASSY DEV),,OPEN,,,,
+495,11,MAZDA,J78A-010,1143,Reference of Good and NG is not included on OI at Grommet Process.,Request to include on OI,PE-BAE (ASSY DEV),,OPEN,,,,
+496,12,MAZDA,J78A-010,1143,Missing/Lacking Bendable jig cover.,Request to provide jig cover.,ME-NPI (MPPD),,OPEN,,,,
+497,13,MAZDA,J78A-010,1143,"SPIN color is not tally to the actual (Connectors 12, 169, 138, 148 & 155)",Request to provide Spin ,ME-NPI (MPPD),,OPEN,,,,
+498,14,MAZDA,J78A-010,1143,YSOP not tally on conn. 43,Request to provide YSOP,ME-NPI (MPPD),,OPEN,,,,
+499,16,MAZDA,J78A-010,1143,"No available spacer for Toridashi connector jig
+ (Connectors 131, 322, 160 & 159)",Request to provide jig Toridashi,ME-NPI (MPPD),,OPEN,,,,
+500,17,MAZDA,J78A-010,1143,Incomplete details of OI at assyboard,Request to update the OI,PE-BAE (ASSY DEV),,OPEN,,,,
+501,18,MAZDA,J78A-010,1143,"OI at TBO process is not readable
+(Japanese character)",Request to update the OI in English Character.,PE-BAE (ASSY DEV),,OPEN,,,,
+502,19,MAZDA,J78A-010,1143,No provided Ebag at Assy process,Request to provide Ebag,PE-FABRICATION,,OPEN,,,,
+503,20,MAZDA,J78A-010,1143,"Layout associates did not know the check items of nameplate (faded barcode, Dirty nameplate, etc.)",Request to conduct orientation for the check items of nameplate,PRODUCTION, C. Orense/ B. Awat,OPEN,,,,
+504,7,DAIHATSU,D18B DOOR,2120,"Loose jigs on assyboard
+(Assembly)",Request for the immediate repair of jigs to AME,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+505,8,DAIHATSU,D18B DOOR,2120,"Not updated  O.I. (all)
+(Assembly)",Request to update and provide O.I.,ME-NPI (MPPD),"RALPH/
+CAMILLE/
+CARLL",OPEN,31-Jul-23,,,
+506,9,DAIHATSU,D18B DOOR,2120,"Lacking bendable jig cover
+(Assembly)",Request to provide bendable jig cover,PE-BAE (Maintenance),Shawn,OPEN,TBA (For confirmation of budget),,,
+507,10,DAIHATSU,D18B DOOR,2120,"No available vinyl cover for not applicable jig (connector 3).(all boards)
+(Assembly)",Request to provide  connector jig cover,ME-Initial (Preparation),Donna,OPEN,31-Jul-23,,,
+508,15,DAIHATSU,D18B DOOR,2120,Hardly taping of checker jig,Conduct orientation about proper taping of checker jig,QA-Final ,Shawn,OPEN,7-Aug-23,,,
+509,18,DAIHATSU,D18B DOOR,2120,"Damaged checker jig (No wing)
+DS-SG-5F-B/SSE-SB-3F-B/DS-WF-2F",Request for immediate repair  ,PE-BAE (Maintenance),Shawn,OPEN,7-Aug-23,,,
+510,19,DAIHATSU,D18B DOOR,2120,Not fixed option tape box,Request to fix option box,PE-FABRICATION,,OPEN,,,,
+511,20,DAIHATSU,D18B DOOR,2120,Associate did not check the grommet stamp,Conduct orientation on proper checking of grommet stamp,PE-EQ-FINAL,,For confirmation,,,,
+512,21,DAIHATSU,D18B DOOR,2120,"Faded marking on alignment jig
+(SSG-TP-14F)",Replacement of ink on alignment jig,PE-EQ-FINAL,,OPEN,18-Jul-23,,,
+513,3,DAIHATSU,D18B ENGINE,2114,No Good condition of for relayout harness on sub hanger.,Request for improvement of sub hanger of relayout harness.,PE-FABRICATION,M. Carandang,OPEN,,,,
+514,5,DAIHATSU,D18B ENGINE,2114,Lacking product label display on          sub-assy.,Provide product label for  other Sub PC Sub 1 to 4,PE-FABRICATION,M. Carandang,OPEN,,,,
+515,10,DAIHATSU,D18B ENGINE,2114,"Lacking bendable jig cover
+(Assembly)",Request to provide bendable jig cover,PE-BAE (Maintenance),Shawn,OPEN,TBA (For confirmation of budget),,,
+516,11,DAIHATSU,D18B ENGINE,2114,"Loose jigs on assyboard
+(Assembly)",Request for the immediate repair of jigs to AME,PE-BAE (Maintenance),Shawn,OPEN,31-Jul-23,,,
+517,12,DAIHATSU,D18B ENGINE,2114,"Not updated OI
+(All)",Request to update and provide O.I,ME-NPI (MPPD),"RALPH/
+CAMILLE/
+CARLL",OPEN,31-Jul-23,,,
+518,13,DAIHATSU,D18B ENGINE,2114,Risk of wrong lay-out same connector (Lay-out),Request to provide attention note,ME-FIE-PE (FMEA),,OPEN,,,,
+519,17,DAIHATSU,D18B ENGINE,2114,"SOT not tally on the actual  due 
+new employee (Assembly)",Request for the updated SOT on assembly process/Compliance on following SOT,ME-NPI (MPPD),"RALPH/
+CAMILLE/
+CARLL",OPEN,31-Jul-23,,,
+520,20,DAIHATSU,D18B ENGINE,2114,Broken jig on shiage board 2,Request for replacement of jig ,PE-BAE (Maintenance),Shawn,OPEN,31-Jul-23,,,
+521,21,DAIHATSU,D18B ENGINE,2114,OI packing was posted on board and not visible for inspectors,Request to enlarge OI for packing and hang to appearance area.,ME-NPI (MPPD),"RALPH/
+CAMILLE/
+CARLL",OPEN,31-Jul-23,,,
+522,22,DAIHATSU,D18B ENGINE,2114,Broken PC cover and checker jigs on ECT Board,Request to enlarge OI for packing and hang to appearance area.,ME-NPI (MPPD),"RALPH/
+CAMILLE/
+CARLL",OPEN,31-Jul-23,,,
+523,23,DAIHATSU,D18B ENGINE,2114,No posted OI for option (Dimension 2),Request to provide OI for option,ME-NPI (MPPD),"RALPH/
+CAMILLE/
+CARLL",OPEN,31-Jul-23,,,
+524,3,DAIHATSU,D83B,2109,"Damaged wire catcher
+(Sub-assy)",Request for repair and replacement if needed,PE-FABRICATION,,OPEN,,,,
+525,4,DAIHATSU,D83B,2109,"Worn out and no provided cover for joint of pipe
+(Sub-assy)",Request to repair/provide vinyl cover on joint of pipe,PE-FABRICATION,,OPEN,,,,
+526,2,DAIHATSU,"D54L/D83A
+ENGINE",2117,Request to repair all sub assy wire catcher.,Repair sub assy wire catcher,PE-FABRICATION,,OPEN,,,,
+527,3,DAIHATSU,"D54L/D83A
+ENGINE",2117,Request to arrange the sequence of tupper box on parts shelves base on the sequence of one set supply box.,Re-arrange sequence of tupper box on component shelves,PRODUCTION,B. Cuenca,ONGOING,26-Jul-23,,,
+528,4,DAIHATSU,"D54L/D83A
+ENGINE",2117,Request to change the size of U-Jig to bigger size.,Replace u-jig with bigger size,PE-BAE (ASSY DEV),,OPEN,,,,
+529,5,DAIHATSU,"D54L/D83A
+ENGINE",2117,Requesting for the alignment of assy jig.,Alignment of Assy jig,PE-BAE (Maintenance),Shawn,OPEN,31-Jul-23,,,
+530,6,DAIHATSU,"D54L/D83A
+ENGINE",2117,Rquest to complete the work instruction on shiage board.,Provide complete OI on Shiage board,ME-NPI (MPPD),"RALPH/
+CAMILLE/
+CARLL",ONGOING,31-Jul-23,,,
+531,7,DAIHATSU,"D54L/D83A
+ENGINE",2117,Request to have option matrix box on option taping process.,Provide option matrix box on option taping process,PE-FABRICATION,,OPEN,,,,
+532,11,SUZUKI,XF273,5015,"• Damaged Wire Catcher
+• No Wire Catcher on Sub Hanger
+• Wire not properly inserted on Catcher","Provide Wire Catcher on Sub Hanger
+Re-orient associate on proper way of inserting wire on wire catcher",PE-FABRICATION,,OPEN,,,,
+533,12,SUZUKI,XF273,5015,Connector Picture vs. Actual connector used was not tally on Sub PC,Provide the correct connector picture being used,PE-FABRICATION,,OPEN,,,,
+534,15,SUZUKI,XF273,5015,"Same Connector on Sub PC
+Sub 01, 05, 06
+SSE-SB-6FA-B",Check if can provide Color Sensor,PE-EQ-FINAL,,OPEN,,,,
+535,16,SUZUKI,XF273,5015,Misalign SDY Junction near Connector 109,Align SDY Junction near connector 109,PE-BAE (ASSY DEV),,OPEN,,,,
+536,17,SUZUKI,XF273,5015,Loose Jig Connector 244,Fix loose Jig,PE-BAE (Maintenance),,OPEN,,,,
+537,20,SUZUKI,XF273,5015,"No Good Pulling strength (Sub Assy)
+
+TOLERANCE:
+GOOD: (10-14N)
+NO GOOD: (16-20N)
+
+SUB 2, 8, 11, 3
+SUB PC JIG G: 
+GOOD: 16.2 (NG)
+NO GOOD: 17.4 (GOOD)",Calibrate Connector Jig on Sub Assy jig,PE-EQ-FINAL,,OPEN,,,,
+538,22,SUZUKI,XF273,5015,Lacking Tanmatsu Jig,Provide tanmatsu jig,PE-BAE (Maintenance),,OPEN,,,,
+539,23,SUZUKI,XF273,5015,Lacking Lockset on some receiving jig,Provide Lockset,PE-BAE (Maintenance),,OPEN,,,,
+540,24,SUZUKI,XF273,5015,Lacking Bendable Jig Cover,Provide Bendable Jig Cover,PE-BAE (Maintenance),,OPEN,,,,
+541,25,SUZUKI,XF273,5015,Lacking YSOP & S-PIN,Provide YSOP & S-PIN,PE-BAE (Maintenance),,OPEN,,,,
+542,26,SUZUKI,XF273,5015,Lacking spacer on Toridashi Jig,Provide spacer on toridashi jig,PE-BAE (Maintenance),,OPEN,,,,
+543,28,SUZUKI,XF273,5015,'No-Ebag (For Request),Waiting for request,PRODUCTION,,OPEN,,,,
+544,30,SUZUKI,XF273,5015,"ITDD cannot detect wrong use of connector color and tape.
+
+Checker 931-932
+Gray Connector (Actual)
+White Connector also passed",Verify the ITDD on ECT,PE-BAE (ECT),,OPEN,,,,
+545,32,SUZUKI,XF273,5015,"Option Process
+
+For Confirmation to MPPD2
+Tape Box installed is combined 
+(2 Model: XF273 & XF271)","Separate combined tape box installed. 
+
+Note: It must be separated based on OI. Not combine.",ME-NPI (MPPD),,OPEN,,,,
+546,33,SUZUKI,XF273,5015,"Option Process
+No Reference Jig
+(Possible to encounter missing Option)
+No Receiving Jig
+(Possible to encounter wrong view of connector)",Check if can provide reference jig and receiving jig.,PE-BAE (ASSY DEV),Mhean,OPEN,,,,
+547,34,SUZUKI,XF273,5015,No OI posted & Not updated OI posted,Attach and update OI,ME-NPI (MPPD),,OPEN,,,,
+548,1,SUZUKI,Y6L FLOOR,5104,No upper limit on tupper box,Request to put line limit on identified tupper boxes.,PRODUCTION,K. Sangalang,OPEN,,,,
+549,2,SUZUKI,Y6L FLOOR,5104,NG Wire Catcher,Repairing of wire catcher,PE-FABRICATION,,OPEN,,,,
+550,11,SUZUKI,Y6L FLOOR,5104,Wrong position of tanmatsu (board no.10),Place the tanmatsu in the right position,PE-BAE (Maintenance),,OPEN,,,,
+551,12,SUZUKI,Y6L FLOOR,5104,No E-bag,Wearing of E-Bag,PRODUCTION,K. Sangalang,OPEN,,,,
+552,13,SUZUKI,Y6L FLOOR,5104,No workload division (Dimension inspection),Provide workload division,QA-Final ,,OPEN,,,,
+553,3,SUZUKI,Y6L FLOOR,5104,Foreign  materials on wire catcher,Conduct 5'S,PRODUCTION,K. Sangalang,OPEN,,,,
+554,4,SUZUKI,Y6L FLOOR,5104,Foreign materials inside tupperbox,Conduct 5'S,PRODUCTION,K. Sangalang,OPEN,,,,
+555,5,SUZUKI,Y6L FLOOR,5104,For orient (operator not checking the condition of grommet),Conduct orientation regarding grommet fitting,PRODUCTION,K. Sangalang,OPEN,,,,
+556,6,SUZUKI,Y6L FLOOR,5104,No running product label,Remind associate to awlays used product label,PRODUCTION,K. Sangalang,OPEN,,,,
+557,8,SUZUKI,Y6L FLOOR,5104,For orient (3x slightly pulling of grommet),Conduct orientation regarding grommet fitting,PRODUCTION,K. Sangalang,OPEN,,,,
+558,9,SUZUKI,Y6L FLOOR,5104,No label on parts,Provide label,PRODUCTION,K. Sangalang,OPEN,,,,
+559,10,SUZUKI,Y6L FLOOR,5104,For arrangement of tupperbox,Arrangement of tupperbox,PRODUCTION,K. Sangalang,OPEN,,,,
+560,11,SUZUKI,Y6L FLOOR,5104,Wrong position of tanmatsu (board no.10),,PE-BAE (Maintenance),,OPEN,,,,
+561,12,SUZUKI,Y6L FLOOR,5104,No E-bag,Wearing of E-Bag,PRODUCTION,,OPEN,,,,
+562,13,SUZUKI,Y6L FLOOR,5104,No workload division (Dimension inspection),Provide workload division,QA-Final ,,OPEN,,,,
+563,14,SUZUKI,Y6L FLOOR,5104,'No pen holder on Inspection,Request for pen holder to avoid pen marks,PE-FABRICATION,,OPEN,,,,
+564,15,SUZUKI,Y6L FLOOR,5104,Associate was not aware on rounds of taping in Option Process,For orient (rounds of taping on option process),PRODUCTION,,OPEN,,,,
+565,15,SUZUKI,Y6L FLOOR,5104,Associate was not aware on rounds of taping in Option Process,For orient (rounds of taping on option process),PRODUCTION,,OPEN,,,,
+566,16,SUZUKI,Y6L FLOOR,5104,'NG tape box on option process,Repair tape box on Option Process,PE-FABRICATION,,OPEN,,,,
+567,17,SUZUKI,Y6L FLOOR,5104,"Appearance Inspection 
+
+Associate was not aware on standard inspection of checking clamp and nameplate",For orient (checking of clamp and checking of nameplate on appearance process),QA-Final ,,OPEN,,,,
+568,18,SUZUKI,Y6L FLOOR,5104,"Appearance Inspection
+
+Associate was not aware on standard inspection of slightly pulling 3x of grommet",For orient (3x slightly pulling of grommet on appearance),QA-Final ,,OPEN,,,,
+569,19,SUZUKI,Y6L FLOOR,5104,Associate was not aware on 1x using only of alignment checker jig,For orient (1x only using of alignment checker jig),QA-Final ,,OPEN,,,,
+570,17,SUZUKI,Y6L FLOOR,5104,"Appearance Inspection 
+
+Associate was not aware on standard inspection of checking clamp and nameplate",For orient (checking of clamp and checking of nameplate on appearance process),QA-Final ,,OPEN,,,,
+571,18,SUZUKI,Y6L FLOOR,5104,"Appearance Inspection
+
+Associate was not aware on standard inspection of slightly pulling 3x of grommet",For orient (3x slightly pulling of grommet on appearance),QA-Final ,,OPEN,,,,
+572,19,SUZUKI,Y6L FLOOR,5104,Associate was not aware on 1x using only of alignment checker jig,For orient (1x only using of alignment checker jig),QA-Final ,,OPEN,,,,
+573,20,SUZUKI,Y6L FLOOR,5104,Missing label and connector picture on tupperbox,Provide proper label and connector picture on tupperbox,PE-FABRICATION,,OPEN,,,,
+574,5,SUZUKI,YV7 ENGINE,5105,No E-bag,Request to provide E-bag,PRODUCTION,K. Sangalang,OPEN,,,,
+575,6,SUZUKI,YV7 ENGINE,5105,Missing tanmatsu jig,Request to provide tanmatsu jig,PE-BAE (Maintenance),,OPEN,,,,
+576,7,SUZUKI,YV7 ENGINE,5105,Missing lockset,Request to provide lockset,PE-BAE (Maintenance),,OPEN,,,,
+577,9,SUZUKI,YV7 ENGINE,5105,Damaged wire catcher on sub assy process,Request to repair damaged wire catcher on sub assy process,PE-FABRICATION,,OPEN,,,,
+578,10,SUZUKI,YV7 ENGINE,5105,No wire catcher on sub hanger,Provide wire catcher on sub assy process,PE-FABRICATION,,OPEN,,,,
+579,13,SUZUKI,YV7 ENGINE,5105,No running product label on Sub 02 and Sub 03,Provide running product label,PRODUCTION,K. Sangalang,OPEN,,,,
+580,14,SUZUKI,YV7 ENGINE,5105,"For orient on bending frequency of 0.13, 0.22, 0.35, and 0.5 size of wire",Re-orient the associate regarding bending frequency.,PRODUCTION,K. Sangalang,OPEN,,,,
+581,15,SUZUKI,YV7 ENGINE,5105,For orient on inspection standards and inspection methods ,Re-orient the associate regarding the standard inspection.,QA-Final ,,OPEN,,,,
+582,16,SUZUKI,YV7 ENGINE,5105,'No OI posted & Not updated OI posted,Attach and update OI,ME-NPI (MPPD),,OPEN,,,,
+583,2,SUZUKI,YSB INPANEL,5113,No sample connector picture,Request to provide sample connector picture,PE-FABRICATION,,OPEN,,,,
+584,3,SUZUKI,YSB INPANEL,5113,NG Wire catchers on Sub Assy,Request to repair NG wire catchers,PE-FABRICATION,,OPEN,,,,
+585,4,SUZUKI,YSB INPANEL,5113,'No provided vinyl cover on sub hanger.,Request to provide viny cover on sub hanger.,PE-FABRICATION,,OPEN,,,,
+586,5,SUZUKI,YSB INPANEL,5113,NG rubber tanmatsu ,Request ame to change the rubber tanmatsu,PE-BAE (Maintenance),,OPEN,,,,
+587,6,SUZUKI,YSB INPANEL,5113,'NG Parts box,Request to change NG parts box ,PE-FABRICATION,,OPEN,,,,
+588,16,SUZUKI,YSB INPANEL,5113,No provided OI for item 113-A-E on shiage process.,Request to provide OI on shiage process.,ME-NPI (MPPD),,OPEN,,,,
+589,17,SUZUKI,YSB INPANEL,5113,'Dirty vinyl cover on dimension process.,Request to clean dimension vinyl cover.,ME-Initial (Preparation),,OPEN,,,,
+590,18,SUZUKI,YSB INPANEL,5113,"No reference picture connector for similar conn.18, 19, 45 and 44 on dimension process.",Request to provide picture of same connector on dimension inspection.,PE-FABRICATION,,OPEN,,,,
+591,19,SUZUKI,YSB INPANEL,5113,'Loose jig on ECT.Detection jig for 1301-1302 and 1305-1306.,Request to repair all loose Jigs,PE-BAE (Maintenance),,OPEN,,,,
+592,20,SUZUKI,YSB INPANEL,5113,Open circuit for conn.66 and 75.,Repair Open circuit,PE-BAE (ECT),,OPEN,,,,
+593,21,SUZUKI,YSB INPANEL,5113,"'No tupper line limit for tupperbox of Through clamp on ECT inspection Cl-1E360-W,D",Request to  provide line limit.,PE-FABRICATION,,OPEN,,,,
+594,22,SUZUKI,YSB INPANEL,5113,'No lock system on ECT,Request to provide lock system on ECT Board,PE-BAE (ECT),,OPEN,,,,
+595,23,SUZUKI,YSB INPANEL,5113,Checker jig wings on ect process,Request to provide checker jig wings.,PE-BAE (ECT), J.C. Aycardo,OPEN,,,,
+596,24,SUZUKI,YSB INPANEL,5113,"Jig for similar conn 16, 15, 38 and 39 need to provide color sensor on option process.",Request to provide color sensor for same connector on ect ,PE-EQ-FINAL,M. Bancoro,OPEN,,,,
+597,25,SUZUKI,YSB INPANEL,5113,"NG condition and dirty checker jig no.66, 60, 52, 48, 13, 14, 45 and 38 on ECT inspection.",Request to check condition of checker jig.,PRODUCTION,A. De Guzman,OPEN,,,,
+598,27,SUZUKI,YSB INPANEL,5113,NG Vinyl cover of option board,Request to change vinyl cover on option board,ME-Initial (Preparation),,OPEN,,,,
+599,29,SUZUKI,YSB INPANEL,5113,"Not updated OI on option 103F-E, 104F-E, 106J-E, 108G-E, 109-E, 112G-E and 136A-E.",Request to update OI on option process.,ME-NPI (MPPD),,OPEN,,,,
+600,30,SUZUKI,YSB INPANEL,5113,'No OI on option (160-E),Request to provide OI.,ME-NPI (MPPD),,OPEN,,,,
+601,32,SUZUKI,YSB INPANEL,5113,Picture of similar connector on appearance table,Request to provide picture for similar connector,QA-Final ,G. Barameda,OPEN,,,,
+602,33,SUZUKI,YSB INPANEL,5113,Provide holder for alignment jig.,Request to provide holder. ,PE-BAE (Maintenance),,OPEN,,,,
+603,34,SUZUKI,YSB INPANEL,5113,'No good condition of alignment jig.,Request to PM alignment jig on appearance process.,PE-EQ-FINAL,,OPEN,,,,
+604,35,SUZUKI,YSB INPANEL,5113,Associate is not using the wire catcher properly. Wire is not inside the catcher.,Re-orient the associate to use the wire catcher properly.,PRODUCTION,A. De Guzman,OPEN,,,,
+605,36,SUZUKI,YSB INPANEL,5113,'Foreign materials on tupper box.,Conduct 5S,PRODUCTION,A. De Guzman,OPEN,,,,
+606,37,SUZUKI,YSB INPANEL,5113,Checker jig wings on ect process,Re-orient associate on how to check the nameplate properly.,PRODUCTION,A. De Guzman,OPEN,,,,
+607,38,SUZUKI,YSB INPANEL,5113,Actual color of YSOP vs. Actual color of connector is not the same.,Provide the correct color of YSOP,PE-BAE (Maintenance),,OPEN,,,,
+608,39,SUZUKI,YSB INPANEL,5113,No YSOP on connector 16,Provide YSOP on jig of connector 16,PE-BAE (Maintenance),,OPEN,,,,
+609,40,SUZUKI,YSB INPANEL,5113,Dirty wire catcher on Assy,Conduct 5S,PRODUCTION,A. De Guzman,OPEN,,,,
+610,41,SUZUKI,YSB INPANEL,5113,Associate do not comply with standard work procedure (rounds of taping),Re-orient associate on no. of rounds on taping.,PRODUCTION,A. De Guzman,OPEN,,,,
+611,42,SUZUKI,YSB INPANEL,5113,"No workload division on Inspection
+(have a support inspector, providing only change point form)",Verify manpower allocation based on process design,PRODUCTION,A. De Guzman,OPEN,,,,
+612,43,SUZUKI,YSB INPANEL,5113,Not pokayoke jigs (connector 18 & 19),Provide pokayoke jig,PE-BAE (Maintenance),,OPEN,,,,
+613,7,SUZUKI,Y2R INPANEL,5103,No provided wire damaged prevention jig installed on assy jig (breaking jig) on all assyboards - different portions and branch,"1. Request to evaluate all jigs with missing protective cover.
+2. Request to provide protective cover on jigs with missing cover. (other boards have cover on the same jig)",PE-BAE (Maintenance),,OPEN,,,,
+614,9,SUZUKI,Y2R INPANEL,5103,NG Condition of Sub Hanger on Sub Assy,Repair sub hanger,PE-FABRICATION,,OPEN,,,,
+615,10,SUZUKI,Y2R INPANEL,5103,Damaged wire catcher on Assy board.,Repair damaged wire catcher,PE-FABRICATION,,OPEN,,,,
+616,11,SUZUKI,Y2R INPANEL,5103,No OI posted and not updated OI,Provide updated OI,ME-NPI (MPPD),,OPEN,,,,
+617,12,SUZUKI,Y2R INPANEL,5103,Associate doesn't follow the standard way of locking retainer connector.,Re-orient associate on standard way of locking retainer connector.,PRODUCTION,,OPEN,,,,
+618,13,SUZUKI,Y2R INPANEL,5103,"Toridashi jigs don't have spacer
+
+Connector 66
+Board 6, 7",Provide spacer on toridashi jigs,PE-BAE (Maintenance),,OPEN,,,,
+619,14,SUZUKI,Y2R INPANEL,5103,Associate is not following the standard way of inserting shikakari on layout. It should be 10mm away from finger to the rear end of installation barrel.,Re-orient associate on standard way of inserting shikakari.,PRODUCTION,,OPEN,,,,
+620,15,SUZUKI,Y2R INPANEL,5103,NG pulling strength on Sub01 and no sound on Sub02,Repair pulling strength,PE-EQ-FINAL,,OPEN,,,,
+621,16,SUZUKI,Y2R INPANEL,5103,Foreign materials on wre catcher and damaged wire catcher,Conduct 5S,PRODUCTION,,OPEN,,,,
+622,17,SUZUKI,Y2R INPANEL,5103,Excess connectors on Sub13,Re-orient associate to do not put connectors above the line limit.,PRODUCTION,,OPEN,,,,
+623,18,SUZUKI,Y2R INPANEL,5103,"Worker is not aware what to do when there are parts left in component box and when there are falling parts (STOP, CALL, WAIT)",Re-orient associate on standard process on what to do when there are parts left on component box.,PRODUCTION,,OPEN,,,,
+624,19,SUZUKI,Y2R INPANEL,5103,"Board 3 Connector 73 - wrong color of tanmatsu
+same with Board 4 Connector 88",Provide the color color of YSOP/SPIN.,PE-BAE (Maintenance),,OPEN,,,,
+625,20,SUZUKI,Y2R INPANEL,5103,Lacking spacer onn toridashi jigs,Provide spacer on toridashi jigs,PE-BAE (Maintenance),,OPEN,,,,
+626,21,SUZUKI,Y2R INPANEL,5103,Workers are not fully aware about allowable bending frequency,Re-orient associate regarding allowable bending frequency.,PRODUCTION,,OPEN,,,,
+627,22,SUZUKI,Y2R INPANEL,5103,No E-bag,Provide e-bag.,PRODUCTION,,OPEN,,,,
+628,23,SUZUKI,Y2R INPANEL,5103,Worker is not doing the standard attachment of VS,Re-orient associate on standard process of attaching VS.,PRODUCTION,,OPEN,,,,
+629,24,SUZUKI,Y2R INPANEL,5103,Worker is not fully aware about thigs to remember when attaching nameplate,Re-orient associate on standard way of checking nameplate.,QA-Final ,,OPEN,,,,
+630,25,SUZUKI,Y2R INPANEL,5103,Inspector is not fully aware about the meaning of tolerance symbol on drawing,Re-orient associate on important points to check on inspection.,QA-Final ,,OPEN,,,,
+631,26,SUZUKI,Y2R INPANEL,5103,Inspector is not fully aware about what to do if the harness is NG but no red tag,Re-orient associate on standard process on what to do if harness is NG but no red tag. ,QA-Final ,,OPEN,,,,
+632,27,SUZUKI,Y2R INPANEL,5103,"There are exposed wires in ECT
+NG wings, dirty checkers","Conduct 5S, repair NG wings.",PE-BAE (ECT),,OPEN,,,,
+633,28,SUZUKI,Y2R INPANEL,5103,Worker performs overpull and over release in ECT,Re-orient associate to do not overpull and over release in ECT.,QA-Final ,,OPEN,,,,
+634,29,SUZUKI,Y2R INPANEL,5103,No indication of workload division in appearance,Verify process design,PRODUCTION,,OPEN,,,,
+635,7,SUZUKI,YT3 Floor,5136,Associate did not follow the grommet fixing method  ,Re-orient the associate  to follow the grommet fixing method that indicated on OI.,PRODUCTION,E. Cometa,OPEN,17-Jul-23,,,
+636,10,SUZUKI,YT3 Floor,5136,50 mm rolling down fixing tape was not indicated on OI,Request to include on OI the 50 mm rolling down fixing tape,ME-NPI (MPPD),,OPEN,,,,
+637,12,SUZUKI,YT3 Floor,5136,Request to arrange the sequence of tupper box on parts shelves base on the sequence of one set supply box,Re-arrange sequence of tupper box on component shelves,ME-Initial (Preparation),,OPEN,,,,
+638,14,SUZUKI,YT3 Floor,5136,Associate does not understand the content of OI,Re-orient associate about OI content,PRODUCTION,E. Cometa,OPEN,17-Jul-23,,,
+639,15,SUZUKI,YT3 Floor,5136,SOT need to revise,"Request for a follow up of the updated SOT
+
+(On-going)",ME-NPI (MPPD),,OPEN,,,,
+640,17,SUZUKI,YT3 Floor,5136,Jig height may affect the process and the existing dimensions ,Request for an immediate adjustment,PE-BAE (ASSY DEV),,OPEN,,,,
+641,18,SUZUKI,YT3 Floor,5136,Missing spacer of toridashi jig on Board 8,Immediately request for toridashi jig spacer's completion ,PE-BAE (ASSY DEV),,OPEN,,,,
+642,19,SUZUKI,YT3 Floor,5136,"Damaged tanmatsu on Board 4, Connectors 81 & 53",Request for the damaged tanmatsu's replacement ,PE-BAE (ASSY DEV),,OPEN,,,,
+643,20,SUZUKI,YT3 Floor,5136,Lacking bendable jig covers,Request for bendable jig cover's completion,PE-BAE (Maintenance),,OPEN,,,,
+644,21,SUZUKI,YT3 Floor,5136,"No SPIN on Board 13, Connector 33",Imemediately request for SPIN ,PE-BAE (Maintenance),,OPEN,,,,
+645,26,SUZUKI,YT3 Floor,5136,No workload division on workload dimension,Workload division should be provided,QA-Final ,,OPEN,,,,
+646,28,SUZUKI,YT3 Floor,5136,"Missing screw - DSL1-F, DSL4-F
+Missing spring - DSTL-2FBPK (for confirmation)
+Detached wing - DSL-BR, DSL-3F-TSN-JC",Request for the missing parts' completion,PE-BAE (ECT),,OPEN,,,,
+647,30,SUZUKI,YT3 Floor,5136,NG tape box ,Request for improvement of tape box ,PE-FABRICATION,,OPEN,,,,
+648,31,SUZUKI,YT3 Floor,5136,"Arrow is not included on optional jigs, cannot identify the required view",Include arrow on OI  due to required view,ME-NPI (MPPD),,OPEN,,,,
+649,32,SUZUKI,YT3 Floor,5136,Associate did not fully comprehend the inspection standards and methods,Re-orient associate on inspection standards and method,QA-Final ,,OPEN,,,,
+650,33,SUZUKI,YT3 Floor,5136,Not included in the inspection checksheet ,Request for inclusion of lever position and slider position inside the connector,QA-Final ,,OPEN,,,,
+651,1,SUBARU,GC7/GX3,7111,Storage box must be higher than tsumesen area,Request to change the existing storage box,PE-FABRICATION,,,16-Aug-23,,,
+652,2,SUBARU,GC7/GX3,7111,Appearance of connector did not check properly,Re-orient all tsumesen associate on proper  checking of connector,PRODUCTION,,,,,,
+653,3,SUBARU,GC7/GX3,7111,No signatories of OI in tsumesen area,Request to provide OI with complete signatories,ME-NPI (MPPD),,,5-Aug-23,,,
+654,4,SUBARU,GC7/GX3,7111,No upper line limit on the tupper box (Sub Assy),"
+Request to provide upper limit line label",PE-FABRICATION,,,16-Aug-23,,,
+655,5,SUBARU,GC7/GX3,7111,No good 5'S of wire catcher,Re-orient all members to conduct 5'S,PRODUCTION,,,,,,
+656,6,SUBARU,GC7/GX3,7111,NG wire catcher on Sub assy,Request to repair/change the wire catcher,PE-FABRICATION,,,,,,
+657,7,SUBARU,GC7/GX3,7111,No good stocking of connector,,PRODUCTION,,,,,,
+658,9,SUBARU,GC7/GX3,7111,No grommet cover,Request to provide grommet cover,PE-FABRICATION,,,16-Aug-23,,,
+659,11,SUBARU,GC7/GX3,7111,Lacking bendable jig cover, Request to provide bendable jig cover,PE-BAE (Maintenance),,,,,,
+660,12,SUBARU,GC7/GX3,7111, Loose jig ,Request to repair all loose jig,PE-BAE (Maintenance),,,,,,
+661,14,SUBARU,GC7/GX3,7111,Not wearing E-bag,Request to provide e-bag,PRODUCTION,,,,,,
+662,15,SUBARU,GC7/GX3,7111,Wire bending must include in OI (Grommet),Request to include in OI,ME-NPI (MPPD),,,,,,
+663,21,MAZDA,J78A-010,1143,"Precautions of wire biting is
+ not included in OI",Request for precautions of wire biting to be included in OI,ME-NPI (MPPD),,OPEN,,,,
+664,22,MAZDA,J78A-010,1143,"• NG jig measurement on Board 3 and 8 (Connector 137 & 325)
+• R20 change to R40 ",Conduct re-study/re-evaluation ,PE-BAE (ASSY DEV),,OPEN,,,,
+665,23,MAZDA,J78A-010,1143,"Common jigs on connectors 55, 4, 5, 247, 248 & 126",Request to provide replacement for the common jigs,PE-BAE (ASSY DEV),,OPEN,,,,
+666,24,MAZDA,J78A-010,1143,"Possible interchange connector 121, 122 ","Provide reflectorized tape on assy jig as per applied product
+
+Provide jig to TSYO4LIF-22MA white & gray interchange of set in TBO checker setting",ME-FIE-PE (FMEA),,OPEN,,,,
+667,25,MAZDA,J78A-010,1143,Associate is not aware about parts left on component box,Re-orient associate on what to do when left parts on component box are encountered,PE-FABRICATION,,OPEN,,,,
+668,26,MAZDA,J78A-010,1143,Possible interchange connector G/W,Provide reflectorized tape on assy jig as per applied product,ME-FIE-PE (FMEA),,OPEN,,,,
+669,27,MAZDA,J78A-010,1143,"NG height of clamp jig
+ (Clamp 170 & 106)",Request to provide clamp replacement,PE-BAE (ASSY DEV),,OPEN,,,,
+670,2,MAZDA,J78A-010,1143,Lay-out and Sub assy associate is un aware on bending frequency.,'Request to conduct re-orientation for wire bending frequency,PRODUCTION,C. Orense/B. Awat,OPEN,19-Jul-23,,,
+671,3,MAZDA,J78A-010,1143,'Overstocking of parts,'Conduct re-orientation to all sub assy members regarding proper stocking of parts on tupperbox,PRODUCTION,C. Orense/B. Awat,OPEN,19-Jul-23,,,
+672,3,MAZDA,J78A-010,1143,'Overstocking of parts,'Conduct re-orientation to all sub assy members regarding proper stocking of parts on tupperbox,PRODUCTION,C. Orense/B. Awat,OPEN,19-Jul-23,,,
+673,4,MAZDA,J78A-010,1143,Damaged wire catcher on sub assy process,Request to repair damaged wire catcher on sub assy process,PE-FABRICATION,,OPEN,25-Jul-23,,,
+674,5,MAZDA,J78A-010,1143,No good 5's on wire catcher and sub assy jig.,Conduct 5's on sub assy area,PRODUCTION,C. Orense/B. Awat,OPEN,19-Jul-23,,,
+675,7,MAZDA,J78A-010,1143,No good location of jointed wires on down spout.,Request to modified/change the location of jointed wires.,PE-FABRICATION,,OPEN,26-Jul-23,,,
+676,10,MAZDA,J78A-010,1143,Reference of Good and NG is not included on OI at Grommet Process.,'Request to include on OI,ME-NPI (MPPD),,OPEN,25-Jul-23,,,
+677,11,MAZDA,J78A-010,1143,'Missing/Lacking Bendable jig cover.,'Request to provide jig cover.,PE-BAE (Maintenance),,OPEN,25-Jul-23,,,
+678,12,MAZDA,J78A-010,1143,"'SPIN color is not tally vs actual (Connectors 12, 169, 138, 148 & 155)",'Request to provide Spin ,PE-BAE (Maintenance),,OPEN,25-Jul-23,,,
+679,13,MAZDA,J78A-010,1143,'YSOP not tally on conn. 43,Request to provide YSOP,PE-BAE (Maintenance),,OPEN,25-Jul-23,,,
+680,15,MAZDA,J78A-010,1143,"No available spacer for Toridashi connector jig
+
+(connectors 131, 322, 160 & 159. )",Request to provide jig Toridashi,PE-BAE (Maintenance),,OPEN,25-Jul-23,,,
+681,16,MAZDA,J78A-010,1143,'Incomplete details of OI at assyboard,Request to update the OI,ME-NPI (MPPD),,OPEN,25-Jul-23,,,
+682,17,MAZDA,J78A-010,1143,"OI at TBO process is not readable
+(Japanese character)",Request to update the OI in English Character.,ME-NPI (MPPD),,OPEN,25-Jul-23,,,
+683,18,MAZDA,J78A-010,1143,'No provided Ebag at Assy process,'Request to provide Ebag,PE-FABRICATION,,OPEN,25-Jul-23,,,
+684,19,MAZDA,J78A-010,1143,"Layout associates did not know the check items of nameplate (faded barcode, Dirty nameplate, etc.)",'Request to conduct orientation for the check items of nameplate,PRODUCTION,C. Orense/B. Awat,OPEN,25-Jul-23,,,
+685,20,MAZDA,J78A-010,1143,"Precautions of wire biting is
+ not included in OI",'Request for precautions of wire biting to be included in OI,ME-NPI (MPPD),,OPEN,25-Jul-23,,,
+686,21,MAZDA,J78A-010,1143,"• NG jig measurement on Board 3 and 8 (Connector 137 & 325)
+• R20 change to R40",'Conduct re-study/re-evaluation ,ME-NPI (MPPD),,OPEN,25-Jul-23,,,
+687,22,MAZDA,J78A-010,1143,"Common jigs on connectors 55, 4, 5, 247, 248 & 126",Request to provide replacement for the common jigs,ME-NPI (MPPD),,OPEN,25-Jul-23,,,
+688,23,MAZDA,J78A-010,1143,"Possible interchange connector 121, 122 ","Provide reflectorized tape on assy jig as per applied product
+
+
+Provide jig to TSYO4LIF-22MA white & gray interchange of set in TBO checker setting",ME-FIE-PE (FMEA),,OPEN,25-Jul-23,,,
+689,24,MAZDA,J78A-010,1143,'Associate is not aware about parts left on component box,Re-orient associate on what to do when left parts on component box are encountered,PRODUCTION,,OPEN,25-Jul-23,,,
+690,24,MAZDA,J78A-010,1143,'Possible interchange connector G/W,Provide reflectorized tape on assy jig as per applied product,ME-FIE-PE (FMEA),,OPEN,25-Jul-23,,,
+691,26,MAZDA,J78A-010,1143,"NG height of clamp jig
+ (Clamp 170 & 106)",Request to provide clamp replacement,PE-BAE (ASSY DEV),,OPEN,25-Jul-23,,,
+692,1,SUBARU,GC7/GX3,7111,'Storage box must be higher than tsumesen area,Request to change the existing storage box,PE-FABRICATION,,OPEN,16-Aug-23,,,
+693,2,SUBARU,GC7/GX3,7111,'Appearance of connector did not check properly,'Re-orient all tsumesen associate on proper  checking of connector,PRODUCTION,,OPEN,,,,
+694,3,SUBARU,GC7/GX3,7111,No signatories of OI in tsumesen area,Request to provide OI with complete signatories,ME-NPI (MPPD),,OPEN,5-Aug-23,,,
+695,4,SUBARU,GC7/GX3,7111,No upper line limit on the tupper box (Sub Assy),Request to provide upper limit line label,PE-FABRICATION,,OPEN,5-Aug-23,,,
+696,5,SUBARU,GC7/GX3,7111,No good 5'S of wire catcher,'Re-orient all members to conduct 5'S,PRODUCTION,,OPEN,5-Aug-23,,,
+697,6,SUBARU,GC7/GX3,7111,'NG wire catcher on Sub assy,Request to repair/change the wire catcher,PE-FABRICATION,,OPEN,5-Aug-23,,,
+698,7,SUBARU,GC7/GX3,7111,No good stocking of connector,,PRODUCTION,,OPEN,5-Aug-23,,,
+699,9,SUBARU,GC7/GX3,7111,No cover for grommet holder,Request to provide grommet cover,PE-FABRICATION,,OPEN,16-Aug-23,,,
+700,11,SUBARU,GC7/GX4,7111,'Lacking bendable jig cover,Request to provide bendable jig cover,PE-BAE (Maintenance),E. Austria,OPEN,22-Jul-23,,,
+701,12,SUBARU,GC7/GX4,7111, Loose jig ,Request to repair all loose jig,PE-BAE (Maintenance),E. Austria,OPEN,23-Jul-23,,,
+702,14,SUBARU,GC7/GX4,7111,Not wearing E-bag,Request to provide e-bag,PRODUCTION,,OPEN,,,,
+703,15,SUBARU,GC7/GX4,7111,Precautions of wire biting not included on OI (Grommet),'Request to include in OI,ME-NPI (MPPD),,OPEN,21-Jul-23,,,
+704,20,SUBARU,GC7/GX4,7111,'Wires are not inside the wire catcher.,Re-orient associate to properly use the wire catcher.,PRODUCTION,,OPEN,,,,
+705,21,SUBARU,GC7/GX4,7111,Not updated OI,On-going for signatories,ME-NPI (MPPD),,OPEN,,,,
+706,22,SUBARU,GC7/GX4,7111,"NG Tools of SSGN, FGO, TSNY
+PKVAC, YRH,090 ",Repair/ Replace NG tools,ME-Initial (Preparation),,OPEN,,,,
+707,1,SUZUKI,36630-59SOO,5127,'Faded tupper box line limit  all sub assy tupperbox,Feedback to Jr. Staff to put line limit and orient members to follow SOP.,PRODUCTION,,OPEN,"Aug. 15, 2023",,,
+708,2,SUZUKI,36630-59SOO,5127,'No 'Sample connector picture reference on all sub assy process,Provide sample connector picture ,PE-FABRICATION,,OPEN,,,,
+709,3,SUZUKI,36630-59SOO,5127,No good view of grommet on OI of bukumi,Request to change the view of grommet on OI,ME-NPI (MPPD),,OPEN,,,,
+710,3,SUZUKI,36630-59SOO,5127,'Dirty bukumi board of bukumi 6,Request to change the bukumi drawing,ME-NPI (MPPD),,OPEN,,,,
+711,3,SUZUKI,36630-59SOO,5127,'Worn out drawing of bukumi,Request to change the bukumi drawing,ME-NPI (MPPD),,OPEN,,,,
+712,3,SUZUKI,36630-59SOO,5127,'Damaged catcher of shiage board,Request to repair the catcher,PE-BAE (Maintenance),,OPEN,,,,
+713,3,SUZUKI,36630-59SOO,5127,No good holder of andon lights on shiage board,Request to repair the holder,PE-FABRICATION,,OPEN,,,,
+714,3,SUZUKI,36630-59SOO,5127,No good holder of product label,Request to provide holder,PE-FABRICATION,,OPEN,,,,
+715,3,SUZUKI,36630-59SOO,5127,Adjust portion 44 on otion board to easily tape the branch,Request to adjust the portion ,PE-BAE (ASSY DEV),,OPEN,,,,
+716,3,SUZUKI,36630-59SOO,5127,Damaged tape box on option board,Request to change the tape holder,PE-FABRICATION,,OPEN,,,,
+717,3,SUZUKI,36630-59SOO,5127,'Damaged marker holder on option board,Request to change the marker holder,PE-FABRICATION,,OPEN,,,,
+718,3,SUZUKI,36630-59SOO,5127,'No label of tupperbox  on option board,,PRODUCTION,,OPEN,"'Aug. 15, 2023",,,
+719,3,SUZUKI,36630-59SOO,5127,'Fix acrylic jig conn.24/25 on appearance table,Request to fix the acryclic jig to avoid foreign material,QA-Final ,,OPEN,,,,
+720,3,SUZUKI,36630-59SOO,5127,'Install lock system on connector 38 to avoid defect,Request to install lock system on conn.38 to avoid missing fixing tape,PE-BAE (ECT),,OPEN,,,,
+721,3,SUZUKI,36630-59SOO,5127,No standard wire bending list on all Sub PC,,PRODUCTION,,OPEN,"'Aug. 15, 2023",,,
+722,3,SUZUKI,36630-59SOO,5127,No good holder of shikakari on sub assy 2,Repair holder of shikakari on Sub Assy,PE-FABRICATION,,OPEN,,,,
+723,3,SUZUKI,36630-59SOO,5127,No lockset on board 12 conn.107,,PE-BAE (Maintenance),,OPEN,,,,
+724,3,SUZUKI,36630-59SOO,5127,'No good  holder of product label on board 3,,PE-BAE (Maintenance),,OPEN,,,,
+725,3,SUZUKI,36630-59SOO,5127,Loose jig obn board 3 conn.1 and 2,,PE-BAE (Maintenance),,OPEN,,,,
+726,3,SUZUKI,36630-59SOO,5127,'Loose jig on board 3 and 2 conn.113,,PE-BAE (Maintenance),,OPEN,,,,
+727,3,SUZUKI,36630-59SOO,5127,'Loose jig on board 1 conn.42,,PE-BAE (Maintenance),,OPEN,,,,
+728,3,SUZUKI,36630-59SOO,5127,'Loose jig on board 3 conn.86,,PE-BAE (Maintenance),,OPEN,,,,
+729,3,SUZUKI,36630-59SOO,5127,No S-pin on board 3 conn.99,,PE-BAE (Maintenance),,OPEN,,,,
+730,3,SUZUKI,36630-59SOO,5127,No good wire catcher on assy board 17,,PE-BAE (Maintenance),,OPEN,,,,
+731,3,SUZUKI,36630-59SOO,5127,'All assy board no cover of bendable jig,,PE-BAE (Maintenance),,OPEN,,,,
+732,3,SUZUKI,36630-59SOO,5127,'No good drawing of shiage board,,ME-NPI (MPPD),,OPEN,,,,
+733,3,SUZUKI,36630-59SOO,5127,'Some associate is no E-BAG,,PRODUCTION,,OPEN,"'Aug. 31, 2023",,,
+734,3,SUZUKI,36630-59SOO,5127,'Worn out OI on ECT,,ME-NPI (MPPD),,OPEN,,,,
+735,3,SUZUKI,36630-59SOO,5127,No detection jig for unlock retainer,,PE-BAE (ECT),,OPEN,,,,
+736,3,SUZUKI,36630-59SOO,5127,Missing wings of checker jig on ECT jig,,PE-BAE (Maintenance),,OPEN,,,,
+737,3,SUZUKI,36630-59SOO,5127,No good high risk of hanger,,PE-FABRICATION,,OPEN,,,,
+738,3,SUZUKI,36630-59SOO,5127, 'No good high risk of hanger,,PE-FABRICATION,,OPEN,,,,
+739,3,SUZUKI,36630-59SOO,5127,'Damaged checksheet holder,,PE-FABRICATION,,OPEN,,,,
+740,2,DAIHATSU,D01L/D94L/D04B/D19D20B/D46D 82141 (Inp 1st Line) ,2111,'NG sub assy wire catcher.,'Request to repair all sub assy wire catcher.,PE-FABRICATION,,OPEN,,,,
+741,3,DAIHATSU,D01L/D94L/D04B/D19D20B/D46D 82141 (Inp 1st Line) ,2111,No provide E-bag,Request to provide E-bag,PRODUCTION,,OPEN,,,,
+742,5,DAIHATSU,D01L/D94L/D04B/D19D20B/D46D 82141 (Inp 1st Line) ,2111,'No connector limit on sub assy tupperbox.,Request to provide connector limit.,PRODUCTION,,OPEN,,,,
+743,6,DAIHATSU,D01L/D94L/D04B/D19D20B/D46D 82141 (Inp 1st Line) ,2111,'NG shikakari label on sub assy.,'Request to repair shikakari label on sub assy.,PE-FABRICATION,,OPEN,,,,
+744,11,DAIHATSU,D01L/D94L/D04B/D19D20B/D46D 82141 (Inp 1st Line) ,2111,NG Component box.,Request to repair NG component box.,PE-FABRICATION,,OPEN,,,,
+745,12,DAIHATSU,D01L/D94L/D04B/D19D20B/D46D 82141 (Inp 1st Line) ,2111,NG component box label.,'Request to repair NG component box label.,PE-FABRICATION,,OPEN,,,,
+746,16,DAIHATSU,D01L/D94L/D04B/D19D20B/D46D 82141 (Inp 1st Line) ,2111,'Lacking component label on shiage  component box.,'Label,PE-FABRICATION,,OPEN,,,,
+747,17,DAIHATSU,D01L/D94L/D04B/D19D20B/D46D 82141 (Inp 1st Line) ,2111,'NG Option tape box.,'Option tape Box.,PE-FABRICATION,,OPEN,,,,
+748,19,DAIHATSU,D01L/D94L/D04B/D19D20B/D46D 82141 (Inp 1st Line) ,2111,'NG vinyl cover on option process.,'Request to replace NG Vinyl cover(option process),PE-BAE (ASSY DEV),,OPEN,,,,
+749,21,DAIHATSU,D01L/D94L/D04B/D19D20B/D46D 82141 (Inp 1st Line) ,2111,Excess option Tape box.,Request to removed Excess Option Box.,PE-FABRICATION,,OPEN,,,,
+750,22,DAIHATSU,D01L/D94L/D04B/D19D20B/D46D 82141 (Inp 1st Line) ,2111,'UnusedTupperbox label(Option),'Request to  removed excess tupperbox.,PE-FABRICATION,,OPEN,,,,
+751,23,DAIHATSU,D01L/D94L/D04B/D19D20B/D46D 82141 (Inp 1st Line) ,2111,Lacking Sequence No. (Option),'Request to provide sequence.,ME-NPI (MPPD),,OPEN,,,,
+752,24,DAIHATSU,D01L/D94L/D04B/D19D20B/D46D 82141 (Inp 1st Line) ,2111,'No connector sample picture on sub assy,Request to provide the sample picture ,PE-FABRICATION,,OPEN,,,,
+753,25,DAIHATSU,D01L/D94L/D04B/D19D20B/D46D 82141 (Inp 1st Line) ,2111,'Faded indication of manpower division,Request to provide manpower division,QA-Final ,,OPEN,,,,
+754,1,HONDA,32RA,3114,'No sound on sub pc 3 ,'No sound on sub pc 3 ,PE-EQ-FINAL,ANGELICA,OPEN,,,,
+755,2,HONDA,32RA,3114,'NG pulling on sub pc ,'NG pulling on sub pc ,PE-EQ-FINAL,ANGELICA,OPEN,,,,
+756,3,HONDA,32RA,3114,'Excess Connector on tupper box ,'Excess Connector on tupper box ,PRODUCTION,Lovely/Queen ,OPEN,,,,
+757,4,HONDA,32RA,3114,'Foreign material on tupper box ,'Foreign material on tupper box ,PRODUCTION,Lovely/Queen ,OPEN,,,,
+758,5,HONDA,32RA,3114,'No X label card for not applicable product ,'No X label card for not applicable product ,PRODUCTION,Lovely/Queen ,OPEN,,,,
+759,6,HONDA,32RA,3114,Gap on downspout ,Gap on downspout ,PE-FABRICATION,Tweety ,OPEN,,,,
+760,7,HONDA,32RA,3114,'Lacking S pin on assy ,'Lacking S pin on assy ,PE-BAE (ASSY DEV),IVAN,OPEN,,,,
+761,8,HONDA,32RA,3114,'Not Allign Branch 16 ,'Not Allign Branch 16 ,PE-BAE (ASSY DEV),IVAN,OPEN,,,,
+762,9,HONDA,32RA,3114,'Decrease Height jig no.48,'Decrease Height jig no.48,PE-BAE (ASSY DEV),IVAN,OPEN,,,,
+763,10,HONDA,32RA,3114,'Increase height of clamp no.5,'Increase height of clamp no.5,PE-BAE (ASSY DEV),IVAN,OPEN,,,,
+764,11,HONDA,32RA,3114,'Component box was not put upside down on last station,Copmonent box was not put upside down on last station ,PRODUCTION,Lovely/Queen ,OPEN,,,,
+765,12,HONDA,32RA,3114,No indication of Maximum sets of harness on hanger after assy ,No indication of Maximum sets of harness on hanger after assy ,QA-Final ,,OPEN,,,,
+766,13,HONDA,32RA,3114,'Associate do not know where to start inspecting again one they are interrupted ,'Associate do not know where to start inspecting again one they are interrupted ,QA-Final ,,OPEN,,,,
+767,13,HONDA,32RA,3114,'Associate do not know where to start inspecting again one they are interrupted ,Associate do not know where to start inspecting again one they are interrupted ,QA-Final ,,OPEN,,,,
+768,3,DAIHATSU,"D01L/D04B/D18B/
+D96A/D19B/D20B",2112,'No provide E-bag,'Request to provide E-bag,PRODUCTION,,OPEN,,,,
+769,8,DAIHATSU,"D01L/D04B/D18B/
+D96A/D19B/D20B",2112,'NG Shikakri Label,'Request to Fabrication personnel to repair NG Shikakari label,PE-FABRICATION,,OPEN,,,,
+770,9,DAIHATSU,"D01L/D04B/D18B/
+D96A/D19B/D20B",2112,'No Connector Picture on sub assy.,'Request to provide connector picture,PE-FABRICATION,,OPEN,,,,
+771,10,DAIHATSU,"D01L/D04B/D18B/
+D96A/D19B/D20B",2112,"Missing  accessories on assy boards.(pin)
+Tanmatsu not  same color.",'Tanmatsu/Pin,PE-BAE (Maintenance),,OPEN,,,,
+772,11,DAIHATSU,"D01L/D04B/D18B/
+D96A/D19B/D20B",2112,'Short Dimension Branch 10,'Request AME to repair the affected branch.,PE-BAE (Maintenance),,OPEN,,,,
+773,13,DAIHATSU,"D01L/D04B/D18B/
+D96A/D19B/D20B",2112,'Lacking component label on shiage  component box.,'Label,PE-FABRICATION,,OPEN,,,,
+774,15,DAIHATSU,"D01L/D04B/D18B/
+D96A/D19B/D20B",2112,'NG vinyl cover on board 4.,'Request to provide Vinyl Cover.,PE-FABRICATION,,OPEN,,,,
+775,16,DAIHATSU,"D01L/D04B/D18B/
+D96A/D19B/D20B",2112,'NG Card Holder(AssyBoards),'Request for the replacement of NG   Card Holder.,PRODUCTION,,OPEN,,,,
+776,18,DAIHATSU,"D01L/D04B/D18B/
+D96A/D19B/D20B",2112,"Loose SPJ/Stucked SPJ
+ on board 1.",Request to repair NG SPJ,PE-BAE (Maintenance),,OPEN,,,,
+777,19,DAIHATSU,"D01L/D04B/D18B/
+D96A/D19B/D20B",2112,'No Good Condition of Downspout(With Gap),Request to repair NG Downspout,PE-FABRICATION,,OPEN,,,,
+778,20,DAIHATSU,"D01L/D04B/D18B/
+D96A/D19B/D20B",2112,'No connector sample picture on sub assy,Request to provide the sample picture ,PE-FABRICATION,,OPEN,,,,
+779,21,DAIHATSU,"D01L/D04B/D18B/
+D96A/D19B/D20B",2112,'Almost similar shikakari beside each other on Sub,Request to separate location of almost similar shikakari,PE-FABRICATION,,OPEN,,,,
+780,1,HONDA,32RA,3115,'Tupper Box Limit on sub assy ,'Tupper Box Limit ,PE-FABRICATION,TWEETY ,OPEN,27-Sep-23,,,
+781,2,HONDA,32RA,3115,'Foreign Material on  Tupper Boxsub assy process ,'Foreign Material on  Tupper Boxsub assy process ,PRODUCTION,Lovely/Lorena,OPEN,20-Sep-23,,,
+782,2,HONDA,32RA,3115,'Foreign Material on  Tupper Boxsub assy process ,'Foreign Material on  Tupper Boxsub assy process ,PRODUCTION,Lovely/Lorena,OPEN,20-Sep-23,,,
+783,3,HONDA,32RA,3115,'Damaged connector tray( Fabrication used carton for connector tray),'Changed connector tray ,PRODUCTION,Lovely/Lorena,OPEN,3-Oct-23,,,
+784,5,HONDA,32RA,3115,'NG pulling on sub assy ,'Chek the pulling on sub assy connector jig,PE-EQ-FINAL,Lerry/Angelica ,OPEN,22-Sep-23,,,
+785,6,HONDA,32RA,3115,'Gap on downspout on sub assy proccess ,'Gap on downspout,PRODUCTION,Lovely/Lorena ,OPEN,20-Sep-23,,,
+786,7,HONDA,32RA,3115,'No good 5's on sub assy ,'5's on sub assy ,PRODUCTION,Lovely/Lorena ,OPEN,20-Sep-23,,,
+787,8,HONDA,32RA,3115,'Extension hanger for for cord ,'Extension catcher,PE-FABRICATION,Twetty ,OPEN,23-Sep-23,,,
+788,9,HONDA,32RA,3115,'Pen Holder on sub assy ,'Pen Holder,PE-FABRICATION,Twetty ,OPEN,23-Sep-23,,,
+789,10,HONDA,32RA,3115,'Divison on hanger for layout ,'Divison on hanger ,PE-FABRICATION,Twetty ,OPEN,,,,
+790,11,HONDA,32RA,3115,'NG sample clamp on assy board (NA-157-PK-B),'NG sample clamp on assy board ,PE-FABRICATION,Twetty ,OPEN,,,,
+791,12,HONDA,32RA,3115,'No posted OI on grommet ,'No posted OI on assy ,ME-NPI (MPPD),Mhean,OPEN,26-Sep-23,,,
+792,13,HONDA,32RA,3115,'No posted OI on partname (Airbag) ,'No posted OI on assy ,ME-NPI (MPPD),Mhean,OPEN,26-Sep-23,,,
+793,15,HONDA,32RA,3115,'incomplete connector label on sub assy process (Sub 3) ,'Connector label incomplete ,PE-FABRICATION,,OPEN,,,,
+794,17,HONDA,32RA,3115,'Loose Srew on ect ,'Loose Screw ,PE-BAE (Maintenance),SHAWN ,OPEN,,,,
+795,17,HONDA,32RA,3115,'Loose Srew on ect ,'Loose Screw ,PE-BAE (Maintenance),SHAWN ,OPEN,,,,
+796,5,SUZUKI,YOC ,5121,'Unfix Bukumi  Board 2,'Fix the bukumi board,PE-BAE (Maintenance),,,,,,
+797,20,SUZUKI,YOC ,5121,'Number of Manpower in inspection is not tally in process design,"1. Confirmation of process design
+2. Follow manpower count in inspection process",PRODUCTION,,,,,,
+798,2,HONDA,32RA,3130,'Good and No Good condition of grommet was not indicated on OI,'Request to nclude on OI the good and no good condition of grommet.,ME-NPI (MPPD),,,26-Jun-23,,,
+799,11,HONDA,32RA,3130,'Lacking Spin on Assy Board,'Request to Provide spin on ASSY BOARD,PE-BAE (ASSY DEV),,,26-Jun-23,,,
+800,11,HONDA,32RA,3130,'Lacking Spin on Assy Board,'Request to Provide spin on ASSY BOARD,PE-BAE (ASSY DEV),,,26-Jun-23,,,
+801,1,DAIHATSU,D01LD04B,2119,'Damaged/NG label on tupper box on parts receiving,'Request to provide label on tupper box,PE-FABRICATION,,,,,,
+802,3,DAIHATSU,D01LD04B,2119,'No sample  picture drawing connector on sub assy ,Request to provide the sample picture drawing  connector on sub assy,PE-FABRICATION,,,,,,
+803,5,DAIHATSU,D01LD04B,2119,'No good hanger downspout of sub assy ,'Request to improve the downspout hanger ,PE-FABRICATION,,,,,,
+804,6,DAIHATSU,D01LD04B,2119,'No provided shikakari label on sub assy,'Request to provide shikakari label,PE-FABRICATION,,,,,,
+805,9,DAIHATSU,D01LD04B,2119,'No connector label on tupper box,'Request to provide connector label,PE-FABRICATION,,,,,,
+806,12,DAIHATSU,D01LD04B,2119,'Incomplete details on grommet machine,'Provide complete details,PE-EQ-FINAL,Lerry/Angelica ,,,,,
+807,13,DAIHATSU,D01LD04B,2119,'No provided OI on assy board for grommet taping,'Request to provide OI to all assy boards,ME-NPI (MPPD),,,,,,
+808,14,DAIHATSU,D01LD04B,2119,'Missing pin on clamp jig on assy board ,'Request to provide pin ,PE-BAE (Maintenance),,,,,,
+809,15,DAIHATSU,D01LD04B,2119,'No provided e-bag,'Request to provide e-bag,PE-FABRICATION,,,5-Aug-23,,,
+810,18,DAIHATSU,D01LD04B,2119,'No provided sequence on Option board,'Provide the sequence label on Option process,ME-NPI (MPPD),,,,,,
+811,19,DAIHATSU,D01LD04B,2119,'NG option tape box,'Request to repair option tape box,PE-FABRICATION,,,,,,
+812,3,DAIHATSU,D92A,2132,'No checker wings on jigs at ECT,'Request to provide wings of checker jig,PE-BAE (ECT),,,,,,
+813,4,DAIHATSU,D92A,2132,'Worn out OI on option process,'Request to change the OI,ME-NPI (MPPD),,,,,,
+814,5,DAIHATSU,D92A,2132,'Missing option matrix,'Request to provide option matrix,ME-NPI (MPPD),,,,,,
+815,6,DAIHATSU,D92A,2132,'Damaged option box,'Request to repair/fix the option matrix box and sequence,PE-FABRICATION,,,,,,
+816,8,DAIHATSU,D92A,2132,'No connector sample picture on sub assy,'Request to provide the sample picture ,PE-FABRICATION,,,,,,
+817,11,DAIHATSU,D92A,2132,"'High tolerance on pulling stregth of sub PC jig, must be in median",'Request to set the N in median tolerance,PE-EQ-FINAL,Lerry/Angelica ,,,,,
+818,12,DAIHATSU,D92A,2132,'NG VO holder on sub assy 5 and 7,'Request to repair VO holder on sub-assy 5 and 7,PE-FABRICATION,7/31/2023,,,,,
+819,13,DAIHATSU,D92A,2132,'No posted OI of grommet on bukumi process,'Request to provide OI of grommet,ME-NPI (MPPD),7/31/2023,,,,,
+820,14,DAIHATSU,D92A,2132,'No provide E-bag,'Request to provide OI of grommet,ME-NPI (MPPD),8/18/2023,,,,,
+821,19,DAIHATSU,D92A,2132,'NG connector reference no. 32,'Request to change correct connector reference for no. 32,ME-NPI (MPPD),8/5/2023,,,,,
+822,20,DAIHATSU,D92A,2132,"'No vinyl cover at assy board no. 2, 6, 7",'Request to provide vinyl cover,PE-BAE (Maintenance),,,,,,
+823,21,DAIHATSU,D92A,2132,'Worn Out OI on packing,'Request to change the OI,ME-NPI (MPPD),,,,,,
+824,22,DAIHATSU,D92A,2132,'No provided vinyl cover at board,'Request to provide vinyl cover on board (packing),PE-BAE (Maintenance),,,,,,
+825,23,DAIHATSU,D92A,2132,'Damaged Component box,'Request to repair component box,PE-FABRICATION,,,,,,
+826,24,DAIHATSU,D92A,2132,'With OI for gray polybox,Confirm if can remove OI of gray polybox,QA-Final ,,,,,,
+827,1,HONDA,3TOA,3158,'Missing lockset,'Lockset,PE-BAE (Maintenance),,,,,,
+828,4,HONDA,3TOA,3158,'No available connector label for tupper box,,PE-FABRICATION,,,,,,
+829,5,HONDA,3TOA,3158,'NG connector label,,PE-FABRICATION,,,,,,
+830,6,HONDA,3TOA,3158,'Not tally of clamp beam versus matrix on parts ,,PE-BAE (Maintenance),,,,,,
+831,12,HONDA,3TOA,3158,'Same connector but different color on Sub 6. Need to separate and fix location of tupperbox. There is also no color sensor for the similar connectors.,,PE-BAE (Maintenance),,,,,,
+832,14,HONDA,3TOA,3158,'Label of some shikakari is not tally with the actual,,PRODUCTION,,,,,,
+833,15,HONDA,3TOA,3158,'No rubber mat for grommet near connector 124.,,PE-BAE (Maintenance),,,,,,
+834,16,HONDA,3TOA,3158,'NG drawing near connector 95.,,ME-NPI (MPPD),,,,,,
+835,17,HONDA,3TOA,3158,'Lacking checker jig wings,,PE-BAE (Maintenance),,,,,,
+836,18,HONDA,3TOA,3158,Faded marking on alignment jig,Replacement of ink on alignment jig,PE-EQ-FINAL,Lerry/Angelica ,,,,,
+837,19,HONDA,3TOA,3158,'No daily check sheet of alignment jig ,,PRODUCTION,,,,,,
+838,20,HONDA,3TOA,3158,'No clamp cover,,PE-FABRICATION,,,,,,
+839,1,MAZDA,Inpanel J78-030,1114,'Monitoring of received parts,'Monitor received parts,PRODUCTION,,,,,,
+840,2,MAZDA,Inpanel J78-030,1114,'Request to move the storage box upper than the tsumusen area ,'Request to move the storage box upper than the tsumusen area ,PE-FABRICATION,,,,,,
+841,3,MAZDA,Inpanel J78-030,1114,'Request to have a clearer upper line limit,'Provide upper line limit,PE-FABRICATION,,,,,,
+842,4,MAZDA,Inpanel J78-030,1114,'Request to remove excess connectors on tupper boxes,'Re-orient associate that connectors should not be overflowing on tupperbox.,PRODUCTION,,,,,,
+843,5,MAZDA,Inpanel J78-030,1114,'Request for running product label,'Provide running product card label,PRODUCTION,,,,,,
+844,6,MAZDA,Inpanel J78-030,1114,'Request for associate's re-orientation regarding the bending frequency,'Re-orient associate regarding bending frequency,PRODUCTION,,,,,,
+845,7,MAZDA,Inpanel J78-030,1114,'Request for verification of jig measurement,,PE-BAE (ASSY DEV),,,,,,
+846,8,MAZDA,Inpanel J78-030,1114,'Request to provide OI for C Group,' Provide OI,ME-NPI (MPPD),,,,,,
+847,9,MAZDA,Inpanel J78-030,1114,'Request for common jigs replacement,,PE-BAE (ASSY DEV),,,,,,
+848,2,SUBARU,GC7/GC7Y,7113,'Appearance of connector did not check properly,'Re-orient all tsumesen associate on proper  checking of connector,PRODUCTION,,,,,,
+849,4,SUBARU,GC7/GC7Y,7113,'No good 5'S of wire catcher,'Re-orient all members to conduct 5'S,PRODUCTION,,,,,,
+850,5,SUBARU,GC7/GC7Y,7113,'NG wire catcher on Sub assy,'Request to repair and change all wire catcher on sub assy,PE-FABRICATION,,,,,,
+851,6,SUBARU,GC7/GC7Y,7113,'NG connector picture at sub assy,'Request to provide connector picture,PE-FABRICATION,,,,,,
+852,7,SUBARU,GC7/GC7Y,7113,'Not updated running product at PC1,'Re-orient all PIC including to members to always check the label at their area,PRODUCTION,,,,,,
+853,9,SUBARU,GC7/GC7Y,7113,'Orient all members regarding fallen and excess parts,'Re-orient all members on proper treatment of fallen and excess parts,PRODUCTION,,,,,,
+854,10,SUBARU,GC7/GC7Y,7113,'Lacking bendable jig cover ,'Request to provide bendable jig cover,PE-BAE (Maintenance),,,,,,
+855,12,SUBARU,GC7/GC7Y,7113,Members are not using the indication of tape holder,'Re-orient all members to use the proper indication of tape holder on assy board,PE-BAE (Maintenance),,,,,,
+856,15,SUBARU,GC7/GC7Y,7113,'No good 5'S of Tupper box,'Re-orient all members to conduct 5'S,PRODUCTION,,,,,,
+857,16,SUBARU,GC7/GC7Y,7113,'Associate is not following the standard process regarding parts left on component box.,'Re-orient associate regarding in not following the standard process regarding parts left on component box.,PRODUCTION,,,,,,
+858,17,SUBARU,GC7/GC7Y,7113,'Color of SPIN is not tally on actual connectors/lacking ,'Request to change color of SPIN,PE-BAE (Maintenance),,,,,,
+859,18,SUBARU,GC7/GC7Y,7113,'Have different color of tape,'Provide reference jig,PE-BAE (ASSY DEV),,,,,,
+860,19,SUBARU,GC7/GC7Y,7113,'Associate is not following the standard process of unloading harness. ,'Re-orient associate about not following the standard process of unloading harness. ,PRODUCTION,,,,,,
+861,20,SUBARU,GC7/GC7Y,7113,'Associate is not checking the nameplate properly.,'Re-orient associate about checking the nameplate properly,PRODUCTION,,,,,,
