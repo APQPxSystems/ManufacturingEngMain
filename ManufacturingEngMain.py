@@ -60,6 +60,7 @@ if not check_password():
 # Automation App Selection
 automation_app = st.selectbox("Select an automation app.", ["Home",
                                                             "PDCA Summary Viewer",
+                                                            "FMEA PDCA Viewer",
                                                             "Sub Balancing", 
                                                             "Kigyo Generator",
                                                             "FMEA and QCP Matrix Date Calculator"])
@@ -438,3 +439,85 @@ if automation_app == "FMEA and QCP Matrix Date Calculator":
         # Effectivity Date
         result_date = subtract_weekdays(start_date, 3)
         st.subheader(f"Effectivty Date: {result_date.strftime('%Y-%m-%d')}")
+
+#FMEA PDCA Viewer
+if automation_app == "FMEA PDCA Viewer":
+    # App Title and Description
+    st.title("FMEA PDCA Viewer")
+
+    # Read FMEA PDCA Excel File
+    fmea_pdca_raw = pd.read_csv("FMEA PDCA\FMEA_PDCA.csv", encoding="ISO-8859-1")
+
+    # Drop Unnecessary Columns
+    fmea_pdca_dropped_cols = fmea_pdca_raw[["Car Maker", "Car Model", "Line", "Findings",
+                                            "Items to Check/Action", "Department",
+                                            "Person in Charge", "Status", "Target Date"]]
+
+    # Convert Line Column to String
+    fmea_pdca_dropped_cols["Line"] = fmea_pdca_dropped_cols["Line"].astype(str)
+
+    # First Graph
+    # Open Items of Each Car Maker per Department/ Section
+    # First Altair Bar Chart -- Per Car Maker
+    df_car_maker_chart = pd.DataFrame(fmea_pdca_dropped_cols[fmea_pdca_dropped_cols["Status"]=="OPEN"])
+    car_maker_chart = alt.Chart(df_car_maker_chart).mark_bar().encode(
+        x=alt.X('Car Maker:N', title='Car Maker'),
+        y=alt.Y('count():Q', title='Count'),
+        color='Department:N'
+    ).properties(
+        title="Open Items of Each Department per Car Maker"
+    )
+    st.altair_chart(car_maker_chart, use_container_width=True)
+    st.write("------------------------------")
+
+    # Second Graph
+    # Open Items of Each Department/ Section on Chosen Car Maker
+    # Select Car Maker and Status
+    selected_car_maker = st.selectbox("Select Car Maker", fmea_pdca_dropped_cols["Car Maker"].unique())
+
+    # Filter Dataframe Based on Selected Car Maker
+    df_car_maker_filter = fmea_pdca_dropped_cols[(fmea_pdca_dropped_cols["Car Maker"]==selected_car_maker)]
+    # Second Altair Bar Chart -- Per Car Model
+    df_car_model_chart = pd.DataFrame(df_car_maker_filter[df_car_maker_filter["Status"]=="OPEN"])
+    car_model_chart = alt.Chart(df_car_model_chart).mark_bar().encode(
+        x=alt.X('Line:N', title='Line'),
+        y=alt.Y('count():Q', title='Count'),
+        color='Department:N'
+    ).properties(
+        title=f"Open Items of Each Department per Car Model on {selected_car_maker}"
+    )
+    st.altair_chart(car_model_chart, use_container_width=True)
+    st.write("------------------------------")
+
+    # Selection of Car Model and Department/ Section
+    line_col, status_col, department_col = st.columns([1,1,1])
+    with line_col:
+        selected_line = st.selectbox("Select Line No. ", df_car_maker_filter["Line"].unique())
+    with status_col:
+        selected_status = st.selectbox("Select Status ", df_car_maker_filter["Status"].unique())
+    with department_col:
+        selected_department = st.selectbox("Select Department/ Section ", df_car_maker_filter["Department"].unique())
+
+    # Filter Dataframe Based on Line No., Status, and Department
+    df_final_filter = df_car_maker_filter[(df_car_maker_filter["Line"]==selected_line)
+                                        & (df_car_maker_filter["Status"]==selected_status)
+                                        & (df_car_maker_filter["Department"]==selected_department)]
+
+    pdca_count = len(df_final_filter["Findings"])
+    # Display PDCA File Based on the Selection
+    st.subheader(f"{selected_department} has {str(pdca_count)} {selected_status} Item/s on {selected_car_maker} Line {selected_line}")
+    st.write(df_final_filter)
+
+    # Download Button for Final Generated PDCA
+    @st.cache_data
+    def convert_df(df):
+        return df.to_csv().encode("utf-8")
+
+    csv = convert_df(df_final_filter)
+
+    st.download_button(
+        label=f"Download {selected_department} FMEA PDCA {selected_status} Items on Line {selected_line}",
+        data=csv,
+        file_name=f"Line {selected_line} FMEA PDCA {selected_status} Items - {selected_department}.csv",
+        mime="text/csv"
+    )
