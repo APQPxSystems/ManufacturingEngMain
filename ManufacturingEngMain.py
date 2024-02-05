@@ -502,7 +502,6 @@ if automation_app == "FMEA PDCA Viewer":
         st.altair_chart(car_maker_chart, use_container_width=True)
     
     with car_maker_col1:
-        st.subheader("Completion Rate")
         car_maker_closed = fmea_pdca_dropped_cols[fmea_pdca_dropped_cols["Status"]=="CLOSED"]
         car_maker_completion_rates = []
 
