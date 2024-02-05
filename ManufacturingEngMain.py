@@ -34,7 +34,7 @@ credential_col1, credential_col2 = st.columns([2,1])
 with credential_col1:
     user_role = st.selectbox("Select your department.", ["Manufacturing Engineering",
                                                         "Production",
-                                                        "Board Assembly Engineering",
+                                                        "Production Engineering",
                                                         "Quality Assurance"])
 with credential_col2:
     app_key = st.text_input("Enter credential key.")
@@ -79,7 +79,7 @@ elif user_role == "Production" and app_key == "SE24":
     automation_app = st.selectbox("Select an automation app.", ["Home",
                                                                 "PDCA Summary Viewer",
                                                                 "FMEA PDCA Viewer"])
-elif user_role == "Board Assembly Engineering" and app_key == "SE24":
+elif user_role == "Production Engineering" and app_key == "SE24":
     automation_app = st.selectbox("Select an automation app.", ["Home",
                                                                 "PDCA Summary Viewer",
                                                                 "FMEA PDCA Viewer"])
