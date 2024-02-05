@@ -474,7 +474,7 @@ if automation_app == "FMEA PDCA Viewer":
     st.title("FMEA PDCA Viewer")
 
     # Read FMEA PDCA Excel File
-    fmea_pdca_raw = pd.read_csv("FMEA_PDCA\FMEA_PDCA.csv")
+    fmea_pdca_raw = pd.read_excel("FMEA_PDCA\FMEA_PDCA.xlsx")
 
     # Drop Unnecessary Columns
     fmea_pdca_dropped_cols = fmea_pdca_raw[["Car Maker", "Car Model", "Line", "Findings",
