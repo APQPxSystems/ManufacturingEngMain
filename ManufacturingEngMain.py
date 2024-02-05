@@ -104,7 +104,7 @@ if automation_app == "PDCA Summary Viewer":
     st.title("PDCA Summary Viewer")
 
     # Read Excel File
-    pdca_file = pd.read_excel("PDCA.xlsx")
+    pdca_file = pd.read_excel("PDCA/PDCA.xlsx")
 
     # Altair Bar Chart - All Models and per Department
     general_df_open = pd.DataFrame(pdca_file[pdca_file["Status"]=="Open"])
