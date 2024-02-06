@@ -474,7 +474,7 @@ if automation_app == "FMEA PDCA Viewer":
     st.title("FMEA PDCA Viewer")
 
     # Read FMEA PDCA Excel File
-    fmea_pdca_raw = pd.read_csv("PDCA/FMEA.csv", encoding="ISO-8859-1")
+    fmea_pdca_raw = pd.read_csv("FMEA PDCA\FMEA_PDCA.csv", encoding="ISO-8859-1")
 
     # Drop Unnecessary Columns
     fmea_pdca_dropped_cols = fmea_pdca_raw[["Car Maker", "Car Model", "Line", "Findings",
@@ -557,13 +557,14 @@ if automation_app == "FMEA PDCA Viewer":
         & (df_car_maker_filter["Status"] == selected_status)
         & (df_car_maker_filter["Department"] == selected_department)
     ]
+    df_final_filter["Today"] = date.today
 
     # Display PDCA File Based on the Selection with Highlighting
     st.subheader(
         f"{selected_department} has {str(len(df_final_filter))} {selected_status} Item/s on {selected_car_maker} Line {selected_line}")
     df_final_filter_styled = df_final_filter.style.apply(
-        lambda row: ['background-color: yellow' if row['Status'] == 'OPEN' and row['Target Date'].date() < date.today() else '' for _
-                    in row],
+        lambda row: ['background-color: yellow' if row['Status'] == 'OPEN' and (pd.isna(row['Target Date']) or row['Target Date'].date() < date.today()) else
+                    'background-color: lightcoral' if pd.isna(row['Target Date']) else '' for _ in row],
         axis=1
     )
     st.dataframe(df_final_filter_styled)
