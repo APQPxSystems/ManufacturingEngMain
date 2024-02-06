@@ -572,8 +572,6 @@ if automation_app == "FMEA PDCA Viewer":
     st.title(f"{len(df_delayed_items)} {selected_status} Item/s are DELAYED!")
 
     # Display PDCA File Based on the Selection with Highlighting
-    st.subheader(
-        f"{selected_department} has {str(len(df_final_filter))} {selected_status} Item/s on {selected_car_maker} Line {selected_line}")
     df_final_filter_styled = df_final_filter.style.apply(
         lambda row: ['background-color: red' if row['Status'] == 'OPEN' and (pd.isna(row['Target Date']) or row['Target Date'].date() < date.today()) else
                     'background-color: red' if pd.isna(row['Target Date']) else '' for _ in row],
