@@ -563,7 +563,7 @@ if automation_app == "FMEA PDCA Viewer":
     st.subheader(
         f"{selected_department} has {str(len(df_final_filter))} {selected_status} Item/s on {selected_car_maker} Line {selected_line}")
     df_final_filter_styled = df_final_filter.style.apply(
-        lambda row: ['background-color: yellow' if row['Status'] == 'OPEN' and (pd.isna(row['Target Date']) or row['Target Date'].date() < date.today()) else
+        lambda row: ['background-color: blue' if row['Status'] == 'OPEN' and (pd.isna(row['Target Date']) or row['Target Date'].date() < date.today()) else
                     'background-color: lightcoral' if pd.isna(row['Target Date']) else '' for _ in row],
         axis=1
     )
