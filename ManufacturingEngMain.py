@@ -557,7 +557,19 @@ if automation_app == "FMEA PDCA Viewer":
         & (df_car_maker_filter["Status"] == selected_status)
         & (df_car_maker_filter["Department"] == selected_department)
     ]
-    df_final_filter["Today"] = date.today
+
+      # Display PDCA File Based on the Selection with Highlighting
+    st.subheader(
+        f"{selected_department} has {str(len(df_final_filter))} {selected_status} Item/s on {selected_car_maker} Line {selected_line}")
+    
+        # Filter data for delayed items with OPEN status and Target Date less than today
+    df_delayed_items = df_final_filter[
+        (df_final_filter["Status"] == "OPEN") &
+        ((pd.to_datetime(df_final_filter["Target Date"]) < datetime.today()) | df_final_filter["Target Date"].isnull())
+    ]
+
+    # Display count of delayed items
+    st.title(f"{len(df_delayed_items)} {selected_status} Item/s are DELAYED!")
 
     # Display PDCA File Based on the Selection with Highlighting
     st.subheader(
