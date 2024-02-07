@@ -88,8 +88,8 @@ elif user_role == "Quality Assurance" and app_key == "SE24":
                                                                 "PDCA Summary Viewer",
                                                                 "FMEA PDCA Viewer"])
 else:
-    st.subheader("Department/ Credential Key Required")
-    st.write("Please enter the credential key that matches with your chosen department.")
+    st.subheader("Department/ Department Key Required")
+    st.write("Please enter the department key that matches with your chosen department.")
     automation_app = ""
 
 st.write("--------------------------------------------------------")
