@@ -37,7 +37,7 @@ with credential_col1:
                                                         "Production Engineering",
                                                         "Quality Assurance"])
 with credential_col2:
-    app_key = st.text_input("Enter credential key.")
+    app_key = st.text_input("Enter department key.")
 
 # def check_password():
 #     """Returns `True` if the user had the correct password."""
