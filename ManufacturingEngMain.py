@@ -201,11 +201,31 @@ if automation_app == "Sub Balancing":
       # Calculate grand total
       grand_total = len(raw_data3)
   
-      # Convert grouped_data to a list
-      grouped_data_list = list(grouped_data)
+      # Create a BytesIO object to store the Excel file
+      excel_buffer_all = BytesIO()
+  
+      # Use pandas to_excel method to write all grouped_data to the BytesIO object
+      with pd.ExcelWriter(excel_buffer_all, engine='openpyxl') as writer_all:
+          for sub_no, group_data in grouped_data:
+              # Write each group_data to a separate sheet in the Excel file
+              group_data.to_excel(writer_all, sheet_name=f"SubNo_{sub_no}", index=False)
+  
+      # Add a download button for the entire Excel file
+      download_all_button = st.button("Download All Generated Data")
+      if download_all_button:
+          # Set the cursor to the beginning of the BytesIO object
+          excel_buffer_all.seek(0)
+  
+          # Add a download link for the entire Excel file
+          st.download_button(
+              label="Download All Generated Data as Excel File",
+              data=excel_buffer_all,
+              file_name="All_Grouped_Data.xlsx",
+              key="download_button_all"
+          )
   
       # Display tables for each "Sub No"
-      for sub_no, group_data in grouped_data_list:
+      for sub_no, group_data in grouped_data:
           count_wire_no = len(group_data)
           percent_of_grand_total = (count_wire_no / grand_total) * 100
           st.subheader(f"Sub No: {sub_no} - Wire Count: {count_wire_no} ({percent_of_grand_total:.2f}% of Total Insertions)")
@@ -219,41 +239,19 @@ if automation_app == "Sub Balancing":
               excel_buffer = BytesIO()
   
               # Use pandas to_excel method to write the group_data to the BytesIO object
-              with pd.ExcelWriter(excel_buffer, engine='xlsxwriter') as writer:
+              with pd.ExcelWriter(excel_buffer, engine='openpyxl') as writer:
                   group_data.to_excel(writer, sheet_name=f"SubNo_{sub_no}", index=False)
   
               # Set the cursor to the beginning of the BytesIO object
               excel_buffer.seek(0)
   
-              # Add a download link for the Excel file
+              # Add a download link for each sheet in the Excel file
               st.download_button(
                   label=f"Download SubNo {sub_no} Data as Excel File",
                   data=excel_buffer,
                   file_name=f"SubNo_{sub_no}_Data.xlsx",
                   key=f"download_button_{sub_no}"
               )
-  
-  # Add a download button for all grouped data
-  download_all_button = st.button("Download All Generated Data")
-  if download_all_button:
-      # Create a BytesIO object to store the Excel file
-      excel_buffer_all = BytesIO()
-  
-      # Use pandas to_excel method to write all grouped_data to the BytesIO object
-      with pd.ExcelWriter(excel_buffer_all, engine='xlsxwriter') as writer_all:
-          for sub_no, group_data in grouped_data_list:
-              group_data.to_excel(writer_all, sheet_name=f"SubNo_{sub_no}", index=False)
-  
-      # Set the cursor to the beginning of the BytesIO object
-      excel_buffer_all.seek(0)
-  
-      # Add a download link for the Excel file
-      st.download_button(
-          label="Download All Generated Data as Excel File",
-          data=excel_buffer_all,
-          file_name="All_Grouped_Data.xlsx",
-          key="download_button_all"
-      )
 
 # Kigyo Calculator
 if automation_app == "Kigyo Generator":
