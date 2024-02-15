@@ -230,28 +230,7 @@ if automation_app == "Sub Balancing":
           percent_of_grand_total = (count_wire_no / grand_total) * 100
           st.subheader(f"Sub No: {sub_no} - Wire Count: {count_wire_no} ({percent_of_grand_total:.2f}% of Total Insertions)")
           st.write(group_data)
-  
-          # Add a download button for each grouped data
           st.write("------------------------------")
-          download_button = st.button(f"Download SubNo {sub_no} Data")
-          if download_button:
-              # Create a BytesIO object to store the Excel file
-              excel_buffer = BytesIO()
-  
-              # Use pandas to_excel method to write the group_data to the BytesIO object
-              with pd.ExcelWriter(excel_buffer, engine='openpyxl') as writer:
-                  group_data.to_excel(writer, sheet_name=f"SubNo_{sub_no}", index=False)
-  
-              # Set the cursor to the beginning of the BytesIO object
-              excel_buffer.seek(0)
-  
-              # Add a download link for each sheet in the Excel file
-              st.download_button(
-                  label=f"Download SubNo {sub_no} Data as Excel File",
-                  data=excel_buffer,
-                  file_name=f"SubNo_{sub_no}_Data.xlsx",
-                  key=f"download_button_{sub_no}"
-              )
 
 # Kigyo Calculator
 if automation_app == "Kigyo Generator":
