@@ -470,125 +470,108 @@ if automation_app == "FMEA and QCP Matrix Date Calculator":
 
 #FMEA PDCA Viewer
 if automation_app == "FMEA PDCA Viewer":
-    # App Title and Description
-    st.title("FMEA PDCA Viewer")
+    # Landing Page
+    st.markdown("<h2 style='text-align:center; background-color:#1e6262;'>WELCOME TO FMEA ONLINE!</h2>", unsafe_allow_html=True)
 
     # Read FMEA PDCA Excel File
-    fmea_pdca_raw = pd.read_csv("PDCA/FMEA.csv", encoding="ISO-8859-1")
-
-    # Drop Unnecessary Columns
-    fmea_pdca_dropped_cols = fmea_pdca_raw[["Car Maker", "Car Model", "Line", "Findings",
-                                            "Items to Check/Action", "Department",
-                                            "Person in Charge", "Status", "Target Date"]]
-
-    # Convert Line Column to String
-    fmea_pdca_dropped_cols["Line"] = fmea_pdca_dropped_cols["Line"].astype(str)
-
-    # Convert Target Date to datetime
-    fmea_pdca_dropped_cols["Target Date"] = pd.to_datetime(fmea_pdca_dropped_cols["Target Date"], errors='coerce')
-
-    # Completion Rate per Car Maker and Graph
-    car_maker_col1, car_maker_spacer, car_maker_col2 = st.columns([1.5, 0.1, 5])
-
-    with car_maker_col2:
-        # First Graph
-        # Open Items of Each Car Maker per Department/ Section
-        # First Altair Bar Chart -- Per Car Maker
-        df_car_maker_chart = pd.DataFrame(fmea_pdca_dropped_cols[fmea_pdca_dropped_cols["Status"] == "OPEN"])
-        car_maker_chart = alt.Chart(df_car_maker_chart).mark_bar().encode(
-            x=alt.X('Car Maker:N', title='Car Maker'),
-            y=alt.Y('count():Q', title='Count'),
-            color='Department:N'
-        ).properties(
-            title="Open Items of Each Department per Car Maker"
-        )
-        st.altair_chart(car_maker_chart, use_container_width=True)
-
-    with car_maker_col1:
-        st.subheader("Completion Rate")
-        car_maker_closed = fmea_pdca_dropped_cols[fmea_pdca_dropped_cols["Status"] == "CLOSED"]
-        car_maker_completion_rates = []
-
-        for car_maker in fmea_pdca_dropped_cols["Car Maker"].unique():
-            total_closed_items = car_maker_closed[car_maker_closed["Car Maker"] == car_maker].shape[0]
-            total_items = fmea_pdca_dropped_cols[fmea_pdca_dropped_cols["Car Maker"] == car_maker].shape[0]
-            completion_rate = total_closed_items / total_items if total_items > 0 else 0
-            car_maker_completion_rates.append({
-                'Car Maker': car_maker,
-                'Completion Rate': f"{round(completion_rate * 100, 2)} %"
-            })
-
-        # Display completion rates
-        completion_df = pd.DataFrame(car_maker_completion_rates)
-        st.write(completion_df)
-    st.write("------------------------------")
-
-    # Second Graph
-    # Open Items of Each Department/ Section on Chosen Car Maker
-    # Select Car Maker and Status
-    selected_car_maker = st.selectbox("Select Car Maker", fmea_pdca_dropped_cols["Car Maker"].unique())
-
-    # Filter Dataframe Based on Selected Car Maker
-    df_car_maker_filter = fmea_pdca_dropped_cols[(fmea_pdca_dropped_cols["Car Maker"] == selected_car_maker)]
-    # Second Altair Bar Chart -- Per Car Model
-    df_car_model_chart = pd.DataFrame(df_car_maker_filter[df_car_maker_filter["Status"] == "OPEN"])
-    car_model_chart = alt.Chart(df_car_model_chart).mark_bar().encode(
-        x=alt.X('Line:N', title='Line'),
-        y=alt.Y('count():Q', title='Count'),
-        color='Department:N'
-    ).properties(
-        title=f"Open Items of Each Department per Car Model on {selected_car_maker}"
-    )
-    st.altair_chart(car_model_chart, use_container_width=True)
-    st.write("------------------------------")
-
-    # Selection of Car Model and Department/ Section
-    line_col, status_col, department_col = st.columns([1, 1, 1])
-    with line_col:
-        selected_line = st.selectbox("Select Line No. ", df_car_maker_filter["Line"].unique())
-    with status_col:
-        selected_status = st.selectbox("Select Status ", df_car_maker_filter["Status"].unique())
-    with department_col:
-        selected_department = st.selectbox("Select Department/ Section ", df_car_maker_filter["Department"].unique())
-
-    # Filter Dataframe Based on Line No., Status, and Department
-    df_final_filter = df_car_maker_filter[
-        (df_car_maker_filter["Line"] == selected_line)
-        & (df_car_maker_filter["Status"] == selected_status)
-        & (df_car_maker_filter["Department"] == selected_department)
-    ]
-
-      # Display PDCA File Based on the Selection with Highlighting
-    st.subheader(
-        f"{selected_department} has {str(len(df_final_filter))} {selected_status} Item/s on {selected_car_maker} Line {selected_line}")
+    fmea_pdca = pd.read_csv("FMEA_PDCA.csv", encoding="ISO-8859-1")
     
+    # Drop Unnecessary Columns
+    fmea_pdca = fmea_pdca[["Car Maker", "Car Model", "Line", "Findings",
+                            "Items to Check/Action", "Department",
+                            "Person in Charge", "Status", "Target Date"]]
+        
+    # Convert Line Column to String
+    fmea_pdca["Line"] = fmea_pdca["Line"].astype(str)
+        
+    # Convert Target Date to Datetime
+    fmea_pdca["Target Date"] = pd.to_datetime(fmea_pdca["Target Date"], errors="coerce")
+    
+    department_options = list(fmea_pdca["Department"].unique())
+    
+    department_selection_container = st.container(border=True)
+    with department_selection_container:
+        department = st.selectbox("Please select your department:", department_options)
+    
+    first_part_container = st.container(border=True)
+    with first_part_container:
+        if department != "___________________________":
+            # First Part -- General
+            st.title(f"Here's the FMEA Dashboard for {department}")
+            
+            department_fmea_pdca = fmea_pdca[fmea_pdca["Department"].isin([department])]
+            
+            # First Chart --- Open and Close Items per Car Maker
+            open_count = len(department_fmea_pdca[department_fmea_pdca["Status"]== "OPEN"])
+            st.subheader(f"You have {open_count} OPEN items in total!")
+            first_chart = alt.Chart(department_fmea_pdca).mark_bar().encode(
+                x=alt.X('Car Maker:N', title='Car Maker'),
+                y=alt.Y('count():Q', title='Count'),
+                color='Status:N'
+            ).properties(
+                title = f"{department} Status of Items per Car Maker"
+            )
+            st.altair_chart(first_chart, use_container_width=True)
+        
+    car_maker_container = st.container(border=True)
+    with car_maker_container:
+        # Second Part -- Filter by Car Maker
+        car_maker = st.selectbox("Select a car maker:", department_fmea_pdca["Car Maker"].unique())
+        
+        # Filter by Car Maker
+        car_maker_department_fmea_pdca = department_fmea_pdca[department_fmea_pdca["Car Maker"].isin([car_maker])]
+        
+    second_part_container = st.container(border=True)
+    with second_part_container:
+        # Second Chart --- Status of Each Department per Line
+        open_count_2 = len(car_maker_department_fmea_pdca[car_maker_department_fmea_pdca["Status"]== "OPEN"])
+        st.subheader(f"You have {open_count_2} OPEN items in {car_maker}!")
+        second_chart = alt.Chart(car_maker_department_fmea_pdca).mark_bar().encode(
+            x=alt.X('Line:N', title='Line'),
+            y=alt.Y('count():Q', title='Count'),
+            color='Status:N'
+        ).properties(
+            title = f"{department} Status of Items per Line in {car_maker}"
+        )
+        st.altair_chart(second_chart, use_container_width=True)
+        
+    third_part_container = st.container(border=True)
+    with third_part_container:
+        # Third Part --- Filter by Line
+        line = st.selectbox("Select line:", car_maker_department_fmea_pdca["Line"].unique())
+        
+        line_cm_dept_fmea_pdca = car_maker_department_fmea_pdca[car_maker_department_fmea_pdca["Line"].isin([line])]
+        line_cm_dept_fmea_pdca = line_cm_dept_fmea_pdca[line_cm_dept_fmea_pdca["Status"]=="OPEN"]
+        
         # Filter data for delayed items with OPEN status and Target Date less than today
-    df_delayed_items = df_final_filter[
-        (df_final_filter["Status"] == "OPEN") &
-        ((pd.to_datetime(df_final_filter["Target Date"]) < datetime.today()) | df_final_filter["Target Date"].isnull())
-    ]
-
-    # Display count of delayed items
-    st.title(f"{len(df_delayed_items)} {selected_status} Item/s are DELAYED!")
-
-    # Display PDCA File Based on the Selection with Highlighting
-    df_final_filter_styled = df_final_filter.style.apply(
-        lambda row: ['background-color: #900d0d' if row['Status'] == 'OPEN' and (pd.isna(row['Target Date']) or row['Target Date'].date() < date.today()) else
-                    'background-color: #900d0d' if pd.isna(row['Target Date']) else '' for _ in row],
-        axis=1
-    )
-    st.dataframe(df_final_filter_styled)
-
-    # Download Button for Final Generated PDCA
-    @st.cache_data
-    def convert_df(df):
-        return df.to_csv().encode("utf-8")
-
-    csv = convert_df(df_final_filter)
-
-    st.download_button(
-        label=f"Download {selected_department} FMEA PDCA {selected_status} Items on Line {selected_line}",
-        data=csv,
-        file_name=f"Line {selected_line} FMEA PDCA {selected_status} Items - {selected_department}.csv",
-        mime="text/csv"
-    )
+        df_delayed_items = line_cm_dept_fmea_pdca[
+            (line_cm_dept_fmea_pdca["Status"] == "OPEN") &
+            ((pd.to_datetime(line_cm_dept_fmea_pdca["Target Date"]) < datetime.today()) | line_cm_dept_fmea_pdca["Target Date"].isnull())
+        ]
+    
+        # Display count of delayed items
+        st.subheader(f"{len(df_delayed_items)} OPEN Item/s are DELAYED!")
+        
+        df_final_filter_styled = line_cm_dept_fmea_pdca.style.apply(
+            lambda row: ['background-color: red' if row['Status'] == 'OPEN'
+                        and (pd.isna(row['Target Date']) or row['Target Date'].date() < date.today()) else
+                        'background-color: red' if pd.isna(row['Target Date']) else '' for _ in row],
+            axis=1
+        )
+    
+        # Display the DataFrame with Styler
+        st.dataframe(df_final_filter_styled)
+        
+        # Download Button for Final Generated PDCA
+        @st.cache_data
+        def convert_df(df):
+            return df.to_csv().encode("utf-8")
+    
+        csv = convert_df(line_cm_dept_fmea_pdca)
+    
+        st.download_button(
+            label=f"Download {department} FMEA PDCA OPEN Items on Line {line}",
+            data=csv,
+            file_name=f"Line {line} FMEA PDCA OPEN Items - {department}.csv",
+            mime="text/csv"
+        )
