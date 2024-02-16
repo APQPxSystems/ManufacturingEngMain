@@ -22,7 +22,7 @@ hide_st_style = """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # App title and info
-st.markdown("<h2 style='text-align:center; background-color:#1e6262; font-family:Poppins'>MANUFACTURING ENGINEERING WEB APP</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align:center; background-color:#1e6262; font-family:Monaco'>MANUFACTURING ENGINEERING WEB APP</h2>", unsafe_allow_html=True)
 
 app_info_container = st.container(border=True)
 with app_info_container:
