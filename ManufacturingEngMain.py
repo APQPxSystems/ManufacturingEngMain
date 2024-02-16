@@ -582,4 +582,4 @@ if automation_app == "FMEA PDCA Viewer":
 
 
 
-st.markdown("<h5 style='background-color:black;'><marquee>Manufacturing Engineering Web App -- Systems Engineering</marquee></h5>")
+st.markdown("<h5 style='background-color:black;'><marquee>Manufacturing Engineering Web App -- Systems Engineering</marquee></h5>", unsafe_allow_html=True)
