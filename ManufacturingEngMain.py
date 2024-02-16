@@ -21,11 +21,11 @@ hide_st_style = """
                 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
+# App title and info
+st.markdown("<h2 style='text-align:center; background-color:#1e6262;'>MANUFACTURING ENGINEERING WEB APP</h2>", unsafe_allow_html=True)
+
 app_info_container = st.container(border=True)
 with app_info_container:
-    # App title and info
-    st.title("Manufacturing Engineering Department Web App")
-    
     st.write("""This web app is a collection of Manufacturing Engineering Department's automation tools.
              This runs on streamlit's cloud server and is not connected to any database.
              Therefore, any data uploaded will not be saved or collected and will vanish everytime the app is refreshed.""")
