@@ -474,7 +474,7 @@ if automation_app == "FMEA PDCA Viewer":
     st.markdown("<h2 style='text-align:center; background-color:#1e6262;'>WELCOME TO FMEA ONLINE!</h2>", unsafe_allow_html=True)
 
     # Read FMEA PDCA Excel File
-    fmea_pdca = pd.read_csv("FMEA_PDCA.csv", encoding="ISO-8859-1")
+    fmea_pdca = pd.read_csv("FMEA/FMEA_PDCA.csv", encoding="ISO-8859-1")
     
     # Drop Unnecessary Columns
     fmea_pdca = fmea_pdca[["Car Maker", "Car Model", "Line", "Findings",
