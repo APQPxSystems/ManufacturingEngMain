@@ -26,7 +26,7 @@ st.markdown("<h2 style='text-align:center; background-color:#1e6262; font-family
 
 app_info_container = st.container(border=True)
 with app_info_container:
-    st.write("""This web app is a collection of Manufacturing Engineering Department's automation tools.
+    st.info("""This web app is a collection of Manufacturing Engineering Department's automation tools.
              This runs on streamlit's cloud server and is not connected to any database.
              Therefore, any data uploaded will not be saved or collected and will vanish everytime the app is refreshed.""")
 
