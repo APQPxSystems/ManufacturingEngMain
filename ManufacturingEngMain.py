@@ -21,13 +21,14 @@ hide_st_style = """
                 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-# App title and info
-st.title("Manufacturing Engineering Department Web App")
-
-st.write("""This web app is a collection of Manufacturing Engineering Department's automation tools.
-         This runs on streamlit's cloud server and is not connected to any database.
-         Therefore, any data uploaded will not be saved or collected and will vanish everytime the app is refreshed.""")
-st.write("--------------------------------------------------------")
+app_info_container = st.container(border=True)
+with app_info_container:
+    # App title and info
+    st.title("Manufacturing Engineering Department Web App")
+    
+    st.write("""This web app is a collection of Manufacturing Engineering Department's automation tools.
+             This runs on streamlit's cloud server and is not connected to any database.
+             Therefore, any data uploaded will not be saved or collected and will vanish everytime the app is refreshed.""")
 
 # User Roles
 credential_col1, credential_col2 = st.columns([2,1])
