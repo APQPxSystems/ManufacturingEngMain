@@ -576,3 +576,10 @@ if automation_app == "FMEA PDCA Viewer":
             file_name=f"Line {line} FMEA PDCA OPEN Items - {department}.csv",
             mime="text/csv"
         )
+
+
+
+
+
+
+st.markdown("<h5 style='background-color:black;'><marquee>Manufacturing Engineering Web App -- Systems Engineering</marquee></h5>")
