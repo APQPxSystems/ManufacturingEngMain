@@ -186,7 +186,7 @@ if automation_app == "Sub Balancing":
            """)
   
   # Upload excel file
-  raw_data = st.file_uploader("Upload sub balancing data", type=["xlsx", "xls"])
+  raw_data = st.file_uploader("Upload sub balancing data", type=["xls", "xlsx"])
   st.write("--------------------------------------")
   
   # Read and process uploaded excel file
