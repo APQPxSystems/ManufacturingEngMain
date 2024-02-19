@@ -581,4 +581,4 @@ if automation_app == "FMEA PDCA Viewer":
 
 
 
-st.markdown("<h6 style='text-align:right;'>Systems Engineering || Manufacturing Engineering Department</h6>", unsafe_allow_html=True)
+st.markdown("<h6 style='text-align:right;'>SYSTEMS ENG'G || ME DEPT</h6>", unsafe_allow_html=True)
