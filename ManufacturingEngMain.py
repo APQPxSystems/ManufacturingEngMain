@@ -590,7 +590,7 @@ if automation_app == "FMEA PDCA Viewer":
 
 
 
+with open('style.css') as f:
+    css = f.read()
 
-
-
-st.markdown("<h6 style='text-align:right;'>SYSTEMS ENG'G || ME DEPT</h6>", unsafe_allow_html=True)
+st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
