@@ -6,7 +6,7 @@
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
-    background: black;
+    background: white;
     animation: gradient 15s ease infinite;
     background-size: 200% 200%;
     background-attachment: fixed;
@@ -18,7 +18,7 @@
     font-weight: bold;
     text-align: center;
     font-size: 35px;
-    color: white;
+    color: black;
     background-color: #055C9D;
     text-shadow: rgb(0, 0, 0) 2px 2px 2px;
 }
@@ -29,7 +29,7 @@
     font-weight: bold;
     text-align: center;
     font-size: 15px;
-    color: white;
+    color: black;
     background-color: #055C9D;
     text-shadow: rgb(0, 0, 0) 2px 2px 2px;
 }
