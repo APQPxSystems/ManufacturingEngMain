@@ -21,6 +21,18 @@ hide_st_style = """
                 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
+# Remove top white space
+st.markdown("""
+        <style>
+               .block-container {
+                    padding-top: 0rem;
+                    padding-bottom: 0rem;
+                    padding-left: 0rem;
+                    padding-right: 0rem;
+                }
+        </style>
+        """, unsafe_allow_html=True)
+
 # App title and info
 st.markdown("<h2 style='text-align:center; background-color:#1e6262; font-family:Monaco'>MANUFACTURING ENGINEERING WEB APP</h2>", unsafe_allow_html=True)
 
