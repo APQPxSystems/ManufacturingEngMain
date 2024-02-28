@@ -482,7 +482,7 @@ if automation_app == "FMEA and QCP Matrix Date Calculator":
 #FMEA PDCA Viewer
 if automation_app == "FMEA PDCA Viewer":
     # Landing Page
-    st.markdown("<h2 style='text-align:center; background-color:#1e6262;'>WELCOME TO FMEA ONLINE!</h2>", unsafe_allow_html=True)
+    st.title("FMEA PDCA Viewer")
 
     # Read FMEA PDCA Excel File
     fmea_pdca = pd.read_csv("FMEA/FMEA_PDCA.csv", encoding="ISO-8859-1")
