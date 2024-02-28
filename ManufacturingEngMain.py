@@ -34,9 +34,8 @@ st.markdown("""
         """, unsafe_allow_html=True)
 
 # App title and info
+st.markdown("<p class='app_sub_title'>ME DEPARTMENT | SYSTEMS ENGINEERING</p>", unsafe_allow_html=True)
 st.markdown("<p class='app_title'>MANUFACTURING ENGINEERING WEB APP</p>", unsafe_allow_html=True)
-
-
 st.markdown("""<p class='app_info'>This web app is a collection of Manufacturing Engineering Department's automation tools.
           This runs on streamlit's cloud server and is not connected to any database.
           Therefore, any data uploaded will not be saved or collected and will vanish everytime the app is refreshed.</p>""", unsafe_allow_html=True)
