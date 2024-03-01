@@ -595,7 +595,6 @@ if automation_app == "Merge Master Sample Automation":
   st.markdown("""How to Use: On your .xls file of merge master sample, delete the rows that contain
               the signatories and revisions. Then, unmerge the merged cells within the dataframe. Save the file as .csv.
               Drag and drop the file on the upload box and the data will be automatically edited.""")
-  st.markdown("For your reference, download the sample .csv file on the button below.")
   
   # Upload File --- Must Be CSV
   raw_data = st.file_uploader("Upload file here:")
