@@ -670,7 +670,7 @@ if automation_app == "Merge Master Sample Automation":
           file_name='MergeMasterSample_Automated.csv',
           mime='text/csv',
       )
-      st.write("__________________________________________________")
+  st.write("__________________________________________________")
 
 
 
