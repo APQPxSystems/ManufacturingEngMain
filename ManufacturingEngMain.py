@@ -612,7 +612,7 @@ if automation_app == "Merge Master Sample Automation":
       #raw_data["Conn"] = raw_data["Conn"]/10
   
       # Drop the 'AcceNo' and 'ExteNo' columns
-      raw_data.drop(["AcceNo", "ExteNo"], axis=1, inplace=True)
+      #raw_data.drop(["AcceNo", "ExteNo"], axis=1, inplace=True)
       
       # Rename columns after "Attachment Process"
       rename_mapping = {}
