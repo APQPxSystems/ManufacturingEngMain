@@ -597,23 +597,6 @@ if automation_app == "Merge Master Sample Automation":
               Drag and drop the file on the upload box and the data will be automatically edited.""")
   st.markdown("For your reference, download the sample .csv file on the button below.")
   
-  # Download Sample Data Format
-  sample_file = pd.read_csv("MPPD/MergeMasterSample/sample_file.csv")
-  @st.cache_data
-  def convert_df(sample):
-      # IMPORTANT: Cache the conversion to prevent computation on every rerun
-      return sample.to_csv().encode('utf-8')
-  
-  csv = convert_df(sample_file)
-  
-  st.download_button(
-      label="Download Sample CSV Format",
-      data=csv,
-      file_name='sample_format.csv',
-      mime='text/csv',
-  )
-  
-  
   # Upload File --- Must Be CSV
   raw_data = st.file_uploader("Upload file here:")
   
