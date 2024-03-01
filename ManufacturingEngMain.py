@@ -636,8 +636,8 @@ if automation_app == "Merge Master Sample Automation":
       raw_data['PartsName'] = raw_data.apply(lambda row: f"{row['PartsName']} L={row['Length']}" if pd.notna(row['Length']) else row['PartsName'], axis=1)
   
       # Drop PartsClass, PartsCode, Length, Method, Qty, Attachment Process
-      columns_to_drop = ['PartsClass', 'PartsCode', 'Length', 'Method', 'Qty', 'Attachment Process']
-      raw_data.drop(columns=columns_to_drop, inplace=True)
+      #columns_to_drop = ['PartsClass', 'PartsCode', 'Length', 'Method', 'Qty', 'Attachment Process']
+      #raw_data.drop(columns=columns_to_drop, inplace=True)
       
       # Transpose the DataFrame without including the index
       transposed_data = raw_data.transpose().reset_index(drop=True)
