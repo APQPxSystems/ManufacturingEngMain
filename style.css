@@ -73,9 +73,8 @@
 .tagline{
     font-family: Sail, cursive;
     text-align: center;
-    font-size: 35px;
+    font-size: 10px;
     color: rgb(0, 255, 255);
-    background-color: rgb(84, 84, 84);
     text-shadow: rgb(0, 0, 0) 2px 2px 2px;
 }
 
