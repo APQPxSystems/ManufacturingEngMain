@@ -34,7 +34,7 @@ st.markdown("""
         """, unsafe_allow_html=True)
 
 # App title and info
-st.markdown("<p class='app_sub_title'>ME DEPARTMENT | SYSTEMS ENGINEERING</p>", unsafe_allow_html=True)
+st.markdown("<p class='app_sub_title'>MANUFACTURING ENGINEERING DEPARTMENT | SYSTEMS ENGINEERING</p>", unsafe_allow_html=True)
 st.markdown("<p class='app_title'>MANUFACTURING ENGINEERING WEB APP</p>", unsafe_allow_html=True)
 st.markdown("""<p class='app_info'>This web app is a collection of Manufacturing Engineering Department's automation tools.
           This runs on streamlit's cloud server and is not connected to any database.
