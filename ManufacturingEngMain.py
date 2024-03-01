@@ -605,14 +605,14 @@ if automation_app == "Merge Master Sample Automation":
       st.write(raw_data)
   
       # Concatenate Column Contents -- Conn, AcceNo, ExteNo into a new column 'Conn'
-      #raw_data['Conn'] = raw_data['Conn'].astype(str) + raw_data['AcceNo'].astype(str) + raw_data['ExteNo'].astype(str)
+      raw_data['Conn'] = raw_data['Conn'].astype(str) + raw_data['AcceNo'].astype(str) + raw_data['ExteNo'].astype(str)
   
       # Convert 'Conn' column values to integers, handling NaN values and non-numeric values
-      #raw_data['Conn'] = pd.to_numeric(raw_data['Conn'].str.replace(r'[^0-9]', '', regex=True), errors='coerce', downcast='integer')
-      #raw_data["Conn"] = raw_data["Conn"]/10
+      raw_data['Conn'] = pd.to_numeric(raw_data['Conn'].str.replace(r'[^0-9]', '', regex=True), errors='coerce', downcast='integer')
+      raw_data["Conn"] = raw_data["Conn"]/10
   
       # Drop the 'AcceNo' and 'ExteNo' columns
-      #raw_data.drop(["AcceNo", "ExteNo"], axis=1, inplace=True)
+      raw_data.drop(["AcceNo", "ExteNo"], axis=1, inplace=True)
       
       # Rename columns after "Attachment Process"
       rename_mapping = {}
@@ -636,8 +636,8 @@ if automation_app == "Merge Master Sample Automation":
       raw_data['PartsName'] = raw_data.apply(lambda row: f"{row['PartsName']} L={row['Length']}" if pd.notna(row['Length']) else row['PartsName'], axis=1)
   
       # Drop PartsClass, PartsCode, Length, Method, Qty, Attachment Process
-      #columns_to_drop = ['PartsClass', 'PartsCode', 'Length', 'Method', 'Qty', 'Attachment Process']
-      #raw_data.drop(columns=columns_to_drop, inplace=True)
+      columns_to_drop = ['PartsClass', 'PartsCode', 'Length', 'Method', 'Qty', 'Attachment Process']
+      raw_data.drop(columns=columns_to_drop, inplace=True)
       
       # Transpose the DataFrame without including the index
       transposed_data = raw_data.transpose().reset_index(drop=True)
