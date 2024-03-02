@@ -9,13 +9,6 @@ import pandas as pd
 import altair as alt
 from datetime import datetime, timedelta, date
 from io import BytesIO
-import pyttsx3
-
-# Text to Speech
-def text_to_speech(text):
-    engine = pyttsx3.init()
-    engine.say(text)
-    engine.runAndWait()
 
 # Streamlit Configurations
 st.set_page_config(page_title="ME Dept Apps", layout="wide")
@@ -44,17 +37,7 @@ st.markdown("""
 st.markdown("<p class='app_sub_title'>MANUFACTURING ENGINEERING DEPARTMENT | SYSTEMS ENGINEERING</p>", unsafe_allow_html=True)
 # Tagline
 st.markdown("<p class='tagline'>Mitigating Encumbrances; Moving towards Excellence</p>", unsafe_allow_html=True)
-st.markdown("<p class='app_title'>MANUFACTURING ENGINEERING WEB APP</p>", unsafe_allow_html=True)
-
-# App Intro Speech
-# Input text box
-input_text = "This web app is a collection of Manufacturing Engineering Department's automation tools. This runs on streamlit's cloud server and is not connected to any database. Therefore, any data uploaded will not be saved or collected and will vanish everytime the app is refreshed."
-
-# Button to trigger text-to-speech
-if st.button("🎙️ APP INTRO"):
-    if input_text:
-        text_to_speech(input_text)
-      
+st.markdown("<p class='app_title'>MANUFACTURING ENGINEERING WEB APP</p>", unsafe_allow_html=True)     
 st.markdown("""<p class='app_info'>This web app is a collection of Manufacturing Engineering Department's automation tools.
           This runs on streamlit's cloud server and is not connected to any database.
           Therefore, any data uploaded will not be saved or collected and will vanish everytime the app is refreshed.</p>""", unsafe_allow_html=True)
