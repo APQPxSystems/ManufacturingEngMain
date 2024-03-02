@@ -38,19 +38,18 @@ st.markdown("<p class='app_sub_title'>MANUFACTURING ENGINEERING DEPARTMENT | SYS
 # Tagline
 st.markdown("<p class='tagline'>Mitigating Encumbrances; Moving towards Excellence</p>", unsafe_allow_html=True)
 st.markdown("<p class='app_title'>MANUFACTURING ENGINEERING WEB APP</p>", unsafe_allow_html=True)
-def text_to_speech(text):
-    engine = pyttsx3.init()
-    engine.say(text)
-    engine.runAndWait()
 
-def main():
-    # Input text box
-    intro_text = "This web app is a collection of Manufacturing Engineering Department's automation tools. This runs on streamlit's cloud server and is not connected to any database. Therefore, any data uploaded will not be saved or collected and will vanish everytime the app is refreshed."
+engine = pyttsx3.init()
+engine.say(text)
+engine.runAndWait()
 
-    # Button to trigger text-to-speech
-    if st.button("🎙️ APP INTRO"):
-        if input_text:
-            text_to_speech(intro_text)
+# Input text box
+intro_text = "This web app is a collection of Manufacturing Engineering Department's automation tools. This runs on streamlit's cloud server and is not connected to any database. Therefore, any data uploaded will not be saved or collected and will vanish everytime the app is refreshed."
+
+# Button to trigger text-to-speech
+if st.button("🎙️ APP INTRO"):
+    if input_text:
+        text_to_speech(intro_text)
 st.markdown("""<p class='app_info'>This web app is a collection of Manufacturing Engineering Department's automation tools.
           This runs on streamlit's cloud server and is not connected to any database.
           Therefore, any data uploaded will not be saved or collected and will vanish everytime the app is refreshed.</p>""", unsafe_allow_html=True)
