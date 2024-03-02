@@ -253,7 +253,7 @@ if automation_app == "Kigyo Generator":
     st.title("Kigyo Generator")
     st.write("""How to use: Upload required excel files.
              Drag the allowance slider to your desired price allowance in %.
-             The Kigyo output will automatically generated
+             The Kigyo output will be automatically generated
              """)
     st.subheader("Upload the required excel files")
 
@@ -412,7 +412,7 @@ if automation_app == "Kigyo Generator (without Inventory Data)":
     st.title("Kigyo Generator")
     st.write("""How to use: Upload required excel files.
             Drag the allowance slider to your desired price allowance in %.
-            The Kigyo output will automatically generated
+            The Kigyo output will be automatically generated
             """)
     st.subheader("Upload the required excel files")
 
