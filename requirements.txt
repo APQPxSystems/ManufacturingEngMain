@@ -3,4 +3,3 @@ altair
 pandas
 openpyxl
 datetime
-pyttsx3
