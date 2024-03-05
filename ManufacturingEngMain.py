@@ -738,7 +738,7 @@ if automation_app == "Merge Master Sample Automation":
         raw_data.drop(["AcceNo", "ExteNo"], axis=1, inplace=True)
         
         # Rename columns after specified start column
-        rename_start_column = st.selectbox("Select the column before product names:", raw_data.columns)
+        rename_start_column = st.text_input("Enter the start column for renaming:")
         characters_to_replace_input = st.number_input("Enter the number of characters to replace with '*':", min_value=0, step=1)
 
         def rename_columns(raw_data, start_column, characters_to_replace):
