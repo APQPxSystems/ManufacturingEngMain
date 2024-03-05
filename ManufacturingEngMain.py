@@ -766,50 +766,50 @@ if automation_app == "Merge Master Sample Automation":
           st.subheader("Renamed Data")
           st.write(renamed_data)
       
-        # Replace "●" values with corresponding column names
-        applicability_symbol = st.text_input("Input used applicability symbol:")
-        for col in raw_data.columns:
-            raw_data[col] = raw_data[col].apply(lambda x: col if x == applicability_symbol else x)
-        
-        # Concatenate "Length" to "PartsName" if "Length" has a value
-        raw_data['PartsName'] = raw_data.apply(lambda row: f"{row['PartsName']} L={row['Length']}" if pd.notna(row['Length']) else row['PartsName'], axis=1)
-    
-        # Drop PartsClass, PartsCode, Length, Method, Qty, Attachment Process
-        columns_to_drop = ['PartsClass', 'PartsCode', 'Length', 'Method', 'Qty', 'Attachment Process']
-        raw_data.drop(columns=columns_to_drop, inplace=True)
-        
-        # Transpose the DataFrame without including the index
-        transposed_data = raw_data.transpose().reset_index(drop=True)
-    
-        # Define a custom function to shift non-null values upwards
-        def shift_cells_up(col):
-            non_null_values = col.dropna()
-            col[:len(non_null_values)] = non_null_values
-            col[len(non_null_values):] = None
-            return col
-    
-        # Apply the custom function to each column
-        transposed_data = transposed_data.apply(shift_cells_up, axis=0)
-        
-        # Display Edited Data
-        st.title("Edited Data")
-        st.write(transposed_data)
-        
-        # Download Button
-        @st.cache_data
-        def convert_df(df):
-            # IMPORTANT: Cache the conversion to prevent computation on every rerun
-            return df.to_csv().encode('utf-8')
-    
-        csv = convert_df(transposed_data)
-    
-        st.download_button(
-            label="Download Edited Data as CSV",
-            data=csv,
-            file_name='MergeMasterSample_Automated.csv',
-            mime='text/csv',
-        )
-    st.write("__________________________________________________")
+      # Replace "●" values with corresponding column names
+      applicability_symbol = st.text_input("Input used applicability symbol:")
+      for col in raw_data.columns:
+          raw_data[col] = raw_data[col].apply(lambda x: col if x == applicability_symbol else x)
+      
+      # Concatenate "Length" to "PartsName" if "Length" has a value
+      raw_data['PartsName'] = raw_data.apply(lambda row: f"{row['PartsName']} L={row['Length']}" if pd.notna(row['Length']) else row['PartsName'], axis=1)
+  
+      # Drop PartsClass, PartsCode, Length, Method, Qty, Attachment Process
+      columns_to_drop = ['PartsClass', 'PartsCode', 'Length', 'Method', 'Qty', 'Attachment Process']
+      raw_data.drop(columns=columns_to_drop, inplace=True)
+      
+      # Transpose the DataFrame without including the index
+      transposed_data = raw_data.transpose().reset_index(drop=True)
+  
+      # Define a custom function to shift non-null values upwards
+      def shift_cells_up(col):
+          non_null_values = col.dropna()
+          col[:len(non_null_values)] = non_null_values
+          col[len(non_null_values):] = None
+          return col
+  
+      # Apply the custom function to each column
+      transposed_data = transposed_data.apply(shift_cells_up, axis=0)
+      
+      # Display Edited Data
+      st.title("Edited Data")
+      st.write(transposed_data)
+      
+      # Download Button
+      @st.cache_data
+      def convert_df(df):
+          # IMPORTANT: Cache the conversion to prevent computation on every rerun
+          return df.to_csv().encode('utf-8')
+  
+      csv = convert_df(transposed_data)
+  
+      st.download_button(
+          label="Download Edited Data as CSV",
+          data=csv,
+          file_name='MergeMasterSample_Automated.csv',
+          mime='text/csv',
+      )
+  st.write("__________________________________________________")
 
 
 
