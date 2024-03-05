@@ -752,8 +752,9 @@ if automation_app == "Merge Master Sample Automation":
       raw_data = raw_data.rename(columns={'Attachment Process**':"Attachment Process"})
       
       # Replace "●" values with corresponding column names
+      applicability_symbol = st.text_input("Input used applicability symbol:")
       for col in raw_data.columns:
-          raw_data[col] = raw_data[col].apply(lambda x: col if x == '●' else x)
+          raw_data[col] = raw_data[col].apply(lambda x: col if x == applicability_symbol else x)
       
       # Concatenate "Length" to "PartsName" if "Length" has a value
       raw_data['PartsName'] = raw_data.apply(lambda row: f"{row['PartsName']} L={row['Length']}" if pd.notna(row['Length']) else row['PartsName'], axis=1)
