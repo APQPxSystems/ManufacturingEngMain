@@ -755,16 +755,16 @@ if automation_app == "Merge Master Sample Automation":
         return raw_data
 
       # Get user inputs
-        start_column_input = st.text_input("Enter the start column for renaming:")
-        characters_to_replace_input = st.number_input("Enter the number of characters to replace with '*':", min_value=0, step=1)
+      start_column_input = st.text_input("Enter the start column for renaming:")
+      characters_to_replace_input = st.number_input("Enter the number of characters to replace with '*':", min_value=0, step=1)
   
-        # Perform column renaming
-        if st.button("Rename Columns"):
-            renamed_data = rename_columns(raw_data.copy(), start_column_input, characters_to_replace_input)
+      # Perform column renaming
+      if st.button("Rename Columns"):
+          renamed_data = rename_columns(raw_data.copy(), start_column_input, characters_to_replace_input)
   
-            # Display the renamed data
-            st.subheader("Renamed Data")
-            st.write(renamed_data)
+          # Display the renamed data
+          st.subheader("Renamed Data")
+          st.write(renamed_data)
       
       # Replace "●" values with corresponding column names
       applicability_symbol = st.text_input("Input used applicability symbol:")
