@@ -768,18 +768,18 @@ if automation_app == "Merge Master Sample Automation":
       
       # Replace "●" values with corresponding column names
       applicability_symbol = st.text_input("Input used applicability symbol:")
-      for col in raw_data.columns:
-          raw_data[col] = raw_data[col].apply(lambda x: col if x == applicability_symbol else x)
+      for col in renamed_data.columns:
+          renamed_data[col] = renamed_data[col].apply(lambda x: col if x == applicability_symbol else x)
       
       # Concatenate "Length" to "PartsName" if "Length" has a value
-      raw_data['PartsName'] = raw_data.apply(lambda row: f"{row['PartsName']} L={row['Length']}" if pd.notna(row['Length']) else row['PartsName'], axis=1)
+      renamed_data['PartsName'] = renamed_data.apply(lambda row: f"{row['PartsName']} L={row['Length']}" if pd.notna(row['Length']) else row['PartsName'], axis=1)
   
       # Drop PartsClass, PartsCode, Length, Method, Qty, Attachment Process
       columns_to_drop = ['PartsClass', 'PartsCode', 'Length', 'Method', 'Qty', 'Attachment Process']
-      raw_data.drop(columns=columns_to_drop, inplace=True)
+      renamed_data.drop(columns=columns_to_drop, inplace=True)
       
       # Transpose the DataFrame without including the index
-      transposed_data = raw_data.transpose().reset_index(drop=True)
+      transposed_data = renamed_data.transpose().reset_index(drop=True)
   
       # Define a custom function to shift non-null values upwards
       def shift_cells_up(col):
