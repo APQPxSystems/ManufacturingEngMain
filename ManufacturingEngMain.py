@@ -760,11 +760,11 @@ if automation_app == "Merge Master Sample Automation":
   
       # Perform column renaming
       if st.button("Rename Columns"):
-          renamed_data = rename_columns(raw_data.copy(), start_column_input, characters_to_replace_input)
+          rar_data = rename_columns(raw_data.copy(), start_column_input, characters_to_replace_input)
   
           # Display the renamed data
           st.subheader("Renamed Data")
-          st.write(renamed_data)
+          st.write(raw_data)
       
       # Replace "●" values with corresponding column names
       applicability_symbol = st.text_input("Input used applicability symbol:")
