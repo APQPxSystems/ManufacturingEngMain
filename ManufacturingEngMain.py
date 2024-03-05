@@ -718,25 +718,24 @@ if automation_app == "Merge Master Sample Automation":
     st.markdown("""How to Use: On your .xls file of merge master sample, delete the rows that contain
                 the signatories and revisions. Then, unmerge the merged cells within the dataframe. Save the file as .csv.
                 Drag and drop the file on the upload box and the data will be automatically edited.""")
-    
+
     # Upload File --- Must Be CSV
     raw_data = st.file_uploader("Upload file here:")
-    
+
     if raw_data is not None:
         raw_data = pd.read_csv(raw_data)
         st.title("Original Data")
         st.write(raw_data)
-    
+
         # Concatenate Column Contents -- Conn, AcceNo, ExteNo into a new column 'Conn'
         raw_data['Conn'] = raw_data['Conn'].astype(str) + raw_data['AcceNo'].astype(str) + raw_data['ExteNo'].astype(str)
-    
+
         # Convert 'Conn' column values to integers, handling NaN values and non-numeric values
         raw_data['Conn'] = pd.to_numeric(raw_data['Conn'].str.replace(r'[^0-9]', '', regex=True), errors='coerce', downcast='integer')
-        #raw_data["Conn"] = raw_data["Conn"]/10
-    
+
         # Drop the 'AcceNo' and 'ExteNo' columns
         raw_data.drop(["AcceNo", "ExteNo"], axis=1, inplace=True)
-        
+
         # Rename columns after specified start column
         rename_start_column = st.text_input("Enter the start column for renaming:")
         characters_to_replace_input = st.number_input("Enter the number of characters to replace with '*':", min_value=0, step=1)
@@ -749,7 +748,7 @@ if automation_app == "Merge Master Sample Automation":
                 if col == start_column:
                     start_renaming = True
                 if start_renaming and col != start_column:
-                    new_col_name = col[:-characters_to_replace].strip() + '*' * characters_to_replace
+                    new_col_name = col[:-min(characters_to_replace, len(col))].strip() + '*' * min(characters_to_replace, len(col))
                     rename_mapping[col] = new_col_name
 
             raw_data.rename(columns=rename_mapping, inplace=True)
@@ -758,44 +757,45 @@ if automation_app == "Merge Master Sample Automation":
             return raw_data
 
         raw_data = rename_columns(raw_data, rename_start_column, characters_to_replace_input)
-        
+
         # Replace "●" values with corresponding column names
         applicability_symbol = st.text_input("Input used applicability symbol:")
         for col in raw_data.columns:
-            raw_data[col] = raw_data[col].apply(lambda x: col if x == applicability_symbol else x)
-        
+            raw_data[col] = raw_data[col].replace(applicability_symbol, col)
+
         # Concatenate "Length" to "PartsName" if "Length" has a value
-        raw_data['PartsName'] = raw_data.apply(lambda row: f"{row['PartsName']} L={row['Length']}" if pd.notna(row['Length']) else row['PartsName'], axis=1)
-    
+        if 'Length' in raw_data.columns:
+            raw_data['PartsName'] = raw_data.apply(lambda row: f"{row['PartsName']} L={row['Length']}" if pd.notna(row['Length']) else row['PartsName'], axis=1)
+
         # Drop PartsClass, PartsCode, Length, Method, Qty, Attachment Process
         columns_to_drop = ['PartsClass', 'PartsCode', 'Length', 'Method', 'Qty', 'Attachment Process']
         raw_data.drop(columns=columns_to_drop, inplace=True)
-        
+
         # Transpose the DataFrame without including the index
         transposed_data = raw_data.transpose().reset_index(drop=True)
-    
+
         # Define a custom function to shift non-null values upwards
         def shift_cells_up(col):
             non_null_values = col.dropna()
             col[:len(non_null_values)] = non_null_values
             col[len(non_null_values):] = None
             return col
-    
+
         # Apply the custom function to each column
         transposed_data = transposed_data.apply(shift_cells_up, axis=0)
-        
+
         # Display Edited Data
         st.title("Edited Data")
         st.write(transposed_data)
-        
+
         # Download Button
         @st.cache_data
         def convert_df(df):
             # IMPORTANT: Cache the conversion to prevent computation on every rerun
             return df.to_csv().encode('utf-8')
-    
+
         csv = convert_df(transposed_data)
-    
+
         st.download_button(
             label="Download Edited Data as CSV",
             data=csv,
@@ -803,7 +803,6 @@ if automation_app == "Merge Master Sample Automation":
             mime='text/csv',
         )
     st.write("__________________________________________________")
-
 
 
 
