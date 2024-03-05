@@ -738,18 +738,33 @@ if automation_app == "Merge Master Sample Automation":
       raw_data.drop(["AcceNo", "ExteNo"], axis=1, inplace=True)
       
       # Rename columns after "Attachment Process"
-      rename_mapping = {}
-      start_renaming = False
+      def rename_columns(raw_data, start_column, characters_to_replace):
+        rename_mapping = {}
+        start_renaming = False
+    
+        for col in raw_data.columns:
+            if col == start_column:
+                start_renaming = True
+            if start_renaming:
+                new_col_name = col[:-characters_to_replace].strip() + '*' * characters_to_replace
+                rename_mapping[col] = new_col_name
+    
+        raw_data.rename(columns=rename_mapping, inplace=True)
+        raw_data = raw_data.rename(columns={start_column + '*' * characters_to_replace: start_column})
+    
+        return raw_data
+
+      # Get user inputs
+          start_column_input = st.text_input("Enter the start column for renaming:")
+          characters_to_replace_input = st.number_input("Enter the number of characters to replace with '*':", min_value=0, step=1)
   
-      for col in raw_data.columns:
-          if col == "Attachment Process":
-              start_renaming = True
-          if start_renaming:
-              new_col_name = col.split("(")[0].strip() + "**"
-              rename_mapping[col] = new_col_name
+          # Perform column renaming
+          if st.button("Rename Columns"):
+              renamed_data = rename_columns(raw_data.copy(), start_column_input, characters_to_replace_input)
   
-      raw_data.rename(columns=rename_mapping, inplace=True)
-      raw_data = raw_data.rename(columns={'Attachment Process**':"Attachment Process"})
+              # Display the renamed data
+              st.subheader("Renamed Data")
+              st.write(renamed_data)
       
       # Replace "●" values with corresponding column names
       applicability_symbol = st.text_input("Input used applicability symbol:")
