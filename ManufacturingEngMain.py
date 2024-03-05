@@ -731,7 +731,7 @@ if automation_app == "Merge Master Sample Automation":
         raw_data['ConnNo'] = raw_data['ConnNo'].astype(str) + raw_data['AcceNo'].astype(str) + raw_data['ExteNo'].astype(str)
     
         # Convert 'Conn' column values to integers, handling NaN values and non-numeric values
-        raw_data['ConnNo'] = pd.to_numeric(raw_data['Conn'].str.replace(r'[^0-9]', '', regex=True), errors='coerce', downcast='integer')
+        raw_data['ConnNo'] = pd.to_numeric(raw_data['ConnNo'].str.replace(r'[^0-9]', '', regex=True), errors='coerce', downcast='integer')
         #raw_data["Conn"] = raw_data["Conn"]/10
     
         # Drop the 'AcceNo' and 'ExteNo' columns
