@@ -739,24 +739,26 @@ if automation_app == "Merge Master Sample Automation":
         # Rename columns after specified start column
         rename_start_column = st.text_input("Enter the start column for renaming:")
         characters_to_replace_input = st.number_input("Enter the number of characters to replace with '*':", min_value=0, step=1)
-
+        
         def rename_columns(raw_data, start_column, characters_to_replace):
             rename_mapping = {}
             start_renaming = False
-
+            fixed_star_count = 2  # Set the fixed number of '*' characters
+        
             for col in raw_data.columns:
                 if col == start_column:
                     start_renaming = True
                 if start_renaming and col != start_column:
-                    new_col_name = col[:-min(characters_to_replace, len(col))].strip() + '*' * min(characters_to_replace, len(col))
+                    new_col_name = col[:-min(characters_to_replace, len(col))].strip() + '*' * fixed_star_count
                     rename_mapping[col] = new_col_name
-
+        
             raw_data.rename(columns=rename_mapping, inplace=True)
-            raw_data = raw_data.rename(columns={start_column + '*' * characters_to_replace: start_column})
-
+            raw_data = raw_data.rename(columns={start_column + '*' * fixed_star_count: start_column})
+        
             return raw_data
-
+        
         raw_data = rename_columns(raw_data, rename_start_column, characters_to_replace_input)
+
 
         # Replace "●" values with corresponding column names
         applicability_symbol = st.text_input("Input used applicability symbol:")
