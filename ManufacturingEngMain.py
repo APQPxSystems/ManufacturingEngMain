@@ -714,7 +714,7 @@ if automation_app == "FMEA PDCA Viewer":
 # Merge Master Sample
 if automation_app == "Merge Master Sample Automation":
     # App Title and Info
-    st.title("Merge Master Sample")
+    st.title("Merge Master Sample (Labels)")
     st.markdown("""How to Use: On your .xls file of merge master sample, delete the rows that contain
                 the signatories and revisions. Then, unmerge the merged cells within the dataframe. Save the file as .csv.
                 Drag and drop the file on the upload box and the data will be automatically edited.""")
@@ -739,7 +739,20 @@ if automation_app == "Merge Master Sample Automation":
         # Rename columns after specified start column
         rename_start_column = st.text_input("Enter the start column for renaming:")
         characters_to_replace_input = st.number_input("Enter the number of characters to replace with '*':", min_value=0, step=1)
+        applicability_symbol = st.text_input("Input used applicability symbol:")
         
+        # Count of applicability_symbol in all columns after rename_start_column
+        if rename_start_column and applicability_symbol:
+            count_row = raw_data.iloc[:, raw_data.columns.get_loc(rename_start_column):].apply(lambda col: col.astype(str).str.count(applicability_symbol)).sum()
+            count_row.name = "Count of Applicable Parts" 
+            count_row = count_row.to_frame().T
+            count_row = count_row.drop(rename_start_column, axis=1)
+            count_row = count_row.transpose()
+
+            st.title("Count of Applicable Parts Per Product")
+            st.dataframe(count_row.style.highlight_max(axis=0))
+
+
         def rename_columns(raw_data, start_column, characters_to_replace):
             rename_mapping = {}
             start_renaming = False
@@ -759,9 +772,7 @@ if automation_app == "Merge Master Sample Automation":
         
         raw_data = rename_columns(raw_data, rename_start_column, characters_to_replace_input)
 
-
         # Replace "●" values with corresponding column names
-        applicability_symbol = st.text_input("Input used applicability symbol:")
         for col in raw_data.columns:
             raw_data[col] = raw_data[col].replace(applicability_symbol, col)
 
