@@ -879,7 +879,7 @@ if automation_app == "Merge Master Sample (Products to Merge)":
       columns_to_drop = st.multiselect("Select columns to drop:", csv_file.columns)
   
       # Button to drop selected columns
-      if st.button("Generate Proucts Required for Merge Master Sample"):
+      if st.button("Generate Products Required for Merge Master Sample"):
           # Drop selected columns
           csv_file = csv_file.drop(columns=columns_to_drop)
           
