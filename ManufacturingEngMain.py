@@ -938,7 +938,8 @@ if automation_app == "Merge Master Sample (Products to Merge)":
 
 
 
-  
+
+st.write("______________________________________________________")  
 
 
 with open('style.css') as f:
