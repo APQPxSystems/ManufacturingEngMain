@@ -821,101 +821,101 @@ if automation_app == "Merge Master Sample Automation (Labels)":
 
 # Merge Master Sample (Products to Merge)
 if automation_app == "Merge Master Sample (Products to Merge)":
-st.title("Merge Master Sample (Products to Merge)")
-
-# Upload CSV
-csv_file = st.file_uploader("Upload csv file here:")
-
-if csv_file is not None:
-    csv_file = pd.read_csv(csv_file)
-    st.subheader("Preview of Uploaded File")
-    st.dataframe(csv_file)
-    
-    # Applicability Symbol Input
-    applicability_symbol = st.text_input("Input used applicability symbol:")
-    
-    # Step 1 -- Total of Applicable Parts per Product -- Additional Column
-    def count_occurrences(row, value):
-        return (row==value).sum()
-    
-    # Apply the custom function to each row of the DataFrame
-    csv_file['Total Applicable C'] = csv_file.apply(lambda row: count_occurrences(row, applicability_symbol), axis=1)
-    
-    # st.write("Added Total Applicability Column")
-    # st.dataframe(csv_file)
-    
-    # Step 2 -- Delete all rows with the maximum value in the Total Applicable column
-    drop_row_condition = csv_file['Total Applicable C'] == csv_file['Total Applicable C'].max()
-    csv_file = csv_file[~drop_row_condition]
-    
-    # st.write("Dropped rows with maximum value")
-    # st.dataframe(csv_file)
-    
-    # Step 3 -- Total of Applicable Products per Part -- Additional Row
-
-    # Transpose dataframe
-    csv_file = csv_file.transpose()
-    
-    # Add another column -- Total Applicable R
-    def count_occurrences(row, value):
-        return (row==value).sum()
-    
-    # Apply the custom function to each row of the DataFrame
-    csv_file['Total Applicable R'] = csv_file.apply(lambda row: count_occurrences(row, applicability_symbol), axis=1)
-    
-    # Transpose dataframe
-    csv_file = csv_file.transpose()
-    
-    # st.write("Added Total Applicability Row")
-    # st.dataframe(csv_file)
-    
-    # Step 4 - Print the column name of the row with highest value of Total Applicable R
-    mother_product = csv_file.iloc[-1].idxmax()
-    
-    # st.title(f"Mother Product -> {mother_product}")
-    
-    # Step 5 -- Drop unnecessary columns
-    # Multiselect box to choose columns to drop
-    columns_to_drop = st.multiselect("Select columns to drop:", csv_file.columns)
-
-    # Button to drop selected columns
-    if st.button("Generate Proucts Required for Merge Master Sample"):
-        # Drop selected columns
-        csv_file = csv_file.drop(columns=columns_to_drop)
-        
-        # Display the DataFrame after dropping selected columns
-        # st.subheader("DataFrame after dropping selected columns:")
-        # st.write(csv_file)
-    
-        # Step 6 -- Final
-        
-        # Specify the starting column
-        starting_column = mother_product
-
-        # List to store selected column names
-        selected_columns = []
-
-        # Loop until all rows are deleted
-        while not csv_file.empty:
-            # Delete rows in the specified column with contents (non-NaN)
-            csv_file = csv_file[csv_file[starting_column].isna()]
-
-            # If DataFrame is empty, break the loop
-            if csv_file.empty:
-                break
-
-            # Select the column with the maximum number of non-NaN values
-            max_column = csv_file.count().idxmax()
-
-            # Delete rows in the selected column
-            csv_file = csv_file[csv_file[max_column].isna()]
-
-            # Add the selected column to the list
-            selected_columns.append(max_column)
-
-        st.title(f"Mother Product -> {mother_product}")
-        st.subheader("Additional Products to Form the Merge Master Sample:")
-        st.title(selected_columns)
+  st.title("Merge Master Sample (Products to Merge)")
+  
+  # Upload CSV
+  csv_file = st.file_uploader("Upload csv file here:")
+  
+  if csv_file is not None:
+      csv_file = pd.read_csv(csv_file)
+      st.subheader("Preview of Uploaded File")
+      st.dataframe(csv_file)
+      
+      # Applicability Symbol Input
+      applicability_symbol = st.text_input("Input used applicability symbol:")
+      
+      # Step 1 -- Total of Applicable Parts per Product -- Additional Column
+      def count_occurrences(row, value):
+          return (row==value).sum()
+      
+      # Apply the custom function to each row of the DataFrame
+      csv_file['Total Applicable C'] = csv_file.apply(lambda row: count_occurrences(row, applicability_symbol), axis=1)
+      
+      # st.write("Added Total Applicability Column")
+      # st.dataframe(csv_file)
+      
+      # Step 2 -- Delete all rows with the maximum value in the Total Applicable column
+      drop_row_condition = csv_file['Total Applicable C'] == csv_file['Total Applicable C'].max()
+      csv_file = csv_file[~drop_row_condition]
+      
+      # st.write("Dropped rows with maximum value")
+      # st.dataframe(csv_file)
+      
+      # Step 3 -- Total of Applicable Products per Part -- Additional Row
+  
+      # Transpose dataframe
+      csv_file = csv_file.transpose()
+      
+      # Add another column -- Total Applicable R
+      def count_occurrences(row, value):
+          return (row==value).sum()
+      
+      # Apply the custom function to each row of the DataFrame
+      csv_file['Total Applicable R'] = csv_file.apply(lambda row: count_occurrences(row, applicability_symbol), axis=1)
+      
+      # Transpose dataframe
+      csv_file = csv_file.transpose()
+      
+      # st.write("Added Total Applicability Row")
+      # st.dataframe(csv_file)
+      
+      # Step 4 - Print the column name of the row with highest value of Total Applicable R
+      mother_product = csv_file.iloc[-1].idxmax()
+      
+      # st.title(f"Mother Product -> {mother_product}")
+      
+      # Step 5 -- Drop unnecessary columns
+      # Multiselect box to choose columns to drop
+      columns_to_drop = st.multiselect("Select columns to drop:", csv_file.columns)
+  
+      # Button to drop selected columns
+      if st.button("Generate Proucts Required for Merge Master Sample"):
+          # Drop selected columns
+          csv_file = csv_file.drop(columns=columns_to_drop)
+          
+          # Display the DataFrame after dropping selected columns
+          # st.subheader("DataFrame after dropping selected columns:")
+          # st.write(csv_file)
+      
+          # Step 6 -- Final
+          
+          # Specify the starting column
+          starting_column = mother_product
+  
+          # List to store selected column names
+          selected_columns = []
+  
+          # Loop until all rows are deleted
+          while not csv_file.empty:
+              # Delete rows in the specified column with contents (non-NaN)
+              csv_file = csv_file[csv_file[starting_column].isna()]
+  
+              # If DataFrame is empty, break the loop
+              if csv_file.empty:
+                  break
+  
+              # Select the column with the maximum number of non-NaN values
+              max_column = csv_file.count().idxmax()
+  
+              # Delete rows in the selected column
+              csv_file = csv_file[csv_file[max_column].isna()]
+  
+              # Add the selected column to the list
+              selected_columns.append(max_column)
+  
+          st.title(f"Mother Product -> {mother_product}")
+          st.subheader("Additional Products to Form the Merge Master Sample:")
+          st.title(selected_columns)
 
 
 
