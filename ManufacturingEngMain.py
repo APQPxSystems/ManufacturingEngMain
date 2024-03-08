@@ -923,9 +923,9 @@ if automation_app == "Merge Master Sample (Products to Merge)":
               
               # Highlight the first iteration as the "Mother Product"
               if i == 1:
-                  st.subheader(f'{i}: Mother Product: {column_name} | Branches: {deleted_values}')
+                  st.subheader(f'{i}: Mother Product: {column_name} \n Branches: {deleted_values}')
               else:
-                  st.subheader(f'{i}: Additional Product: {column_name} | Branches: {deleted_values}')
+                  st.subheader(f'{i}: Additional Product: {column_name} \n Branches: {deleted_values}')
 
 
 
