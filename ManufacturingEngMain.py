@@ -751,7 +751,7 @@ if automation_app == "Merge Master Sample Automation (Labels)":
             count_row = count_row.transpose()
 
             st.title("Count of Applicable Parts Per Product")
-            st.dataframe(count_row.style.highlight_max(axis=0))
+            st.dataframe(count_row.style.highlight_max(axis=0), width=700)
 
 
         def rename_columns(raw_data, start_column, characters_to_replace):
@@ -797,7 +797,10 @@ if automation_app == "Merge Master Sample Automation (Labels)":
 
         # Apply the custom function to each column
         transposed_data = transposed_data.apply(shift_cells_up, axis=0)
-
+        
+        # Add a blank column every after a column in transposed-data
+        [transposed_data.insert(i + 1, f'Blank_{i}', np.nan, allow_duplicates=True) for i in range(transposed_data.shape[1] - 1, 0, -1)]
+        
         # Display Edited Data
         st.title("Edited Data")
         st.write(transposed_data)
