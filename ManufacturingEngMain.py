@@ -90,8 +90,7 @@ if user_role == "Manufacturing Engineering" and app_key == "MESE24":
                                                                 "Kigyo Generator (with Inventory Data)",
                                                                 "Kigyo Generator (without Inventory Data)",
                                                                 "FMEA and QCP Matrix Date Calculator",
-                                                                "Merge Master Sample Automation (Labels)",
-                                                                "Merge Master Sample (Products to Merge)"])
+                                                                "Merge Master Sample Automation (Labels)"])
 elif user_role == "Production" and app_key == "SE24":
     automation_app = st.selectbox("Select an automation app.", ["Home",
                                                                 "PDCA Summary Viewer",
