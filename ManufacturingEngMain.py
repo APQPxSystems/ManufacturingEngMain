@@ -881,9 +881,11 @@ if automation_app == "Merge Master Sample (Products to Merge)":
       # Step 5 -- Drop unnecessary columns
       # Multiselect box to choose columns to drop
       columns_to_drop = st.multiselect("Select columns to drop:", csv_file.columns)
+      
+      branch_column = st.selectbox("Select Branch Column:", csv_file.columns)
   
       # Button to drop selected columns
-      if st.button("Generate Products Required for Merge Master Sample"):
+      if st.button("Generate Proucts Required for Merge Master Sample"):
           # Drop selected columns
           csv_file = csv_file.drop(columns=columns_to_drop)
           
@@ -893,33 +895,37 @@ if automation_app == "Merge Master Sample (Products to Merge)":
       
           # Step 6 -- Final
           
-          # Specify the starting column
-          starting_column = mother_product
   
-          # List to store selected column names
-          selected_columns = []
   
-          # Loop until all rows are deleted
+          # Step 7 -- Final, Final
+          # Initialize a list to store the deleted values in the 'Part' column and the chosen column name for each iteration
+          deleted_values_per_iteration = []
+  
+          # Continue the process until the DataFrame is empty
           while not csv_file.empty:
-              # Delete rows in the specified column with contents (non-NaN)
-              csv_file = csv_file[csv_file[starting_column].isna()]
+              # Identify the column with the highest count of non-NaN values
+              column_with_max_count = csv_file.iloc[:, 1:].count().idxmax()
+              
+              # Remove rows with non-NaN values in the identified column
+              deleted_values = csv_file.loc[~csv_file[column_with_max_count].isna(), branch_column].tolist()
+              
+              # Append the chosen column name to the list
+              deleted_values_per_iteration.append({'Column': column_with_max_count, 'DeletedValues': deleted_values})
+              
+              # Update the DataFrame by removing rows with non-NaN values in the identified column
+              csv_file = csv_file[csv_file[column_with_max_count].isna()]
   
-              # If DataFrame is empty, break the loop
-              if csv_file.empty:
-                  break
-  
-              # Select the column with the maximum number of non-NaN values
-              max_column = csv_file.count().idxmax()
-  
-              # Delete rows in the selected column
-              csv_file = csv_file[csv_file[max_column].isna()]
-  
-              # Add the selected column to the list
-              selected_columns.append(max_column)
-  
-          st.title(f"Mother Product -> {mother_product}")
-          st.subheader("Additional Products to Form the Merge Master Sample:")
-          st.title(selected_columns)
+          # Display the deleted values and the chosen column for each iteration
+          st.title("Products Needed to Form the Merge Master Sample")
+          for i, values_dict in enumerate(deleted_values_per_iteration, start=1):
+              column_name = values_dict['Column']
+              deleted_values = values_dict['DeletedValues']
+              
+              # Highlight the first iteration as the "Mother Product"
+              if i == 1:
+                  st.subheader(f'{i}: Mother Product: {column_name} | Branches: {deleted_values}')
+              else:
+                  st.subheader(f'{i}: Additional Product: {column_name} | Branches: {deleted_values}')
 
 
 
