@@ -42,10 +42,7 @@ st.markdown("""<p class='app_info'>This web app is a collection of Manufacturing
 # User Roles
 credential_col1, credential_col2 = st.columns([2,1])
 with credential_col1:
-    user_role = st.selectbox("Select your department.", ["Manufacturing Engineering",
-                                                        "Production",
-                                                        "Production Engineering",
-                                                        "Quality Assurance"])
+    user_role = st.selectbox("Select your department.", ["Manufacturing Engineering"])
 with credential_col2:
     app_key = st.text_input("Enter department key.", type="password")
 
