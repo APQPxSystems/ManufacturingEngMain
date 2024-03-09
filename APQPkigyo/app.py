@@ -336,4 +336,9 @@ if user_role == "Manufacturing Engineering" and app_key == "MESE24":
 
 st.write("______________________________________________________________")
 
+with open('style.css') as f:
+    css = f.read()
+
+st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
+
   
