@@ -42,10 +42,7 @@ st.markdown("""<p class='app_info'>This web app is a collection of Manufacturing
 # User Roles
 credential_col1, credential_col2 = st.columns([2,1])
 with credential_col1:
-    user_role = st.selectbox("Select your department.", ["Manufacturing Engineering",
-                                                        "Production",
-                                                        "Production Engineering",
-                                                        "Quality Assurance"])
+    user_role = st.selectbox("Select your department.", ["Manufacturing Engineering"])
 with credential_col2:
     app_key = st.text_input("Enter department key.", type="password")
 
@@ -59,7 +56,7 @@ if user_role == "Manufacturing Engineering" and app_key == "MESE24":
         st.title("PDCA Summary Viewer")
     
         # Read Excel File
-        pdca_file = pd.read_excel("PDCA/PDCA.xlsx")
+        pdca_file = pd.read_excel("APQP_PDCA/PDCA.xlsx")
     
         # Altair Bar Chart - All Models and per Department
         general_df_open = pd.DataFrame(pdca_file[pdca_file["Status"]=="Open"])
