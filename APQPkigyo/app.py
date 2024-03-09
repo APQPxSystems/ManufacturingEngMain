@@ -56,7 +56,7 @@ if user_role == "Manufacturing Engineering" and app_key == "MESE24":
                                                                 "Kigyo Generator (without Inventory Data)"])
 
     # Kigyo Calculator -- with Inventory Data
-    if automation_app == "Kigyo Generator":
+    if automation_app == "Kigyo Generator (with Inventory Data)":
         # App Title and Subheader
         st.title("Kigyo Generator")
         st.write("""How to use: Upload required excel files.
