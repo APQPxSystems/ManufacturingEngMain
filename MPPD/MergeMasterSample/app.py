@@ -49,8 +49,8 @@ with credential_col2:
 if user_role == "Manufacturing Engineering" and app_key == "MESE24":
 
     automation_app = st.selectbox("Select Automation Tool:", 
-                                ["Merge Master Sample Automation (Labels)",
-                                "Merge Master Sample (Products to Merge)"])
+                                ["Merge Master Sample (Products to Merge)",
+                                 "Merge Master Sample Automation (Labels)"])
 
     # Merge Master Sample
     if automation_app == "Merge Master Sample Automation (Labels)":
