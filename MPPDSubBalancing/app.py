@@ -117,9 +117,9 @@ if user_role == "Manufacturing Engineering" and app_key == "MESE24":
     st.write("______________________________________________________")  
 
 
-    with open('MPPDSubBalancing/style.css') as f:
-        css = f.read()
+with open('MPPDSubBalancing/style.css') as f:
+    css = f.read()
 
-    st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
+st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
   
 
