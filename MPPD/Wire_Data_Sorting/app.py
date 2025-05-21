@@ -80,7 +80,7 @@ def extract_filtered_consecutive_groups(df, columns_same, columns_diff):
 st.title("Advanced Wire Data Sorting App")
 
 # Upload
-uploaded_file = st.file_uploader("Upload an Excel file (.xls)", type='xls')
+uploaded_file = st.file_uploader("Upload an Excel file (.xlsx)", type='xlsx')
 
 if uploaded_file:
     df = pd.read_excel(uploaded_file)
