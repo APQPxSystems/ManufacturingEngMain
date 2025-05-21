@@ -1,0 +1,7 @@
+[theme]
+base="light"
+primaryColor="#0F4C81"         # Deep cool blue for accents
+backgroundColor="#E8F1F9"      # Soft light blue for background
+secondaryBackgroundColor="#D0E4F7" # Slightly darker background for widgets
+textColor="#1B1F3B"            # Dark navy text for contrast
+font="sans serif"              # Clean, modern font
