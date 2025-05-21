@@ -102,7 +102,7 @@ if uploaded_file:
         # Filter
         filtered_df = extract_filtered_consecutive_groups(sorted_df, columns_same, columns_diff)
         st.subheader("Output Table")
-        st.dataframe(filtered_df)
+        st.dataframe(filtered_df, hide_index = True)
 
 with open('style.css') as f:
     css = f.read()
